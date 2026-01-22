@@ -1,0 +1,9 @@
+{
+    "name": "My Express App - Production",
+    "db": {
+  "user": "igkvonline1",
+  "database": "IGKVRevaluation",
+  "server": "10.132.33.72",
+  "password": "igkvonline$2015"
+}
+}

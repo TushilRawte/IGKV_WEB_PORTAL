@@ -1,0 +1,212 @@
+// ========== Dynamic Css For College Page
+.college{
+  background-color:#d96846 !important;
+}
+
+.kvk{
+  background-color: #009970 !important;
+}
+
+// ==============================
+.marqee-container {
+    border: 1px solid #ddd;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  
+  .header {
+    background-color: #16628f;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .notifiaction-news{
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .news-container{
+    border-top: solid #07294d;
+    // background-color: #EEF5FF;
+    padding: 10px;
+  
+  }
+  
+  .main-header-title{
+    font-weight: 500;
+  }
+  
+  .header-title {
+    margin: 0;
+    list-style: none; 
+    padding: 0; 
+    
+  }
+
+  .header-title li{
+    display: inline-block; 
+  margin-right: 10px; 
+  }
+  
+  .dropdown {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #555;
+  }
+  
+  .marquee-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .marquee-content ul{
+  list-style: none;
+  }
+  
+  .date {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .btn-set{
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+ 
+  // .button-58:active {
+  //   background-color: #a4d4d8;
+  //   fill: #87cdd3;
+  // }
+  
+//   @media (min-width: 768px) {
+//     .button-58 {
+//       min-width: 170px;
+//     }
+//   }
+  
+
+  
+span a{
+    margin-top: 25px;
+    color: #4167b8;
+    border-radius: 5px;
+    // font-size: calc(16px * var(--font-scale));
+    font-size: calc(16px * var(--font-scale)) ;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: 2 70 13;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.top_news_list a{
+  color: #000;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+  font-weight: 500;
+
+}
+
+
+@media screen and (min-width: 760px) {
+   
+  .newscategory-list-smallscreen{
+  display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 760px) {
+   
+  .main-header-title{
+// font-size: 1.3em;
+font-size: calc(1.3em * var(--font-scale)) ;
+  }
+  
+  .newscategory-list-normalscreen{
+  display: none;
+    }
+    .header{
+      // font-size: calc(14px * var(--font-scale));
+      font-size: calc(14px * var(--font-scale)) ;
+    }
+    .dropdown{
+      padding: 1em 0;
+    }
+    .gray-bg {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .category-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .dropdown-label {
+      // font-size: calc(1rem * var(--font-scale));
+      font-size: calc(1rem * var(--font-scale)) ;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+    
+    .custom-dropdown {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .category-search-input {
+      width: 100%;
+      padding: 0.8em;
+      // font-size: calc(1rem * var(--font-scale));
+      font-size: calc(1rem * var(--font-scale)) ;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      appearance: none; /* Removes default browser styles */
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1em top 50%;
+      background-size: 0.65em auto;
+      cursor: pointer;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .category-search-input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+      outline: none;
+    }
+    
+    .category-search-input option {
+      // font-size: calc(1rem * var(--font-scale));
+      font-size: calc(1rem * var(--font-scale)) ;
+      padding: 0.5em;
+    }
+    .dropdown{
+      width: 160px;
+    }
+
+}
+

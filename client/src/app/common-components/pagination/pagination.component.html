@@ -1,0 +1,63 @@
+<div class="faculty-search-group mb-3">
+  <!-- Search Form -->
+  <form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="search-form">
+    <mat-form-field appearance="fill" class="search-input">
+      <mat-label>Search</mat-label>
+      <input matInput formControlName="Content_Title" placeholder="Search here...">
+    </mat-form-field>
+    <div class="search-buttons">
+      <button mat-mini-fab type="submit" color="primary" class="search-button"  aria-label="Search activities">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button mat-mini-fab type="button" color="warn" class="clear-button"  aria-label="Clear search" (click)="onClear()">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+  <div class="content-area">
+    <ng-content></ng-content>
+  </div>
+
+  
+<mat-paginator  aria-label="Pagination controls" class="mt-5" [length]="totalrecords"
+               [pageSizeOptions]="[9, 15, 30, 60]"
+               (page)="onPageChange($event)">
+</mat-paginator>
+
+ <!--  <section>
+    <div class="pagination-controls">
+      <button mat-flat-button class="pagination-button previous" (click)="changePage('previous')" [disabled]="currentPages <= 1">
+        &laquo; Previous
+      </button>
+      <span class="pagination-info">Page {{ currentPages }}</span>
+      <button mat-flat-button class="pagination-button next" (click)="changePage('next')" [disabled]="rowsPerPage > currentRecords">
+        Next &raquo;
+      </button>
+    </div>
+    <div class="pagination-summary">
+      <span>Results: {{startdata}}-{{enddata}} of {{totalrecords}}</span>
+    </div>
+    <div class="page-button">
+      <button mat-flat-button>
+        1
+      </button>
+      <button mat-flat-button>
+        2
+      </button>
+      <button mat-flat-button>
+        3
+      </button>
+      <button mat-flat-button>
+        4
+      </button>
+      <button mat-flat-button>
+        5
+      </button>
+      <button mat-flat-button>
+        6
+      </button>
+    </div>
+  </section> -->

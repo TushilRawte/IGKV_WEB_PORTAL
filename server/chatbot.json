@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What courses does the university offer?",
+    "answer": "The university offers a variety of undergraduate and postgraduate courses, including B.Sc, B.Tech, M.Sc, MBA, and PhD programs.",
+    "keywords": ["courses", "university", "offer", "programs", "degree"]
+  },
+  {
+    "question": "How do I apply for admission?",
+    "answer": "To apply for admission, visit the admissions page on our website and fill out the online application form.",
+    "keywords": ["apply", "admission", "application", "form", "admissions"]
+  },
+  {
+    "question": "Where is the university located?",
+    "answer": "The university is located in [City, Country]. Please visit our contact page for more details.",
+    "keywords": ["location", "university", "located", "address", "city"]
+  },
+  {
+    "question": "What is the fee structure?",
+    "answer": "The fee structure varies depending on the course. Please visit our fee structure page for more details.",
+    "keywords": ["fee", "structure", "tuition", "cost", "price"]
+  },
+  {
+    "question": "How can I contact the faculty?",
+    "answer": "You can contact the faculty via email, which can be found on the faculty directory page on our website.",
+    "keywords": ["contact", "faculty", "email", "reach", "professor"]
+  },
+  {
+    "question": "What are the placement opportunities?",
+    "answer": "The university has a dedicated placement cell that helps students secure internships and jobs with top companies.",
+    "keywords": ["placement", "opportunities", "jobs", "internships", "career"]
+  },
+  {
+    "question": "Hello",
+    "answer": "Hi, How can I help you",
+    "keywords": ["hello", "hi", "hii", "hiii", "hey"]
+  },
+  {
+    "question": "Who is Vice-Chancellor",
+    "answer": "Prof. (Dr.) Girish Chandel, Presently serving as Vice-Chancellor, IGKV, Raipur, C.G. from 25.02.2022.",
+    "keywords": ["VC", "HVC", "Vice-Chancellor", "Vice Chancellor", "Girish Chandel"]
+  },
+  {
+    "question": "Thanks you",
+    "answer": "You're very welcome! ",
+    "keywords": ["tq", "tx", "Thanks","Thankyu..."]
+  },
+  {
+    "question": "How many Colleges in IGKV",
+    "answer": "To know the Colleges in IGKV, visit this link https://igkv.ac.in/web/college_list.aspx Where you will get all colleges detail ",
+    "keywords": ["Colleges", "College list", "ContiConstituent Colleges", "Affilliated College", "collage", "colages","clg","clgs"]
+  },
+  {
+    "question": "How many Departments in IGKV",
+    "answer": "Indira Gandhi Krishi Vishwavidyalaya (IGKV) has several specialized departments, focusing on various aspects of agricultural sciences. Currently, IGKV has 20 departments, including Agri-Business Management, Agricultural Economics, Agricultural Extension, Agricultural Microbiology, Agricultural Statistics, Agrometeorology, Agronomy, Entomology, Floriculture and Landscape, Forestry, Fruit Science, Genetics and Plant Breeding, Plant Molecular Biology and Biotechnology, Plant Pathology, Plant Physiology, Soil Science and Agricultural Chemistry, Vegetable Science, Visit this link https://igkv.ac.in/web/Departments.aspx to get detail",
+    "keywords": ["Department", "Departments list", "departments data", "", "department?", "department..."]
+  }
+
+]

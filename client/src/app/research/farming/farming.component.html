@@ -1,0 +1,70 @@
+<div class="" *ngIf="farming_Data && farming_Data.length > 0;">
+    <app-banner [banner_heading]="heading" [banner_img]="bannerImg" ></app-banner>
+
+
+    <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <section class="container-fluid Allnews mt-5">
+              <div class="container">
+                <label for="" style="padding-top: 10px; font-weight: 600; font-size: calc(14px * var(--font-scale));">Select Products</label> 
+                <div class="Allnews-search-section">
+                  <select name="" id="" class="Allnews-search-input" [(ngModel)]="selectedProduct"  (change)="getProductdata()" >
+                    <option value="">--select--</option>
+                    <option *ngFor="let product of productList" [value]="product.product_id">{{ product.product_name }}</option>
+                  </select>
+                  
+                  <button class="Allnews-search-button" (click)="refreshPage()">
+                    Refresh<span></span>
+                  </button>
+                </div>
+              </div>
+            </section>       
+          </div>
+        </div>
+      </div>
+    <section >
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div>
+                    <h2 class="section-title1">Products</h2>
+                </div> 
+            </div>
+            <div class="products" *ngFor="let item of farming_Data">
+                <div class="row product mt-3 bg-light shadow" style="border: solid 1px; border-color: rgb(202, 200, 200);">
+                    <div class="col-md-8">
+                        <div class="text-container">
+                            <h2>{{item.product_name}}</h2>
+                            <p class="contents" >{{item.product_description}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img [src]="item.product_image" (error)="onErrorImage($event)"  alt="Image"  style="max-height: 258px; max-width: 300px;">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<div *ngIf="farming_Data==''"  style="display: flex; align-items: center; justify-content: center; "  class="mt-5 pb-5" >
+    <div class="not-found-container " style="border: solid 1px; border-color: rgb(202, 200, 200);">
+        <div class="error-icon">
+            <img src="https://img.icons8.com/ios/452/error.png" alt="Error Icon">
+        </div>
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! Data not Found...</p>
+        <a routerLink="/" class="home-link">Back to Home</a>
+    </div>
+   
+</div>
+
+
+
+
+

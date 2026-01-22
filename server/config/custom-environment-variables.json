@@ -1,0 +1,6 @@
+{
+  "db": { 
+      "password": "nic@123"
+  },
+  "jwtPrivateKey": "student_jwtPrivateKey"
+}

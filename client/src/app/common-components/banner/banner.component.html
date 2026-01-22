@@ -1,0 +1,30 @@
+<section
+  id="page-banner"
+  class="bg_cover"
+  role="img"
+  aria-label="Page banner background image"
+  data-overlay="8"
+  [style.backgroundImage]="'url(' + banner_img + ')'">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-banner-cont">
+          <h2 class="header">{{ banner_heading }}</h2>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a routerLink="">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                {{ banner_sub_heading }} {{ banner_heading }}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
