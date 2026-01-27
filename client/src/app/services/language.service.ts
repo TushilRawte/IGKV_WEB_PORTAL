@@ -24,5 +24,11 @@ export class LanguageService {
 
   getCurrentLanguage(): string {
     return this.currentLanguageSubject.value;
-  }
+  } 
+
+ 
+
+
 }
+
+

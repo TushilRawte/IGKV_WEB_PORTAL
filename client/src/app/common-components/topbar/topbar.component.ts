@@ -30,7 +30,7 @@ export class TopbarComponent  {
   currentLanguage:string
   isHindi: boolean = false;  // Initially set to false for English logo
 
-  // constructor(private com :CommonService,private ds:DataService,private route:Router,private dialog: MatDialog , private translate: TranslateService
+ // constructor(private com :CommonService,private ds:DataService,private route:Router,private dialog: MatDialog , private translate: TranslateService
   // ){
   //   translate.setDefaultLang('en');
   //   translate.use('en');
@@ -58,7 +58,11 @@ export class TopbarComponent  {
 
 
   ngOnInit(): void {
-   
+    this.switchLanguage('hn')
+this.languageService.currentLanguage$.subscribe(lang => {
+  // console.log('tushil', lang);
+});
+    // this.switchLanguage('hn');
     this.route.events.subscribe((val: any) => {
 
       if(this.route.url === '/'){

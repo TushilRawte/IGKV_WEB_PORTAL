@@ -263,7 +263,7 @@ margin-top: 20px;
 
 /* When open, set a high max-height to accommodate content */
 .toggle-content.open {
-  max-height: 1000px;  /* Adjust this value if you have longer content */
+  max-height: max-content;  /* Adjust this value if you have longer content */
   padding-top: 10px;   /* Optional: smooth padding transition */
   padding-bottom: 10px;
 }
