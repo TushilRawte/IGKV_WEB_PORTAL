@@ -19,7 +19,7 @@
                     <div class="slider-container-background"
                         style=" background: url('{{ data.img}}') center / cover no-repeat;"></div>
 
-                    <img src="{{ data.img}}" class="" alt="...">
+                    <img src="{{ data.img}}" class="" alt="director activity banner image">
                 </div>
 
                 <div class="carousel-caption d-none d-md-block" *ngIf="Office_Page_Data" style="bottom: 5.25rem;">
@@ -62,7 +62,7 @@
                             <a [routerLink]="['/about/activities-details',content.Website_Content_ID]">
                                 <div class="banner image" [style.background-image]="'url(' + content.Column1 + ')'"
                                     *ngIf="content.Column1">
-                                    <img [src]="content.Column1" class="img-fluid" alt="">
+                                    <img [src]="content.Column1" class="img-fluid" alt="director events image">
                                 </div>
                                 <div class="content">
 

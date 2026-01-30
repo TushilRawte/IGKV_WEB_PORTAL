@@ -14,7 +14,7 @@
                     <!-- new code -->
                     <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button *ngFor="let data of Event_data; let i = index" type="button"
+                            <button *ngFor="let data of Event_data; let i = index" type="button" aria-label="next slide"
                                 [attr.data-bs-target]="'#carouselExampleCaptions1'" [attr.data-bs-slide-to]="i"
                                 [class.active]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)">
                             </button>
@@ -25,7 +25,7 @@
                                     *ngFor="let data of Event_data; let i = index" [class.active]="i === 0">
                                     <div class="slider-container">
                                          <a (click)="setdetails()"  [routerLink]="['about/activities-details',data?.Website_Content_ID]">
-                                        <img src="{{ data?.Column1 }}">
+                                        <img src="{{ data?.Column1 }}" alt="banner image"> 
                                          </a>
                                     </div>
                                     <div class="carousel-caption ">
@@ -57,7 +57,7 @@
                         <div class="col-sm-4 images ">
                             <div class="news-thum">
                                 <div class="image1 banner1" [style.background-image]="'url(' + Event_data[0]?.Column1 + ')'"  >
-                                    <img [src]="Event_data[0]?.Column1" alt="event" (click)="scrollToSlide(0)">
+                                    <img [src]="Event_data[0]?.Column1" alt="Event Image" (click)="scrollToSlide(0)">
                                     <div class="content1">
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@
                         <div class="col-sm-4 images">
                             <div class="news-thum  ">
                                 <div class="image1 banner1" [style.background-image]="'url(' + Event_data[1]?.Column1 + ')'"  >
-                                    <img [src]="Event_data[1]?.Column1" alt="event" (click)="scrollToSlide(1)">
+                                    <img [src]="Event_data[1]?.Column1" alt="Event Image" (click)="scrollToSlide(1)">
                                     <div class="content1">
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@
                         <div class="col-sm-4 images">
                             <div class="news-thum  ">
                                 <div class="image1 banner1" [style.background-image]="'url(' + Event_data[2]?.Column1 + ')'"  >
-                                    <img [src]="Event_data[2]?.Column1" alt="event" (click)="scrollToSlide(2)">
+                                    <img [src]="Event_data[2]?.Column1" alt="Event Image" (click)="scrollToSlide(2)">
                                     <div class="content1">
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                         <div class="col-sm-4 images">
                             <div class="news-thum  ">
                                 <div class="image1 banner1" [style.background-image]="'url(' + Event_data[3]?.Column1 + ')'" >
-                                    <img [src]="Event_data[3]?.Column1" alt="event" (click)="scrollToSlide(3)">
+                                    <img [src]="Event_data[3]?.Column1" alt="Event Image" (click)="scrollToSlide(3)">
                                     <div class="content1">
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                         <div class="col-sm-4 images">
                             <div class="news-thum  ">
                                 <div class="image1 banner1" [style.background-image]="'url(' + Event_data[4]?.Column1 + ')'" >
-                                    <img [src]="Event_data[4]?.Column1" alt="event" (click)="scrollToSlide(4)">
+                                    <img [src]="Event_data[4]?.Column1" alt="Event Image" (click)="scrollToSlide(4)">
                                     <div class="content1">
                                     </div>
                                 </div>

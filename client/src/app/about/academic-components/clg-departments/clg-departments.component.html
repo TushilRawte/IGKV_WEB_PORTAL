@@ -24,7 +24,7 @@
             <div class="col-md-4 department-list" style="max-height: 679px; ">
                 <div id="buttonContainer">
                     <ng-container *ngFor="let data of departmentlist;let i=index">
-                        <button #button class="button-31" role="button" (click)="getSubjectId(i)"
+                        <button #button class="button-31" role="button" (click)="getSubjectId(i)" aria-label="department list"
                                 [ngClass]="{'college': isCollege, 'other': isOther}">
                           <div [innerHTML]="data.DepartmentName"></div>
                         </button>
@@ -45,7 +45,7 @@
                         <div class=" col-sm-4 text-center ">
                                 <div class="image-section">
                                     <img [src]="departmentdetails?.HeadDetail.img2"
-                                    (error)="onErrorImage($event)" alt="Alternate Text" />
+                                    (error)="onErrorImage($event)" alt="department head image" />
                                 </div>
                            
                             <p class="person-name" style="margin-bottom: 5px;">

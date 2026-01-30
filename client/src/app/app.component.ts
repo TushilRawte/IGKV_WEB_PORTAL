@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  // title = 'Temp-new';
+  // title = 'web-portal';
 
   isShowScrollToTop = false;
   topPosToStartShowing = 600;

@@ -23,7 +23,7 @@
               <div class="col-sm-2 " *ngFor="let item of Staff_List.slice(startIndex, startIndex + 6)">
                 <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="staff-container d-none">
                   <img class="rounded-circle shadow-1-strong mb-4" (error)="onErrorImage($event)" 
-                    alt="avatar" style="width: 200px; height: 250px;" />
+                    alt="{{ item.Employee_Name }}" style="width: 200px; height: 250px;" />
                   <h5 class="mb-1 person-name">{{ item.Employee_Name }}</h5> 
                   <p class="person-post">{{ item.Post_Name }}</p>
                   <p class="text-muted">
@@ -34,7 +34,7 @@
               <a *ngIf="!isshowUnLink"  [routerLink]="['/about/employeeProfile',item.empid_numeric]">
                 <img class="card-img-top img-fluid" 
                   style="max-height: 180px; min-height: 180px; background-color: #5f5d5d; border-bottom: #ccc solid 1px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" [src]="item.img2 "
-                  (error)="onErrorImage($event)" alt="avatar" />
+                  (error)="onErrorImage($event)" alt="{{ item.Employee_Name }}" />
                   <div class="card-body " style="padding: 5px;min-height: 96px; ">
                     <h3 class="card-title text-lenth-fix-line-1" style="margin-bottom:1px ; font-size: calc(13px* var(--font-scale));"><b class="person-name">{{ item.Employee_Name }}</b></h3>
                     <p class="card-text text-lenth-fix-line-1 person-post" style="margin-bottom:1px ;">{{ item.Post_Name }}</p>
@@ -45,7 +45,7 @@
                <a *ngIf="isshowUnLink" [routerLink]="['cont/employeeProfile',item.empid_numeric]">
                 <img class="card-img-top img-fluid" 
                   style="max-height: 180px; min-height: 180px; background-color: #5f5d5d; border-bottom: #ccc solid 1px; box-shadow: rgba(50, 50, 93, 0.25) 0px 0.5em 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" [src]="item.img2 "
-                  (error)="onErrorImage($event)" alt="avatar" />
+                  (error)="onErrorImage($event)" alt="{{ item.Employee_Name }}" />
                   <div class="card-body " style="padding: 5px;min-height: 96px; ">
                     <h3 class="card-title text-lenth-fix-line-1" style="margin-bottom:1px ; font-size: calc(13px* var(--font-scale));"><b class="person-name">{{ item.Employee_Name }}</b></h3>
                     <p class="card-text text-lenth-fix-line-1 person-post" style="margin-bottom:1px ;">{{ item.Post_Name }}</p>

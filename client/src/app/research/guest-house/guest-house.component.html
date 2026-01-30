@@ -6,8 +6,7 @@
         <div class="row">
             <div class="profile col-md-3">
                 <img class="profile-picture" [src]="Incharge_image" style="min-height: 218px; min-width: 233px;"
-                    (error)="onErrorImage($event)">
-                <!-- <img class="profile-picture" [src]="headDetail_data.img2" style="min-height: 218px; min-width: 233px;" onerror="this.src='assets/images/imgs/persion.jpg'"> -->
+                    (error)="onErrorImage($event)" alt="staff image">
                 <p class="person-name">Dr. Prashant Kumar Pandey</p>
                 <p class="person-post">In-charge</p>
             </div>
@@ -394,7 +393,7 @@
       <div class="row contact-us">
         <div class="col-md-5 col-sm-12 indoor_img_part">
           <div class="image">
-            <img [src]="ContactImg" alt="">
+            <img [src]="ContactImg" alt="contact image">
           </div>
         </div>
         <div class="col-md-7 col-sm-12 indoor_part">

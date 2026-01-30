@@ -9,11 +9,8 @@
                         <ng-container *ngFor="let data of activity_details.slice(0,3)">
                             <div class="col-md-4 mb-4">
                                     <div class="activity-container">
-                                        <!-- <a [routerLink]="['/about/activities-details',activity_details[5].Website_Content_ID]">
-                                        <img class="activity-img" [src]="activity_details[5].Column1" alt="Beautiful Image">
-                                        </a> -->
                                         <a [routerLink]="['cont/activities-details',data.Website_Content_ID]">
-                                            <img class="activity-img" [src]="data.Column1" (error)="onErrorImage($event)" alt="Beautiful Image">
+                                            <img class="activity-img" [src]="data.Column1" (error)="onErrorImage($event)" alt="activity image">
                                         </a>
                                             <div class="activity-description">
                                             <p>{{data.Content_Title}}</p>

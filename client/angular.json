@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Temp-new": {
+    "web-portal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/temp-new",
+            "outputPath": "dist/web-portal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -83,10 +83,10 @@
         
           "configurations": {
             "production": {
-              "buildTarget": "Temp-new:build:production"
+              "buildTarget": "web-portal:build:production"
             },
             "development": {
-              "buildTarget": "Temp-new:build:development"
+              "buildTarget": "web-portal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Temp-new:build"
+            "buildTarget": "web-portal:build"
           }
         },
         "test": {

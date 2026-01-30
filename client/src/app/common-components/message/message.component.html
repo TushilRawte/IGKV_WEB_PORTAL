@@ -2,8 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="profile col-md-3"> 
-                <img class="profile-picture" [src]="headDetail_data.img2" style="min-height: 218px; min-width: 233px;" (error)="errorHandler($event)"  >
-                <!-- <img class="profile-picture" [src]="headDetail_data.img2" style="min-height: 218px; min-width: 233px;" onerror="this.src='assets/images/imgs/persion.jpg'"> -->
+                <img class="profile-picture" [src]="headDetail_data.img2" style="min-height: 218px; min-width: 233px;" (error)="errorHandler($event)" alt="staff image" >
                 <p class="person-name">{{headDetail_data.Employee_Name}}</p>
                 <p class="person-post">{{headDetail_data.Post_Name}}</p>
             </div> 

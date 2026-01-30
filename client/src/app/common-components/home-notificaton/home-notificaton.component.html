@@ -24,7 +24,7 @@
           <div class="col-sm-12 row newscategory-list-normalscreen">
             <ng-container *ngFor="let content of newsCategory">
               <div class="col-6">
-                <button
+                <button aria-label="Select News Category"
                   [ngClass]="{'college': isCollege,}"
                   class="btn button-style-1"
                   (click)="getNewsID(content.News_Category_ID)"
@@ -70,8 +70,7 @@
           background-color: #f1c123;
           border: none;">{{'More News' | translate}}</a>
           </span>
-          <!-- <button class="button-style-2"></button> -->
-        </div>
+       </div>
       </div>
       <!-- Your HTML template -->
 

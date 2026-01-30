@@ -7,12 +7,10 @@
    <ng-container *ngFor="let data of infra_List" >
     <div class="col-xl-4 col-md-6">
       <div class="post-item position-relative h-100">
-        <!-- <div class="post-img position-relative overflow-hidden banner1 image1" [style.background-image]="'url(+ auditorium_seminarImg + )'" >
-          <img [src]="data.institutionSetup.imageList[0]?.Column1" alt="">
-        </div> -->
+ 
         <div class=" post-img position-relative overflow-hidden banner1 image1"
         [style.background-image]="'url(' + data.institutionSetup.imageList[0]?.Column1 + ')'" *ngIf="data.institutionSetup.imageList[0]?.Column1">
-        <img [src]="data.institutionSetup.imageList[0]?.Column1" (error)="OnErrorImage($event)" alt="Award">
+        <img [src]="data.institutionSetup.imageList[0]?.Column1" (error)="OnErrorImage($event)" alt="infrastructure Image">
         <div class="content">
       
          </div>

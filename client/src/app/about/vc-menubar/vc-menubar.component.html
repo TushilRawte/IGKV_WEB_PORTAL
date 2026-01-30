@@ -4,7 +4,7 @@
             <!-- <div class="col-sm-6 mb-1 vc-menu"> </div> -->
 
             <div class="col-sm-12 mb-1  vc-menu">
-                <button (click)="toggleMenu()" style="color: rgb(39, 38, 38); font-weight: 600;" class="ranking">{{ menu ? '✖ Close' : '☰ View Details' }}</button>
+                <button (click)="toggleMenu()" aria-label="Toggle Menu" style="color: rgb(39, 38, 38); font-weight: 600;" class="ranking">{{ menu ? '✖ Close' : '☰ View Details' }}</button>
                 <a class="text-dark" style="color: rgb(39, 38, 38); font-weight: 600;"
                     routerLink="/about/vice-chancellor"><span><i class="fa-solid fa-house"></i></span> Home </a></div>
             <div id="menu">

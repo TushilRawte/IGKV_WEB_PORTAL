@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start_web": "ng serve --host 0.0.0.0 --port 4810 --project Temp-new",
+    "start_web": "ng serve --host 0.0.0.0 --port 4200 --project web-portal",
     "build": "ng build --base-href /site/ --deploy-url /site/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

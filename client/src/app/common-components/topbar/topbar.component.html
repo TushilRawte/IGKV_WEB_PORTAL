@@ -12,11 +12,11 @@
                             </li>
                             <li> <a class="nav-link topnav" [routerLink]="['about/news',0]">{{'News & Notifications' | translate }}</a></li>
                             <li class="nav-item dropdown position-static">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" routerLink="about/publication-home"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPublication" role="button" routerLink="about/publication-home"
                                     data-mdb-toggle="dropdown" style="color: #fff;" aria-expanded="false">{{'Publications' | translate}}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdownPublication">
                                     <div class="mega-menu-container1">
                                         <div class="container">
                                             <div class="row link_list">
@@ -49,11 +49,11 @@
                
 
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownLogin" role="button" data-mdb-toggle="dropdown"
                             style="color: #fff;" aria-expanded="false">{{'Login' | translate }}
                         </a>
                         <!-- Dropdown menu -->
-                        <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdownLogin">
                             <div class="mega-menu-container1">
                                 <div class="container">
                                     <div class="row link_list">
@@ -73,13 +73,13 @@
                     </li>
                     <!-- change font -->
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle"  id="navbarDropdowncontras" role="button" data-mdb-toggle="dropdown"
                             style="color: #fff; font-size: 20px;" aria-expanded="false"> 
-                            <img src="assets/accessibility-svgrepo-com.svg" alt="Accessibility" width="25" height="">
+                            <img src="assets/accessibility-svgrepo-com.svg" alt="Accessibility icon" width="25" height="">
                              <!-- <i class="fa-solid fa-universal-access" style=" font-size: 26px;"></i> -->
                         </a>
                         <!-- Dropdown menu -->
-                        <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdowncontras">
                             <div class="mega-menu-container2">
                                 <div class="container">
                                     <div class="row link_list">
@@ -95,21 +95,21 @@
                                             </div>
                                                 <div class="row  size mt-5 pt-3 " style="display: contents;">
                                                     <h1 class="text-dark">Font Size</h1>
-                                                    <a>  <button mat-mini-fab color="primary" class="" (click)="decreaseFont()" aria-label="Switch to Hindi"> A-</button></a>
-                                                    <a><button mat-mini-fab class="" color="primary" (click)="resetFont()" aria-label="Switch to Hindi"> A</button></a>
-                                                    <a> <button mat-mini-fab class="" color="primary" (click)="increaseFont()"> A+</button></a>
+                                                    <a>  <button mat-mini-fab color="primary" class="" (click)="decreaseFont()" aria-label="Decrease Font Size"> A-</button></a>
+                                                    <a><button mat-mini-fab class="" color="primary" (click)="resetFont()" aria-label="Reset Font Size"> A</button></a>
+                                                    <a> <button mat-mini-fab class="" color="primary" (click)="increaseFont()" aria-label="Increase Font Size"> A+</button></a>
                                                 </div>
                                                 <div class="row  size mt-5 pt-3 " style="display: contents;">
                                                     <h1 class="text-dark">Big Cursor</h1>
-                                                      <a> <button  mat-mini-fab color="primary" (click)="toggleBigCursor()">  <i class="fa-regular fa-hand-pointer"></i></button></a>
+                                                      <a> <button  mat-mini-fab color="primary" (click)="toggleBigCursor()" aria-label="Toggle Big Cursor">  <i class="fa-regular fa-hand-pointer"></i></button></a>
                                                 </div>   
                                                 <div class="row  size mt-5 pt-3 " style="display: contents;">
                                                     <h1 class="text-dark">Hide Image</h1>
-                                                      <a> <button  mat-raised-button  color="basic" style="color:#000" (click)="toggleImages()" matBadge="✔">Hide</button></a>
+                                                      <a> <button  mat-raised-button  color="basic" style="color:#000" aria-label="Hide Images" (click)="toggleImages()" matBadge="✔">Hide</button></a>
                                                 </div>
                                                 <div class="row  size mt-5 pt-3 " style="display: contents;">
                                                     <h1 class="text-dark">Download Screen Reader</h1>
-                                                      <a href="https://www.nvaccess.org/download/"><button mat-icon-button ><i class="fa fa-download" aria-hidden="true"></i></button></a>
+                                                      <a href="https://www.nvaccess.org/download/"><button mat-icon-button  aria-label="Download Screen Reader"><i class="fa fa-download" aria-hidden="true"></i></button></a>
                                                 </div>      
                                         </div>
                                     </div>
@@ -118,20 +118,16 @@
                         </div>
                     </li>
                     
-                <li class="nav-item dropdown position-static">
-                    <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdown">
-                    </div>
-                     
-                    </li>
+               
                  
                 <li class="nav-item dropdown position-static">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownLanguage" role="button" data-mdb-toggle="dropdown"
                         style="color: #fff;" aria-expanded="false">
-                        <img src="assets/language-svgrepo-com .svg" alt="Language" width="24" height="24">
+                        <img src="assets/language-svgrepo-com .svg" alt="Language icon" width="24" height="24">
 
                     </a>
                     <!-- Dropdown menu -->
-                    <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu drop_down_option " aria-labelledby="navbarDropdownLanguage">
                         <div class="mega-menu-container1">
                             <div class="container">
                                 <div class="row link_list">
@@ -173,7 +169,7 @@
                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/language-svgrepo-com .svg" alt="Language" width="24" height="24">
+                            <img src="assets/language-svgrepo-com .svg" alt="Language icon" width="24" height="24">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                             <li><a class="dropdown-item" (click)="switchLanguage('en')">
@@ -186,12 +182,12 @@
                     </li>
                     
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownAccessibility" role="button" data-bs-toggle="dropdown"
                             style="color: #fff; font-size: 20px;" aria-expanded="false">
-                            <img src="assets//accessibility-svgrepo-com.svg" alt="Girl in a jacket" width="25" height="">
+                            <img src="assets//accessibility-svgrepo-com.svg" alt="Accessibility icon" width="25" height="">
                         </a>
                         <!-- Dropdown menu -->
-                        <div class="dropdown-menu p-3" >
+                        <div class="dropdown-menu p-3" aria-labelledby="navbarDropdownAccessibility">
                             <h1 class="text-dark">Color Contrast</h1>
                             <button class="A-btn btn" style="background-color: #e39643; color: white;" (click)="toggleClass('invert-colors')">Invert Colors</button>
                             <button class="A-btn btn" style="background-color: #0d0d0d; color: white;" (click)="toggleClass('high-contrast')">High Contrast</button>
@@ -202,19 +198,19 @@
                             <hr>
                     
                             <h1 class="text-dark">Font Size</h1>
-                            <button mat-mini-fab class="btn btn-primary" (click)="decreaseFont()">A-</button>
-                            <button mat-mini-fab class="btn btn-primary" (click)="resetFont()">A</button>
-                            <button mat-mini-fab class="btn btn-primary" (click)="increaseFont()">A+</button>
+                            <button mat-mini-fab class="btn btn-primary" aria-label="Decrease Font Size" (click)="decreaseFont()">A-</button>
+                            <button mat-mini-fab class="btn btn-primary" aria-label="Reset Font Size" (click)="resetFont()">A</button>
+                            <button mat-mini-fab class="btn btn-primary" aria-label="Increase Font Size" (click)="increaseFont()">A+</button>
 
                             <hr>
 
                             <h1 class="text-dark">Big Cursor</h1>
-                            <a> <button  mat-mini-fab color="primary" (click)="toggleBigCursor()">  <i class="fa-regular fa-hand-pointer"></i></button></a>
+                            <a> <button  mat-mini-fab color="primary" (click)="toggleBigCursor()" aria-label="Toggle Big Cursor">  <i class="fa-regular fa-hand-pointer"></i></button></a>
 
                             <hr>
 
                             <h1 class="text-dark">Hide Image</h1>
-                            <a> <button  mat-raised-button  color="basic" style="color:#000" (click)="toggleImages()"  matBadge="✔">Hide</button></a>
+                            <a> <button  mat-raised-button  aria-label="Hide Images" color="basic" style="color:#000" (click)="toggleImages()"  matBadge="✔">Hide</button></a>
                         </div>
                     </li>
                     <li><a (click)="openSearchPopup()"><i class="fa-solid fa-magnifying-glass" style="font-size: calc(12px * var(--font-scale));"></i></a></li>
@@ -254,16 +250,16 @@
                         <!-- Left links -->
                         <ul class="navbar-nav  ms-auto ">
                             <li class="nav-item">
-                                <a  routerLink="." class="nav-link"><i class="fa-solid fa-house fa-lg"></i></a>
+                                <a  routerLink="." class="nav-link" aria-label="Home"><i class="fa-solid fa-house fa-lg" ></i></a>
                             </li>
     
                             <!-- Navbar dropdown -->
                             <li class="nav-item dropdown position-static"  [ngClass]="{'hover-disabled': !showHover}">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownAbout" role="button"
                                     data-mdb-toggle="dropdown" aria-expanded="false">{{'About' | translate  }}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown" 
+                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownAbout" 
                                     style="border-top-left-radius: 0; border-top-right-radius: 0;">
                                     <div class="mega-menu-container">
                                         <div class="container">
@@ -426,11 +422,11 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                                <a class="nav-link dropdown-toggle" id="A5" role="button" data-mdb-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownAcademic" role="button" data-mdb-toggle="dropdown"
                                     aria-expanded="false">{{'Academic' | translate }}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownAcademic"
                                     style="border-top-left-radius: 0; border-top-right-radius: 0;">
                                     <div class="mega-menu-container">
                                         <div class="container">
@@ -552,11 +548,11 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                                <a class="nav-link dropdown-toggle" id="A1" role="button" data-mdb-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownResearch" role="button" data-mdb-toggle="dropdown"
                                     aria-expanded="false">{{'Research' | translate}}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownResearch"
                                     style="border-top-left-radius: 0; border-top-right-radius: 0; ">
                                     <div class="mega-menu-container">
                                         <div class="container">
@@ -686,11 +682,11 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                                <a class="nav-link dropdown-toggle" id="A3" role="button" data-mdb-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownExtensions" role="button" data-mdb-toggle="dropdown"
                                     aria-expanded="false">{{'Extensions' | translate}}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownExtensions"
                                     style="border-top-left-radius: 0; border-top-right-radius: 0;">
                                     <div class="mega-menu-container">
                                         <div class="container">
@@ -775,11 +771,11 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                                <a class="nav-link dropdown-toggle" id="A2" role="button" data-mdb-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownStudentWelfare" role="button" data-mdb-toggle="dropdown"
                                     aria-expanded="false">{{'Student Welfare' | translate}}
                                 </a>
                                 <!-- Dropdown menu -->
-                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                                <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownStudentWelfare"
                                     style="border-top-left-radius: 0; border-top-right-radius: 0;">
                                     <div class="mega-menu-container">
                                         <div class="container ">
@@ -864,11 +860,11 @@
                     </li>
 
                     <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                        <a class="nav-link dropdown-toggle" id="A4" role="button" data-mdb-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownFarm" role="button" data-mdb-toggle="dropdown"
                             aria-expanded="false">{{'Farm' | translate}}
                         </a>
                         <!-- Dropdown menu -->
-                        <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                        <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownFarm"
                             style="border-top-left-radius: 0; border-top-right-radius: 0;">
                             <div class="mega-menu-container">
                                 <div class="container">
@@ -958,11 +954,11 @@
                             
                     </li>
                     <li class="nav-item dropdown position-static" [ngClass]="{'hover-disabled': !showHover}">
-                        <a class="nav-link dropdown-toggle" id="A4" role="button" data-mdb-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownInternational" role="button" data-mdb-toggle="dropdown"
                             aria-expanded="false">{{'International' | translate }}
                         </a>
                         <!-- Dropdown menu -->
-                        <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdown"
+                        <div class="dropdown-menu drop_down_option w-100 mt-0 " aria-labelledby="navbarDropdownInternational"
                             style="border-top-left-radius: 0; border-top-right-radius: 0;">
                             <div class="mega-menu-container">
                                 <div class="container">

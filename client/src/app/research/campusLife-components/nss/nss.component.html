@@ -202,7 +202,7 @@
                   <div class="thum">
                     <div class="banner image" [style.background-image]="'url(' + data.Column1 + ')'"
                       *ngIf="data.Column1">
-                      <img [src]="data.Column1" (error)="OnErrorImage($event)" alt="Award">
+                      <img [src]="data.Column1" (error)="OnErrorImage($event)" alt="activities image">
                       <div class="content">
 
                       </div>
@@ -318,7 +318,7 @@
           </div>
           <div class="view-more">
             <a routerLink="/research/nss-program-details">
-              <button alt="View All">
+              <button alt="View All" aria-label="View All NSS Programs">
                 <i>V</i>
                 <i>i</i>
                 <i>e</i>

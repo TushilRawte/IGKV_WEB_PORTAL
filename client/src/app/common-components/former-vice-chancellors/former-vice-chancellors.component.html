@@ -33,8 +33,7 @@
                 <!-- first row   -->
                 <div class="row contents" *ngFor="let item of paginatedContents">
                 <div class="col-md-4">
-                <!-- <img class="main-img"  [src]="ImageNotFound" alt=""> -->
-                <img class="main-img" [src]="item.imgURL" (error)="item.imgURL = ImageNotFound" alt="">
+                <img class="main-img" [src]="item.imgURL" (error)="item.imgURL = ImageNotFound" alt="former vice chancellor image">
 
                 </div>
             
@@ -58,7 +57,7 @@
             <div class="col-md-4 gray-bg">
                 <div class="card-details">
                 <div class="card-content">
-                    <img class="card-img" [src]="HVCImg" alt="">
+                    <img class="card-img" [src]="HVCImg" alt="Former Vice Chancellor Image">
                     
                         <h4>Know the VC</h4>
                         <p class="about">

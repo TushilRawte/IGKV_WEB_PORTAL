@@ -22,7 +22,7 @@
                    <div class="col event-thum officer_img">
                        <img [src]="content.Member_Photo_URL" (error)="onErrorImage($event)" 
                        class="img-thumbnail "z
-                       onerror="this.src='assets/images/Img_notFound.png'"  style="min-height: 140px; max-height: 140px; width: 140px;" alt="no image">
+                       onerror="this.src='assets/images/Img_notFound.png'"  style="min-height: 140px; max-height: 140px; width: 140px;" alt="staff image">
                    </div>
                    <div class="event-cont">
                         <span class="emp_name"><i class="fa"></i><b style="font-size: calc(15px * var(--font-scale));">{{content.Member_Name_Eng}}</b></span> <hr>
@@ -68,7 +68,6 @@
         </div>
         <div class="col-md-6">
            <div class="news">
-            <!-- <img src="assets/newsback.jpg" alt=""> -->
            </div>
         </div>
        

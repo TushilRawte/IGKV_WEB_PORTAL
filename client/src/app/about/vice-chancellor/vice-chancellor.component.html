@@ -23,7 +23,6 @@
                     <div class="row img-details">
           <div class="col-md-3">
             <div class=" image-part">
-              <!-- <img src="https://igkv.ac.in/{{ vc_data.img2 }}" alt="vice-chancellor image  " class="vc-img" > -->
               <img src="assets/images/Desk_of_Vice_Chancellor.jpg" alt="vice-chancellor image  " class="vc-img" >
             </div>
             <div class="row content-part">
@@ -65,7 +64,7 @@
                   <div class="row">
                       <div class="activity-container">
                           <a (click)="setdetails_vc('Activities','/about/vice-chancellor/vc-activities')"  [routerLink]="['/about/vc/activities-details',Activity_data[0].Website_Content_ID]">
-                          <img class="activity-img" [src]="Activity_data[0].Column1" alt="Beautiful Image">
+                          <img class="activity-img" [src]="Activity_data[0].Column1" alt="Activity Image">
                           </a>
                           <div class="activity-description">
                               <p>{{Activity_data[0].Content_Title}}</p>
@@ -83,7 +82,7 @@
                       <div class="col-md-12">
                           <div class="activity-container">
                               <a (click)="setdetails_vc('Activities','/about/vice-chancellor/vc-activities')" [routerLink]="['/about/vc/activities-details',Activity_data[1].Website_Content_ID]">
-                              <img class="activity-img" [src]="Activity_data[1].Column1" alt="Beautiful Image">
+                              <img class="activity-img" [src]="Activity_data[1].Column1" alt="Activity Image">
                               </a>
                               <div class="activity-description">
                                   <p>{{Activity_data[1].Content_Title}}</p>
@@ -101,7 +100,7 @@
               <div class="col-md-6">
                 <div class="activity-container-new">
                   <a (click)="setdetails_vc('Activities','/about/vice-chancellor/vc-activities')" [routerLink]="['/about/vc/activities-details',Activity_data[2].Website_Content_ID]">
-                  <img class="activity-img" [src]="Activity_data[2].Column1" alt="Beautiful Image">
+                  <img class="activity-img" [src]="Activity_data[2].Column1" alt="Activity Image">
                   </a>
                   <div class="activity-description">
                       <p>{{Activity_data[2].Content_Title}}</p>
@@ -115,7 +114,7 @@
               </div> &nbsp;
               <div class="activity-container-new">
                   <a (click)="setdetails_vc('Activities','/about/vice-chancellor/vc-activities')" [routerLink]="['/about/vc/activities-details',Activity_data[3].Website_Content_ID]">
-                <img class="activity-img" [src]="Activity_data[3].Column1" alt="Beautiful Image">
+                <img class="activity-img" [src]="Activity_data[3].Column1" alt="Activity Image">
                   </a>
                 <div class="activity-description">
                     <p>{{Activity_data[3].Content_Title}}</p>
@@ -129,7 +128,7 @@
             </div>&nbsp;
             <div class="activity-container-new">
               <a (click)="setdetails_vc('Activities','/about/vice-chancellor/vc-activities')" [routerLink]="['/about/vc/activities-details',Activity_data[4].Website_Content_ID]">
-              <img class="activity-img" [src]="Activity_data[4].Column1" alt="Beautiful Image">
+              <img class="activity-img" [src]="Activity_data[4].Column1" alt="Activity Image">
               </a>
               <div class="activity-description">
                   <p>{{Activity_data[4].Content_Title}}</p>
@@ -164,7 +163,7 @@
         <div class="post-item position-relative h-100">
 
           <div class="post-img banner1 image1 position-relative overflow-hidden" [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <img [src]="data.Column1" class="img-fluid" alt="">
+            <img [src]="data.Column1" class="img-fluid" alt="vice chancellor award image">
             <div class="content1">
             </div>
           </div>
@@ -204,7 +203,7 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-              <img [src]="data.Column1" class="img-fluid" alt="">
+              <img [src]="data.Column1" class="img-fluid" alt="vice chancellor event image">
               <span class="post-date">{{data.web_content_date2|date:'MMM d, y'}}</span>
               <div class="content1">
               </div>
@@ -240,7 +239,7 @@
   
         <article class="entry"  > 
           <div class="entry-img banner1 image1"  [style.background-image]="'url(' + speech_data[0].Column1 + ')'" *ngIf="speech_data[0].Column1">
-            <img [src]="speech_data[0].Column1" alt="" class="img-fluid">
+            <img [src]="speech_data[0].Column1" alt="vice chancellor speech image" class="img-fluid">
             <div class="content1">
             </div>
           </div>
@@ -274,7 +273,7 @@
   
         <article class="entry"  > 
           <div class="entry-img banner1 image1"  [style.background-image]="'url(' + speech_data[1].Column1 + ')'" *ngIf="speech_data[1].Column1">
-            <img [src]="speech_data[1].Column1" alt="" class="img-fluid">
+            <img [src]="speech_data[1].Column1" alt="vice chancellor speech image" class="img-fluid">
             <div class="content1">
             </div>
           </div>
@@ -334,7 +333,7 @@
                   <div class="col-md-4">
                     <div class="images">
                       <img [src]="visit_data[0].Column1
-                      " alt="">
+                      " alt="vice chancellor visit image">
                     </div>
                   </div>
                 </div>
@@ -354,7 +353,7 @@
             <div class="col-md-4">
               <div class="images">
                 <img [src]="visit_data[1].Column1
-                " alt="">
+                " alt="vice chancellor visit image">
               </div>
             </div>
           </div>
@@ -375,7 +374,7 @@
           <div class="col-md-4">
             <div class="images">
               <img [src]="visit_data[2].Column1
-              " alt="">
+              " alt="vice chancellor visit image">
             </div>
           </div>
         </div>
@@ -395,7 +394,7 @@
     <div class="col-md-4">
       <div class="images">
         <img [src]="visit_data[3].Column1
-        " alt="">
+        " alt="vice chancellor visit image">
       </div>
     </div>
   </div>
@@ -430,7 +429,7 @@
         <div class="post-item position-relative h-100">
 
           <div class="post-img banner1 image1 position-relative overflow-hidden" [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <img [src]="data.Column1" class="img-fluid" alt="">
+            <img [src]="data.Column1" class="img-fluid" alt="vice chancellor print media image">
             <div class="content1">
             </div>
           </div>

@@ -4,7 +4,6 @@
 
 <app-overview [overview]="DepartmentFirst_Details?.overview"></app-overview>
 
-<!-- <img src="assets/images/imgs/food_Eng.jpg" alt=""> -->
   
 <div class="container-fluid degree-courses gray-bg pt-5 pb-5">
     <div class="container">
@@ -117,8 +116,7 @@
     <div class="container">
         <div class="row">
             <div class="profile col-md-3"> 
-                <img class="profile-picture"[src]="item.img2" style="min-height: 218px; min-width: 233px;" (error)="errorHandler($event)"  >
-                <!-- <img class="profile-picture" [src]="headDetail_data.img2" style="min-height: 218px; min-width: 233px;" onerror="this.src='assets/images/imgs/persion.jpg'"> -->
+                <img class="profile-picture"[src]="item.img2" style="min-height: 218px; min-width: 233px;" (error)="errorHandler($event)" alt="department detail image"  >
                 <p style="color: white;">{{item.Employee_Name}}</p>
                 <p class="person-post" style="color: white;">{{item.Post_Name}}</p>
             </div> 
@@ -174,7 +172,7 @@
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="Activity-member">
           <div class="member-img banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <img [src]="data.Column1"  alt="">
+            <img [src]="data.Column1"  alt="department activity image">
             <div class="content">
       
             </div>
@@ -209,10 +207,8 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-              <img [src]="data.Column1" class="img-fluid" alt="">
-              <!-- <a  (click)="setdetails_dpart('Awards','/about/department/departmentDetail/'+ Subject_Id +'/depart-award')" [routerLink]="['/about/activities-details',data.Website_Content_ID]">
-            </a> -->
-
+              <img [src]="data.Column1" class="img-fluid" alt="department awards image">
+            
               <span class="post-date">{{data.web_content_date2|date:'MMMM d, y'}}</span>
               <div class="content1">
         
@@ -228,9 +224,6 @@
           </div>
         </div>
       </ng-container>
-      <!-- <div class="col-lg-12 col-sm-12" align="center" *ngIf="award_data?.length > 2">
-        <a (click)="setdetails_dpart('Awards','/about/department/departmentDetail/'+ Subject_Id +'/depart-award')" routerLink="depart-award" class="main-btn">View more </a>
-      </div> -->
     </div>
   </div>
 </section>
@@ -245,9 +238,8 @@
       <div class="col-xl-4 col-md-6">
         <div class="post-item position-relative h-100">
           <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <img [src]="data.Column1" class="img-fluid" alt="">
-            <!-- <a (click)="setdetails_dpart('Events','/about/department/departmentDetail/'+ Subject_Id +'/depart-event')" [routerLink]="['/about/activities-details',data.Website_Content_ID]">
-            </a> -->
+            <img [src]="data.Column1" class="img-fluid" alt="department events image">
+          
             <div class="content1">
         
             </div>
@@ -262,9 +254,6 @@
         </div>
       </div>
     </ng-container>
-    <!-- <div class="col-lg-12 col-sm-12" align="center" *ngIf="event_data?.length > 2">
-      <a (click)="setdetails_dpart('Events','/about/department/departmentDetail/'+ Subject_Id +'/depart-event')" routerLink="depart-event" class="main-btn">View more </a>
-    </div> -->
     </div>
   </div>
 </section>

@@ -2,7 +2,7 @@
      [style.background-image]="'url(' + displayedBanner + ')'" 
      *ngIf="displayedBanner">
   <!-- Display image -->
-  <img [src]="displayedBanner">
+  <img [src]="displayedBanner" alt="Banner image">
 
   <!-- Content (Optional) -->
   <div class="content">
@@ -10,6 +10,6 @@
   </div>
 
   <!-- Slider navigation buttons (only if it's a slider, i.e., for arrays) -->
-  <button *ngIf="isSlider" (click)="prevBanner()" class="nav-btn prev">‹</button>
-  <button *ngIf="isSlider" (click)="nextBanner()" class="nav-btn next">›</button>
+  <button *ngIf="isSlider" (click)="prevBanner()" class="nav-btn prev" aria-label="Previous Banner">‹</button>
+  <button *ngIf="isSlider" (click)="nextBanner()" class="nav-btn next" aria-label="Next Banner">›</button>
 </div>

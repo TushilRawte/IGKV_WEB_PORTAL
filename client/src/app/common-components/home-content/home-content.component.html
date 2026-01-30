@@ -20,7 +20,7 @@
                         <a [routerLink]="['about/department/departmentDetail', item.Subject_Id]">
                             <img class="background_img" [src]="Department_Images[i].img" alt="Department Image">
                             <div class="add-cart">
-                                <span><i><img [src]="bookIconImg" alt="Department"></i></span>
+                                <span><i><img [src]="bookIconImg" alt="Department Icon"></i></span>
                                 <span>
                                     <h6>{{item.Subject_Name_E}}</h6>
                                 </span>
@@ -54,9 +54,9 @@
                                 style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
                                 <div class="image">
                                     <a [routerLink]="['about/college-home/college',item.Office_Id]">
-                                        <img class="background_img" [src]="AllCollegeIcon" alt="Department">
+                                        <img class="background_img" [src]="AllCollegeIcon" alt="College Icon">
                                         <div class="add-cart">
-                                            <span><i><img [src]="bookIconImg" alt="College"></i> </span>
+                                            <span><i><img [src]="bookIconImg" alt="College Icon"></i> </span>
                                             <span>
                                                 <h6>{{item.College_Full_Name_E}}</h6>
                                             </span>
@@ -95,9 +95,9 @@
                                     style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
                                     <div class="image">
                                         <a [routerLink]="['about/college-home/college',item.Office_Id]">
-                                            <img class="background_img" [src]="AllCollegeIcon" alt="Department">
+                                            <img class="background_img" [src]="AllCollegeIcon" alt="Affiliated College Icon">
                                             <div class="add-cart">
-                                                <span><i><img [src]="bookIconImg" alt="Affiliated College"></i> </span>
+                                                <span><i><img [src]="bookIconImg" alt="Affiliated College Icon"></i> </span>
                                                 <span>
                                                     <h6>{{item.College_Full_Name_E}}</h6>
                                                 </span>

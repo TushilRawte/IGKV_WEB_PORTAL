@@ -16,7 +16,7 @@
       
       <!-- Message when no results are found -->
       <p *ngIf="filteredMenu.length === 0">No results found.</p>
-          <button  mat-mini-fab class="close-btn" (click)="closeDialog()"><i class="fa-solid fa-xmark"></i></button>
+          <button  mat-mini-fab class="close-btn" aria-label="Close Search" (click)="closeDialog()"><i class="fa-solid fa-xmark"></i></button>
 
     </div>
   </div>

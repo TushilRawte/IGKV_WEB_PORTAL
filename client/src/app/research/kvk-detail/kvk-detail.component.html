@@ -15,7 +15,7 @@
   <nav *ngIf="kvks_Detail" class="navbar navbar-expand-lg " id="mainMenu" style="background-color: rgba(255, 255, 255, 0.973); height: 90px; z-index: 2;" >
     <div class=" container-fluid">
         <a routerLink="./" style="display: flex;">
-            <img src="assets/images/igkv_logo.png" alt="" aria-hidden="true" height="60px" style="margin-top: 6px;">
+            <img src="assets/images/igkv_logo.png" alt="IGKV Logo" aria-hidden="true" height="60px" style="margin-top: 6px;">
              <h1 class="kvk-head">{{kvks_Detail.office_name | titlecase}}</h1>
         </a>
      
@@ -29,12 +29,12 @@
             <div class="row">
                 <div class="collapse navbar-collapse mt-1" id="navbarNavDropdown" >
                     <ul class="navbar-nav">
-                      <li><a  class="nav-link topnav" aria-label="topnav" routerLink="./"><i style="padding-right: 0;" class="fa-solid fa-house" style="color: black;"></i></a></li>
+                      <li><a  class="nav-link topnav" aria-label="Home" routerLink="./"><i style="padding-right: 0;" class="fa-solid fa-house" style="color: black;"></i></a></li>
                       <li class="nav-item dropdown">
-                          <a  class="nav-link dropdown-toggle" aria-label="navbarDropdownMenuLink"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a  class="nav-link dropdown-toggle"   id="navbarDropdownMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About 
                           </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkAbout">
                             <a class="dropdown-item"  [routerLink]="['/research/kvk-home/kvk/',Office_id]" fragment="Overview">Overview</a>
                             <a class="dropdown-item"  [routerLink]="['/research/kvk-home/kvk/',Office_id]" fragment="SeniorScientist">Senior Scientist and Head</a>
                             <a class="dropdown-item"  [routerLink]="['cont/staff-details/',Office_id]">Who's Who</a>
@@ -42,10 +42,10 @@
                           </div>
                         </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkResearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Research
                           </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkResearch">
                             <a class="dropdown-item" [routerLink]="['cont/project/',Office_id]">Projects</a>
                             <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,1]">Books & Magazines</a>
                             <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,3]">Publications</a>
@@ -54,10 +54,10 @@
                           </div>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkActivity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Activity
                           </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkActivity">
                             <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,17]">Visit</a>
                             <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,15]">Training</a>
                             <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,13]">FLD</a>
@@ -66,20 +66,20 @@
                         </li>
                         
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkFarmerCorner" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FarmerCorner 
                           </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkFarmerCorner">
                             <a class="dropdown-item"  routerLink="cont/sucessStories">Success Stories</a>
                           </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" id="navbarDropdownMenuLinkInfrastruture">
                           <a class="nav-link "  [routerLink]="['cont/infrastruturetype/',Office_id]" >
                             Infrastruture
                           </a>
                         </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link "  [routerLink]="['cont/recruitment',Office_id]"  id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link "  [routerLink]="['cont/recruitment',Office_id]"  id="navbarDropdownMenuLinkRecruitment" aria-haspopup="true" aria-expanded="false">
                           Recruitment
                         </a>
                       </li>
@@ -93,7 +93,7 @@
    <nav *ngIf="kvks_Detail" class="navbar navbar-expand-lg bg-body-tertiary"  id="subMenu">
     <div class="container-fluid" >
       <a routerLink="./" style="display: flex;" class="name">
-        <img src="assets/images/igkv_logo.png" alt="" aria-hidden="true" height="60px" style="margin-top: 6px;">
+        <img src="assets/images/igkv_logo.png" alt="igkv logo" aria-hidden="true" height="60px" style="margin-top: 6px;">
          <h2 class="kvk-head">{{kvks_Detail.office_name | titlecase}}</h2>
     </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

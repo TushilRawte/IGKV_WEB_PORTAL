@@ -17,7 +17,7 @@
                     <div class="slider-container-background"
                         style=" background: url('{{ data.img}}') center / cover no-repeat;"></div>
 
-                    <img src="{{ data.img}}" class="" alt="...">
+                    <img src="{{ data.img}}" class="" alt="slider image">
                 </div>
 
                 <!-- <div class="carousel-caption d-none d-md-block" *ngIf="Office_Page_Data">
@@ -499,7 +499,7 @@
                     <div class="Activity-member">
                         <div class="member-img banner1 image1" [style.background-image]="'url(' + data.Column1 + ')'"
                             *ngIf="data.Column1">
-                            <img [src]="data.Column1" alt="">
+                            <img [src]="data.Column1" alt="director activity image">
                             <div class="content">
 
                             </div>
@@ -549,7 +549,7 @@
                             <a (click)="setdetails_dir('Event','/research/director/' + unit_id + '/events')" [routerLink]="['/about/activities-details',content.Website_Content_ID]">
                                 <div class="banner image" [style.background-image]="'url(' + content.Column1 + ')'"
                                     *ngIf="content.Column1">
-                                    <img [src]="content.Column1" class="img-fluid" alt="">
+                                    <img [src]="content.Column1" class="img-fluid" alt="director event image">
                                 </div>
                                 <div class="content">
 
@@ -595,7 +595,7 @@
                         <div class="card card-block">
                           <a (click)="setdetails_dir('Awards','/research/director/'+ unit_id +'/awards')" [routerLink]="['/about/activities-details',data.Website_Content_ID]">
                             <div class="image banner" [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-                            <img [src]="data.Column1" alt="" />
+                            <img [src]="data.Column1" alt="director award image" />
                             <div class="content">
           
                             </div>

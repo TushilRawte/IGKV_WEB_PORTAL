@@ -16,7 +16,7 @@
               [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
               <a
                 [routerLink]="['/about/college-home/college', college_id, 'cont', 'activities-details', data.Website_Content_ID]">
-                <img [src]="data.Column1" class="img-fluid" alt="">
+                <img [src]="data.Column1" class="img-fluid" alt="college awards image">
               </a>
               <span class="post-date">{{data.web_content_date2|date:'MMMM d, y'}}</span>
               <div class="content1">

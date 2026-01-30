@@ -14,12 +14,12 @@
 <nav *ngIf="College_Detail" class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenu">
   <div class="container-fluid" >
       <a routerLink="./" style="display: flex;">
-        <img src="assets/images/igkv_logo.png" alt="" height="60px" style="margin-top: 6px;">
+        <img src="assets/images/igkv_logo.png" alt="igkv logo" height="60px" style="margin-top: 6px;">
          <h2  class="clg-head">{{College_Detail?.College_Full_Name_E}}</h2>
       </a>
     
           <nav class="navbar col d-block d-sm-none" data-bs-theme="light">
-              <button class="navbar-toggler" type="button" aria-label="navbar-toggler" data-bs-toggle="collapse"
+              <button class="navbar-toggler" type="button" aria-label="navbar-toggler" data-bs-toggle="collapse" 
                   data-bs-target="#navbarExample4" aria-controls="navbarExample4"
                   aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -29,12 +29,12 @@
           <div class="row"> 
             <div class="collapse navbar-collapse mt-1" id="navbarNavDropdown" >
               <ul class="navbar-nav">
-                <li><a  class="nav-link topnav" routerLink="./"><i style="padding-right: 0; color: #000;" class="fa-solid fa-house"></i></a></li>
+                <li><a  class="nav-link topnav" routerLink="./" aria-label="Home"><i style="padding-right: 0; color: #000;" class="fa-solid fa-house" ></i></a></li>
                 <li class="nav-item dropdown" role="nav">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About 
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkAbout">
                       <a class="dropdown-item" [routerLink]="['/about/college-home/college/',Office_Id]" fragment="Overview">Overview</a>
                       <a class="dropdown-item" [routerLink]="['/about/college-home/college/',Office_Id]" fragment="DeskofDean">Desk of Dean</a>
                       <a class="dropdown-item" [routerLink]="['cont/staff-details/',Office_Id]">Who's Who</a>
@@ -44,20 +44,20 @@
                     </div>
                   </li>
                 <li class="nav-item dropdown" role="Academic">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkAcademic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Academic 
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkAcademic">
                       <a class="dropdown-item" href="https://igkv.ac.in/counselinghomenew.aspx" target="_blank">Admission</a>
                       <a class="dropdown-item" [routerLink]="['/about/college-home/college/',Office_Id]" fragment="Departments">Departments</a>
                       <a class="dropdown-item" [routerLink]="['cont/campus-life', Office_Id,7]">Library</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown" role="Research">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkResearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Research 
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkResearch">
                       <a class="dropdown-item" [routerLink]="['cont/project',Office_Id]">Projects</a>
                       <a class="dropdown-item" [routerLink]="['cont/publication',Office_Id,1]">Books & Magazines</a>
                       <a class="dropdown-item" [routerLink]="['cont/publication',Office_Id,3]">Publications</a>
@@ -66,10 +66,10 @@
                     </div>
                   </li>
                 <li class="nav-item dropdown" role="Campus-Life ">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkCampusLife" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Campus Life 
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkCampusLife">
                       <a class="dropdown-item" [routerLink]="['cont/campus-life', Office_Id,10]">Sports</a>
                       <a class="dropdown-item" [routerLink]="['cont/campus-life', Office_Id,1]">NCC</a>
                       <a class="dropdown-item" [routerLink]="['cont/campus-life', Office_Id,2]">NSS</a>
@@ -77,10 +77,10 @@
                     </div>
                   </li>
                   <li class="nav-item dropdown" role="Recruitment">
-                    <a class="nav-link" [routerLink]="['cont/infrastruturetype', Office_Id]"  id="navbarDropdownMenuLink">Infrastruture</a>
+                    <a class="nav-link" [routerLink]="['cont/infrastruturetype', Office_Id]"  id="navbarDropdownMenuLinkInfrastruture">Infrastruture</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" [routerLink]="['cont/recruitment',Office_Id]"  id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link" [routerLink]="['cont/recruitment',Office_Id]"  id="navbarDropdownMenuLinkRecruitment" aria-haspopup="true" aria-expanded="false">
                     Recruitment
                   </a>
                 </li>
@@ -98,7 +98,7 @@
    <nav *ngIf="College_Detail" class="navbar navbar-expand-lg bg-body-tertiary"   id="subMenu">
     <div class="container-fluid">
       <a routerLink="./" style="display: flex;" class="name">
-        <img src="assets/images/igkv_logo.png" alt="" height="60px" style="margin-top: 6px;">
+        <img src="assets/images/igkv_logo.png" alt="IGKV Logo" height="60px" style="margin-top: 6px;">
          <h2 class="clg-head">{{College_Detail.College_Full_Name_E}}</h2>
       </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -194,8 +194,7 @@
       <div class="col-md-5">
         <div class="slider-container pt-3">
         
-          <!-- <img class="slider-image" [src]="images[currentSlide].src" alt="Image {{ currentSlide + 1 }}"> -->
-          <img class="slider-image"  aria-hidden="true"  [src]="College_Detail?.Unit_Image_URL" (error)="onErrorImage($event)" >
+          <img class="slider-image"  aria-hidden="true"  [src]="College_Detail?.Unit_Image_URL" (error)="onErrorImage($event)" alt="College Overview Image">
         </div>
       </div>
     </div>

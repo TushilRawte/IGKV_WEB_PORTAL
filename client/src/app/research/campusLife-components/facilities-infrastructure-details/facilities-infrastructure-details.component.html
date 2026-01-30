@@ -12,7 +12,7 @@
                         <div class="slider-container">
                             <div class=" banner1 image1"
                             [style.background-image]="'url(' + infraListDetails[currentSlide].imageURL + ')'" *ngIf="infraListDetails[currentSlide].imageURL">
-                            <img [src]="infraListDetails[currentSlide].imageURL" (error)="OnErrorImage($event)" alt="Award">
+                            <img [src]="infraListDetails[currentSlide].imageURL" (error)="OnErrorImage($event)" alt="facilities image">
                             <div class="content">
                             </div>
                              </div>
@@ -36,7 +36,7 @@
                         <div class="facility-card" [routerLink]="['/research/infrastructure-common/details/',office_id,data.Institution_setup_type_ID,data.Institution_Setup_main_id]">
                             <!-- <a routerLink="research/facilities-infrastructure/details/1"> -->
                             <div class="row">
-                                <div class="col-3"> <img [src]="data?.imageURL"></div>
+                                <div class="col-3"> <img [src]="data?.imageURL" alt="facilities image"></div>
                                 <div class="col-9" style="padding-left: 0;"> <span>{{data?.title}}</span></div>
                             </div>
                            
