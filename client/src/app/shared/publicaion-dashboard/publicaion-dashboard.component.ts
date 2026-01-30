@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 
 
 @Component({
@@ -9,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./publicaion-dashboard.component.scss']
 })
 export class PublicaionDashboardComponent {
+  bannerIMG:String=environment.PhotoUrl +'research-publication-banner.jpg';
   constructor(private router: Router) {}
 
   links = [

@@ -1,33 +1,10 @@
-<!-- Navbar -->
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">University Publications</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Journals</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Research Papers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-  
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Explore Our Latest Publications</h1>
-      <p class="lead">Access journals, research papers, annual reports, and more.</p>
-    </div>
-  </section>
+
+
+
+  <app-banner [banner_heading]="'Explore Our Latest Publications'" [banner_img]="bannerIMG" banner_sub_heading="'Access journals, research papers, annual reports, and more.'" ></app-banner>
   
   <!-- Important Links Section -->
   <section class="important-links container my-5">
-    <h2 class="text-center mb-4">Our Publications</h2>
     <div class="row g-4">
         <div class="col-md-4 col-sm-6" *ngFor="let link of links">
           <div class="card link-card shadow-sm h-100">

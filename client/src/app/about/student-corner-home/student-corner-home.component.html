@@ -1,10 +1,5 @@
-
-<section
-  id="page-banner"
-  class="pt-105 pb-110 bg_cover"
-  data-overlay="8"
-  [style.background-image]="'url(' + bannerImage + ')'"
->
+<section id="page-banner" class="pt-105 pb-110 bg_cover" data-overlay="8"
+  [style.background-image]="'url(' + bannerImage + ')'">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -38,23 +33,23 @@
         <div class="login-container mt-3">
           <div class="description">
             <p style="text-align: justify">
-              The Student Portal of IGKV (Indira Gandhi Krishi Vishwavidyalaya) serves as a comprehensive platform for students, providing seamless access to academic resources, important announcements, and administrative services. It is designed to support the academic journey by offering features like course registration, examination schedules, and result viewing. Additionally, the portal connects students with essential resources such as library access, scholarship information, and e-learning materials. User-friendly and accessible, the IGKV Student Portal ensures that students have the tools they need to succeed, fostering a supportive and efficient educational environment.
+              The Student Portal of IGKV (Indira Gandhi Krishi Vishwavidyalaya) serves as a comprehensive platform for
+              students, providing seamless access to academic resources, important announcements, and administrative
+              services. It is designed to support the academic journey by offering features like course registration,
+              examination schedules, and result viewing. Additionally, the portal connects students with essential
+              resources such as library access, scholarship information, and e-learning materials. User-friendly and
+              accessible, the IGKV Student Portal ensures that students have the tools they need to succeed, fostering a
+              supportive and efficient educational environment.
             </p>
           </div>
-          <a
-            href="https://igkv.ac.in/web/AuthenticationStudent.aspx" target="_blank"
-            class="btn text-center"
-            ><button class="button1">Login Here</button></a
-          >
+          <a href="https://igkv.ac.in/web/AuthenticationStudent.aspx" target="_blank" class="button1 login-link">
+            Login Here
+          </a>
         </div>
       </div>
       <div class="col-md-6">
         <div class="img-container mt-3">
-          <img
-            [src]="student_corner_img1"
-            class="img-fluid"
-            alt="student login portal image"
-          />
+          <img [src]="student_corner_img1" class="img-fluid" alt="student login portal image" />
         </div>
       </div>
       &nbsp;&nbsp;
@@ -75,11 +70,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a (click)="navigateToLibrary()">
-              <img
-                [src]="library_Icon"
-                height="80px"
-                alt="Icon or Image"
-              />
+              <img [src]="library_Icon" height="80px" alt="Icon or Image" />
               <div class="name">Library</div>
             </a>
           </div>
@@ -88,10 +79,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a href="https://igkv.ac.in/counselinghomenew.aspx" target="_blank">
-              <img
-                [src]="admission_icon"
-                alt="Icon or Image"
-              />
+              <img [src]="admission_icon" alt="Icon or Image" />
               <div class="name">Admission</div>
             </a>
           </div>
@@ -100,11 +88,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a (click)="navigateToHostel()">
-              <img
-                [src]="hostel_icon"
-                height="80px"
-                alt="Icon or Image"
-              />
+              <img [src]="hostel_icon" height="80px" alt="Icon or Image" />
               <div class="name">Hostel</div>
             </a>
           </div>
@@ -113,11 +97,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a (click)="navigateToAbout()">
-              <img
-                [src]="ncc_icon"
-                height="80px"
-                alt="Icon or Image"
-              />
+              <img [src]="ncc_icon" height="80px" alt="Icon or Image" />
               <div class="name">NCC</div>
             </a>
           </div>
@@ -126,11 +106,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a (click)="navigateToSports()">
-              <img
-                [src]="sports_icon"
-                height="80px"
-                alt="Icon or Image"
-              />
+              <img [src]="sports_icon" height="80px" alt="Icon or Image" />
               <div class="name">Sports</div>
             </a>
           </div>
@@ -139,11 +115,7 @@
           <!-- Replace 'your-image.jpg' with the actual path to your image -->
           <div class="card-content">
             <a href="https://igkv.ac.in//Establishment/Estb_Egreivance_Igmis_Complain_Registration_Form.aspx">
-              <img
-                [src]="help_icon"
-                height="80px"
-                alt="Icon or Image"
-              />
+              <img [src]="help_icon" height="80px" alt="Icon or Image" />
               <div class="name">Help</div>
             </a>
           </div>
@@ -154,93 +126,93 @@
 </div>
 
 <!-- dashboard -->
-<div id="Div1" class="mt-3 mb-3 container-fluid"  >
-  
-    <div class="container">
-      <div class="row">
-        <div class="section-title mt-5">
-          <h2>Dashboard</h2>
-        </div>
+<div id="Div1" class="mt-3 mb-3 container-fluid">
+
+  <div class="container">
+    <div class="row">
+      <div class="section-title mt-5">
+        <h2>Dashboard</h2>
       </div>
+    </div>
 
-      <div class="row" style="justify-content: center">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-         
-            <div class="counter">
-              <!-- <a routerLink="/about/college-home"> -->
-              <span class="counter-value">{{currentCounts[0]}}</span>
-              <h3>Colleges</h3>
-              <div class="counter-icon">
-                <i class="fa fa-university"></i>
-              </div>
-            <!-- </a> -->
-            </div>
-        
-        </div>
+    <div class="row" style="justify-content: center">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <div class="counter purple">
-            <span class="counter-value">{{currentCounts[1]}}</span>
-            <h3>Faculty</h3>
-            <div class="counter-icon">
-              <i class="fas fa-users"></i>
-            </div>
+        <div class="counter">
+          <!-- <a routerLink="/about/college-home"> -->
+          <span class="counter-value">{{currentCounts[0]}}</span>
+          <h3>Colleges</h3>
+          <div class="counter-icon">
+            <i class="fa fa-university"></i>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <!-- <a routerLink="/about/department"> -->
-            <div class="counter">
-              <span class="counter-value">{{currentCounts[2]}}</span>
-              <h3>Departments</h3>
-              <div class="counter-icon">
-                <i class="fa fa-building"></i>
-              </div>
-            </div>
           <!-- </a> -->
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <div class="counter purple">
-            <span class="counter-value">{{currentCounts[3]}}+</span>
-            <h3>Students</h3>
-            <div class="counter-icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <div class="counter purple">
+          <span class="counter-value">{{currentCounts[1]}}</span>
+          <h3>Faculty</h3>
+          <div class="counter-icon">
+            <i class="fas fa-users"></i>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <div class="counter">
-            <span class="counter-value">{{currentCounts[4]}}+</span>
-            <h3>Girls</h3>
-            <div class="counter-icon">
-              <i class="fas fa-female"></i>
-            </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <!-- <a routerLink="/about/department"> -->
+        <div class="counter">
+          <span class="counter-value">{{currentCounts[2]}}</span>
+          <h3>Departments</h3>
+          <div class="counter-icon">
+            <i class="fa fa-building"></i>
           </div>
         </div>
+        <!-- </a> -->
+      </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <div class="counter purple">
-            <span class="counter-value">{{currentCounts[5]}}+</span>
-            <h3>Boys</h3>
-            <div class="counter-icon">
-              <i class="fas fa-male"></i>
-            </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <div class="counter purple">
+          <span class="counter-value">{{currentCounts[3]}}+</span>
+          <h3>Students</h3>
+          <div class="counter-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
-          <div class="counter">
-            <span class="counter-value">{{currentCounts[6]}}+</span>
-            <h3>Passout Students</h3>
-            <div class="counter-icon">
-              <i class="fa-solid fa-user-graduate"></i>
-            </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <div class="counter">
+          <span class="counter-value">{{currentCounts[4]}}+</span>
+          <h3>Girls</h3>
+          <div class="counter-icon">
+            <i class="fas fa-female"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <div class="counter purple">
+          <span class="counter-value">{{currentCounts[5]}}+</span>
+          <h3>Boys</h3>
+          <div class="counter-icon">
+            <i class="fas fa-male"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6" #counter>
+        <div class="counter">
+          <span class="counter-value">{{currentCounts[6]}}+</span>
+          <h3>Passout Students</h3>
+          <div class="counter-icon">
+            <i class="fa-solid fa-user-graduate"></i>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 </div>
 
@@ -274,13 +246,14 @@
 <!-- student awards -->
 <section id="blog-student-award" class="blog-student-award container-fluid pt-3 pb-3" *ngIf="award_data != ''">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2 class="section-title1">Student Awards</h2>
+    <h2 class="section-title1">Student Awards</h2>
     <div class="row gy-4 posts-list ">
       <ng-container *ngFor="let data of award_data">
         <div class="col-xl-4 col-md-6">
           <div class="post-item position-relative h-100">
 
-            <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
+            <div class="post-img position-relative overflow-hidden  banner1 image1"
+              [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
               <img [src]="data.Column1" class="img-fluid" alt="student corner awards image">
               <span class="post-date">{{data.web_content_date2|date:'MMMM d, y'}}</span>
               <div class="content1">
@@ -308,15 +281,17 @@
 <hr>
 
 <!-- NCC Activities -->
-<section id="blog-student-award" class="blog-student-award container-fluid pt-3 pb-3" *ngIf="Activity_data_NCC?.length > 0">
+<section id="blog-student-award" class="blog-student-award container-fluid pt-3 pb-3"
+  *ngIf="Activity_data_NCC?.length > 0">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2 class="section-title1">NCC Activities</h2>
+    <h2 class="section-title1">NCC Activities</h2>
     <div class="row gy-4 posts-list ">
       <ng-container *ngFor="let data of Activity_data_NCC">
         <div class="col-xl-4 col-md-6">
           <div class="post-item position-relative h-100">
 
-            <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
+            <div class="post-img position-relative overflow-hidden  banner1 image1"
+              [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
               <img [src]="data.Column1" class="img-fluid" alt="NCC Activities Image">
               <span class="post-date">{{data.web_content_date2|date:'MMMM d, y'}}</span>
               <div class="content1">
@@ -343,15 +318,17 @@
 
 <hr>
 <!-- NSS Activites -->
-<section id="blog-student-award" class="blog-student-award container-fluid pt-3 pb-3" *ngIf="Activity_data_NSS?.length > 0">
+<section id="blog-student-award" class="blog-student-award container-fluid pt-3 pb-3"
+  *ngIf="Activity_data_NSS?.length > 0">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2 class="section-title1">NSS Activities</h2>
+    <h2 class="section-title1">NSS Activities</h2>
     <div class="row gy-4 posts-list ">
       <ng-container *ngFor="let data of Activity_data_NSS">
         <div class="col-xl-4 col-md-6">
           <div class="post-item position-relative h-100">
 
-            <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
+            <div class="post-img position-relative overflow-hidden  banner1 image1"
+              [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
               <img [src]="data.Column1" class="img-fluid" alt="NSS Activities Image">
               <span class="post-date">{{data.web_content_date2|date:'MMMM d, y'}}</span>
               <div class="content1">
@@ -379,33 +356,33 @@
 <!-- students-events -->
 <section id="blog-student-event" class="blog-student-event pb-3 pt-3" *ngIf="Academic_data?.length > 0 ">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2 class="section-title1">Academic Activities</h2>
+    <h2 class="section-title1">Academic Activities</h2>
     <div class="row gy-4 posts-list  pb-3">
       <ng-container *ngFor="let data of Academic_data">
-      <div class="col-xl-4 col-md-6">
-        <div class="post-item position-relative h-100">
-          <div class="post-img position-relative overflow-hidden  banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <img [src]="data.Column1" class="img-fluid" alt="Academic Activities Image">
-            <div class="content1">
-        
+        <div class="col-xl-4 col-md-6">
+          <div class="post-item position-relative h-100">
+            <div class="post-img position-relative overflow-hidden  banner1 image1"
+              [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
+              <img [src]="data.Column1" class="img-fluid" alt="Academic Activities Image">
+              <div class="content1">
+
+              </div>
+              <span class="post-date">{{data.web_content_date}}</span>
             </div>
-            <span class="post-date">{{data.web_content_date}}</span>
-          </div>
-          <div class="post-content d-flex flex-column">
-            <p class="contents">
-              {{data.Content_Title}}
-            </p>
-          </div>
-          <hr>
-          <!-- <a [routerLink]="['/about/activities-details',data.Website_Content_ID]" class="readmore stretched-link"><span>Read More&nbsp;<i
+            <div class="post-content d-flex flex-column">
+              <p class="contents">
+                {{data.Content_Title}}
+              </p>
+            </div>
+            <hr>
+            <!-- <a [routerLink]="['/about/activities-details',data.Website_Content_ID]" class="readmore stretched-link"><span>Read More&nbsp;<i
                 class="fa-solid fa-arrow-right color-orange"></i></span></a> -->
+          </div>
         </div>
-      </div>
-    </ng-container>
+      </ng-container>
     </div>
     <div class="col-lg-12 col-sm-12" align="center">
       <a routerLink="/about/activities/category/5" class="main-btn">View more </a>
     </div>
   </div>
 </section>
-

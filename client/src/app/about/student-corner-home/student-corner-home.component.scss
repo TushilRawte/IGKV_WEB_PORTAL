@@ -288,16 +288,17 @@ right: 0;
     line-height: 1.5;
   }
 
-  .login-container .button1 {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    font-size: calc(16px * var(--font-scale));
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    padding:8px
-  }
+ .login-container .button1 {
+  display: inline-block;
+  background-color: #0056b3;   /* darker blue */
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: calc(16px * var(--font-scale));
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
   .login-container .button1:hover {
     background-color: #0056b3;
