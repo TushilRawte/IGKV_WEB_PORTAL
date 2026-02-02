@@ -62,7 +62,13 @@
                   <span class="title">{{ data.Main_Title }}</span>
                 </a> -->
                   <span class="title">{{ data.Main_Title }}</span>
-               <span class="categories"><b> <p> {{data.News_Category_Name_E}}</p> > <p>{{data.news_sub_category_name}}</p></b></span> 
+               <span class="categories">
+  <strong>
+    <span class="category">{{ data.News_Category_Name_E }}</span>
+    &gt;
+    <span class="subcategory">{{ data.news_sub_category_name }}</span>
+  </strong>
+</span>
               </div>
               <div class="content">
                 <div class="sub-notifications">

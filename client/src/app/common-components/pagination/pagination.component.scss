@@ -145,8 +145,8 @@ section {
 }
 
 .pagination-button:disabled {
-  background-color: #e9ecef; /* Light gray for disabled buttons */
-  color: #adb5bd; /* Muted text for disabled state */
+  background-color: #dee2e6;
+  color: #495057;
   cursor: not-allowed;
 }
 
@@ -181,6 +181,7 @@ section {
   padding: 8px 16px;
   font-size: calc(14px * var(--font-scale));
   background-color: #e3f2fd;
+  color: #0d47a1;   /* dark blue */
   border: 1px solid #dee2e6;
   border-radius: 5px;
   cursor: pointer;
@@ -188,8 +189,9 @@ section {
 }
 
 .page-button button:hover {
-  background-color: #bbdefb;
+   background-color: #bbdefb;
   border-color: #90caf9;
+  color: #0d47a1;
 }
 
 /* Responsive Design */

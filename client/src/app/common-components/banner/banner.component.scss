@@ -11,7 +11,7 @@
 
 #page-banner:before {
   content: "";
-  background: #07294dd0; /* Adjust the alpha value to control overlay transparency */
+  background: rgba(7, 41, 77, 0.95);
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +48,8 @@
 }
 
 .breadcrumb-item.active {
-  color: #ffc107; /* Set active breadcrumb text color to yellow */
+  color: #ffb703;
+  // font-weight: 700;
 }
 
 @media (max-width: 768px) {
