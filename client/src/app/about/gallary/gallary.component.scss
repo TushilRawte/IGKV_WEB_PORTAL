@@ -63,6 +63,7 @@
     font-size: calc(13px * var(--font-scale));
     color: #07294d;
     font-weight: 500;
+    background-color: #ffffff; 
 }
 .gallery .cont h4{
     font-weight: 600;
@@ -187,7 +188,7 @@ a {
 
   .no-data-container p {
     font-size: calc(1rem * var(--font-scale));
-    color: #777;
+   color: #4a4a4a; 
   }
 
 /* Responsive adjustments */

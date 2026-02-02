@@ -73,15 +73,16 @@
                     <div class="col-lg-3 event-list-normalscreen"  *ngIf="showCategory">
                         <div class="row">
                             <div class="col-lg-12 col-md-6 mt-5 " >
-                                <div class="event-List mt-5">
-                                   <!-- <h3>Category</h3> -->
-                                    <ul *ngFor="let data of Event_List">
-                                        <a [routerLink]="['/about/activities/category/',data.Event_Category_ID]">
-                                            <li> <i class="fa-solid fa-list"></i>{{data.Event_Category_Name_E}}</li>
+                            <div class="event-List mt-5">
+                                <ul>
+                                    <li *ngFor="let data of Event_List">
+                                        <a [routerLink]="['/about/activities/category/', data.Event_Category_ID]">
+                                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                                            {{ data.Event_Category_Name_E }}
                                         </a>
-                                        
-                                    </ul>
-                                </div> <!-- course features -->
+                                    </li>
+                                </ul>
+                            </div>
                             </div>
                         </div>
                     </div>

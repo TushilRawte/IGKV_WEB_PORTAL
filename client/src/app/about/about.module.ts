@@ -81,6 +81,7 @@ import { ClgRecruitmentComponent } from './academic-components/clg-recruitment/c
 import { AnnualReportComponent } from './annual-report/annual-report.component';
 import { AdvisoryNewsComponent } from './advisory-news/advisory-news.component';
 import { IgkvAchievementsComponent } from './igkv-achievements/igkv-achievements.component';
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -173,7 +174,7 @@ import { IgkvAchievementsComponent } from './igkv-achievements/igkv-achievements
     NgbModule,
     MaterialcomponentsModule,
     ReactiveFormsModule,
-    
-  ]
+    TranslateModule
+]
 })
 export class AboutModule { }

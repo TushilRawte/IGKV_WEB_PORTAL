@@ -109,7 +109,7 @@
   font-size: calc(15px * var(--font-scale));
   color: #07294d;
   overflow: hidden;
-
+  margin-bottom: 0.5em;
   padding: 0.5em;
   font-weight: 500;
   background: #ffc60091;
@@ -134,10 +134,9 @@
   margin-bottom: 0.5em;
 }
 
-.event-List h3 {
+.event-List ul li a {
   font-weight: 600;
-  background-color: #07294dc7;
-  color: #fff;
+  color: #07294d;
   padding: 0.5em;
   border-radius: 0.5em;
   text-align: center;

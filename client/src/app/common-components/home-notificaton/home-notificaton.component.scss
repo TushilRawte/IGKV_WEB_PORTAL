@@ -1,18 +1,20 @@
 // ========== Dynamic Css For College Page
 .college{
-  background-color:#d96846 !important;
+  background-color: #b84f32 !important; /* darker orange */
+  color: #ffffff !important;
 }
 
 .kvk{
-  background-color: #009970 !important;
+  background-color: #007a55 !important; /* darker green */
+  color: #ffffff !important;
 }
 
 
 
   
   .header {
-    background-color: #16628f;
-    color: #fff;
+   background-color: #16628f;
+  color: #ffffff;
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
@@ -31,9 +33,17 @@
     padding: 10px;
   
   }
+
+  .header-title,
+.header-title li,
+.header-title b {
+  color: #ffffff;
+  font-weight: 600;
+}
   
   .main-header-title{
-    font-weight: 500;
+    color: #07294d;   /* strong brand blue */
+  font-weight: 600;
   }
   
   .header-title {
@@ -88,7 +98,7 @@
   
 span a{
     margin-top: 25px;
-    color: #4167b8;
+     color: #1a1a1a;
     border-radius: 5px;
     // font-size: calc(16px * var(--font-scale));
     font-size: calc(16px * var(--font-scale)) ;
@@ -102,10 +112,9 @@ span a{
 
 
 .top_news_list a{
-  color: #000;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+   color: #1a1a1a;          /* softer than pure black */
   font-weight: 500;
-
+  background-color: #ffffff;
  
 }
 
