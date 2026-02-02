@@ -5,9 +5,9 @@
       <div class="row">
         <section class="container-fluid Allnews mt-5">
           <div class="container">
-            <label for="" style="padding-top: 10px; font-weight: 600; font-size: calc(14px * var(--font-scale));">Select Farmer</label> 
+            <label for="selectFarmer" style="padding-top: 10px; font-weight: 600; font-size: calc(14px * var(--font-scale));">Select Farmer</label> 
             <div class="Allnews-search-section">
-              <select name="" id="" class="Allnews-search-input" [(ngModel)]="selectedKissan"  (change)="getAllSuccessStory()" >
+              <select class="Allnews-search-input" id="selectFarmer" aria-label="Select Farmer" [(ngModel)]="selectedKissan"  (change)="getAllSuccessStory()" >
                 <option value="">--select--</option>
                 <option *ngFor="let office of farmer_Data" [value]="office.farmer_story_id">{{ office.Full_Name }}</option>
               </select>
