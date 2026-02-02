@@ -107,7 +107,7 @@ right: 0;
   
   #page-banner:before {
     content: "";
-    background: #07294dd0; /* Adjust the alpha value to control overlay transparency */
+    background: rgba(7, 41, 77, 0.92);  /* darker overlay *//* Adjust the alpha value to control overlay transparency */
     position: absolute;
     top: 0;
     left: 0;
@@ -148,42 +148,23 @@ right: 0;
   
 //   ===== Button ======
 .button-29 {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #49fff0 0, #4da2d3 100%);
-  border: 0;
-  border-radius: 3px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 38px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 18px;
-  padding-right: 18px;
-  position: relative;
-  text-align: left;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #07294d;            /* dark blue */
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: calc(18px * var(--font-scale));
 }
+
 
 .button-29:focus {
   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
 .button-29:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
+  background-color: #e6e6e6;
+  color: #07294d;
 }
 
 .button-29:active {
@@ -220,7 +201,7 @@ right: 0;
   }
   .counter .counter-value{
     color: #fff;
-    background: linear-gradient(to right, #19bbd2, #2778ee);
+    background: linear-gradient(to right, #0b5ed7, #084298    );
     font-size: calc(22px * var(--font-scale));
     font-weight: 300;
     padding: 14px 14px 14px;
@@ -229,7 +210,7 @@ right: 0;
     display: block;
   }
   .counter h3{
-    color: #2778ee;
+    color: #0b5ed7;
     font-size: calc(18px * var(--font-scale));
     font-weight: 900;
     letter-spacing: 0.5px;
@@ -238,7 +219,7 @@ right: 0;
   }
   .counter .counter-icon{
     color: #fff;
-    background: linear-gradient(to right, #19bbd2, #2778ee);
+    background: linear-gradient(to right, #19bbd2, #0b5ed7);
     font-size: calc(20px * var(--font-scale));
     line-height: 60px;
     width: 40px;
@@ -251,9 +232,9 @@ right: 0;
   }
   .counter.purple .counter-value,
   .counter.purple .counter-icon{
-    background: linear-gradient(to right, #8f70e7, #c452ef);
+    background: linear-gradient(to right, #6a1b9a, #4a148c);
   }
-  .counter.purple h3{ color: #c452ef; }
+  .counter.purple h3{ color: #7a1fa2; } 
   .counter.magenta .counter-value,
   .counter.magenta .counter-icon{
     background: linear-gradient(to right, #e84a94, #ae379b);
@@ -448,8 +429,8 @@ right: 0;
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #d96846;
-  color: white;
+  background-color: #9c3b22;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: calc(13px * var(--font-scale));
   padding: 6px 12px;
@@ -597,8 +578,8 @@ right: 0;
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #6EACDA;
-  color: white;
+  background-color: #1f4e79;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: calc(13px * var(--font-scale));
   padding: 6px 12px;

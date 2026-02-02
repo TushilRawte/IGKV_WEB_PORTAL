@@ -3906,48 +3906,6 @@ a {
     text-decoration:none !important;
 }
 
-/*=====================================================
-    Horizontal Notification css
-======================================================*/
-
-
-.marquee-container {
-  height: 30px;
-  overflow: hidden;
-  line-height: 30px;
-  color: red;
-}
-
-.marquee {
-    top: 0;
-    left: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    animation: marquee 30s linear infinite;
-}
-  
-
-
-@keyframes marquee {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%
-  }
-}
-
-.blink {
-    background-color: yellow;
-    -webkit-animation: blink 800ms step-end infinite;
-            animation: blink 800ms step-end infinite;
-	}
-	@-webkit-keyframes blink { 50% { background-color: red; }}
-    @keyframes blink { 50% { background-color: red; }}
-
-/*=============*/
 
 /*==================================
        Menu Whoswho
