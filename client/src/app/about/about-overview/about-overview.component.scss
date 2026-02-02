@@ -12,9 +12,9 @@
 
 .about-singel-items span{
    font-size: calc(60px * var(--font-scale))px;
-   color: #dbdbdb;
+   color: #000 ;
    font-family: 'Montserrat', sans-serif;
-   font-weight: 400;
+   font-weight: 600;
    line-height: 46px;
    padding-bottom: 22px;
 }
@@ -89,7 +89,8 @@
    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 
 
-   h4 {
+
+   h4,span,p {
       color: white;
    }
 }
