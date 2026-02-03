@@ -14,8 +14,8 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="kvkActivity-member">
             <div class="member-img banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-              <a [routerLink]="['/research/kvk-home/kvk', kvk_id, 'cont', 'activities-details', data.Website_Content_ID]">
-                <img [src]="data.Column1" class="img-fluid" alt="kvk activity image" >
+              <a [routerLink]="['/research/kvk-home/kvk', kvk_id, 'cont', 'activities-details', data.Website_Content_ID]" [attr.aria-label]="'View activity details: ' + data.Content_Title">
+                <img [src]="data.Column1" class="img-fluid" [alt]="" aria-hidden="true">
                 </a>
             <div class="content1">
         
