@@ -121,7 +121,7 @@
       
             <div  style="background-color: rgb(246, 250, 253);" class="row projectDetailRow" data-aos="fade-up" data-aos-delay="100" *ngFor="let item of projectBySearch; let i = index">
                 <div class="tab-content">
-                  <div class="tab-pane active show" id="tab-1">
+                  <div class="tab-pane active show" [attr.id]="'tab-' + i">
                    <!-- <h1> {{ i + 1 }}.</h1>  -->
                       <div class="row">
                           <div class="col-lg-12 details order-2 order-lg-1">
@@ -148,7 +148,7 @@
                                       <td>{{item.MajorHead_Name}}</td>
                                       <td>{{item.Budget_Amount}}</td>
                                       <td>{{item.PI_Name}}</td>
-                                      <td><a href="#" target="_blank"><i class="fa-solid fa-file-pdf" style="color: rgb(45, 100, 172);"></i></a></td>
+                                      <td><a href="#" target="_blank" aria-label="Download project document (PDF)"><i class="fa-solid fa-file-pdf" aria-hidden="true" style="color: rgb(45, 100, 172);"></i></a></td>
                                     </tr>
                                   </tbody>
                                 </table>
