@@ -14,8 +14,8 @@
       </div> 
         <div class="col-md-12 mt-1" >
           <mat-accordion>
-            <div class="course-buttons mt-2" style="overflow-x: auto;" *ngFor="let item of degreeProgramm_Data let i = index">
-              <mat-expansion-panel [expanded]="i === 0" class="mat-exp">
+            <div class="course-buttons mt-2" style="overflow-x: auto;" *ngFor=" let item of degreeProgramm_Data let i = index">
+              <mat-expansion-panel [expanded]="i === 0" class="mat-exp" [attr.id]="'degree-panel-' + i">
                 <mat-expansion-panel-header>
                   <mat-panel-title style="justify-content: center; font-size: calc(16px * var(--font-scale)); font-weight: bold;">
                     {{ item.Degree_Programme_Full_Name_E }}

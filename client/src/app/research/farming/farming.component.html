@@ -7,9 +7,9 @@
           <div class="row">
             <section class="container-fluid Allnews mt-5">
               <div class="container">
-                <label for="" style="padding-top: 10px; font-weight: 600; font-size: calc(14px * var(--font-scale));">Select Products</label> 
+                <label for="productSelect" style="padding-top: 10px; font-weight: 600; font-size: calc(14px * var(--font-scale));">Select Products</label> 
                 <div class="Allnews-search-section">
-                  <select name="" id="" class="Allnews-search-input" [(ngModel)]="selectedProduct"  (change)="getProductdata()" >
+                  <select id="productSelect" class="Allnews-search-input" [(ngModel)]="selectedProduct"  (change)="getProductdata()" >
                     <option value="">--select--</option>
                     <option *ngFor="let product of productList" [value]="product.product_id">{{ product.product_name }}</option>
                   </select>
