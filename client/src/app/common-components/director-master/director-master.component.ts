@@ -241,7 +241,6 @@ export class DirectorMasterComponent {
       .postapi('homeDashboard/passoutStudents', null)
       .subscribe((result: any) => {
         if(result){
-          // console.log(result);
           
         this.passoutStudentF_data = result.countAllStudentGw[0].Total;
         this.passoutStudentM_data = result.countAllStudentGw[1].Total;
@@ -277,20 +276,6 @@ export class DirectorMasterComponent {
       });
   }
 
-  // getKvklist() {
-  //   this.ds.postapi('kvk/kvklist', null).subscribe((result: any) => {
-  //     if(result){
-  //       this.kvklist = result.kvks_Detail.length;
-  //       console.log('kvk',this.kvklist);
-        
-  //       this.setupCounter(0, this.kvklist);
-  //     }else{
-  //       this.kvklist = [];
-  //     }
-  //   },(error)=>{
-  //     console.error('Error fetching kvk counts', error);
-  //   })
-  // }
 
   getKvklist(){
     this.ds.postapi('kvk/kvklist',null).subscribe((result:any)=>{
@@ -451,7 +436,6 @@ export class DirectorMasterComponent {
       this.ds.postapi(`kvk/scientist/`,null).subscribe((result:any)=>{
       if(result){
         this.scientist = result[0].Total_Scientist;
-        // console.log(this.scientist)
       } else{
        this.scientist = [];
       }
@@ -472,28 +456,7 @@ export class DirectorMasterComponent {
     })
 }
 
-// getDRSDashboard(){
-//   this.ds.postapi(`homeDashboard/drsDashboard`,null).subscribe((result:any)=>{
-//   if(result){
-//     this.project_data = result[0][0];
-//     this.copyright_data = result[0][1];
-//     this.patent_data = result[0][2];
-//     this.technology_data = result[0][3];
-//     this.publication_data = result[0][4];
-//     console.log('dd',this.project_data);
 
-//   } else{
-//   //  this.project_data = [];
-//    this.copyright_data = [];
-//    this.patent_data = [];
-//    this.technology_data = [];
-//    this.publication_data = [];
-   
-//   }
-//   },(error)=>{
-//     console.error('Error fetching awards data', error);
-//   })
-// }
 
 getDRSDashboard(){
   this.ds.postapi(`homeDashboard/drsDashboard`,null).subscribe((result:any)=>{
@@ -502,7 +465,6 @@ getDRSDashboard(){
     this.patent_data = result[2][0];
     this.technology_data = result[3][0];
     this.publication_data = result[4][0];
-    // console.log('dd',result);
     this.cdr.detectChanges();
 
   },(error)=>{
@@ -513,8 +475,7 @@ getDRSDashboard(){
 getDashborad(){
   this.ds.getapi(`varietyreleased/dash`).subscribe((result:any)=>{
     this.variety_data=result[0][0]
-    // this.Crop_data=result[1][0]
-    // console.log(this.variety_data);
+
   })  
 }
 

@@ -13,7 +13,6 @@ export class ActivityCommonComponent implements OnInit{
 errorImage: any=environment.PhotoUrl + 'no_preview_image.png';
 
 ngOnInit(): void {
-  console.log('Activity Details:', this.activity_details);
 }
 
 OnErrorImage(event: any) {

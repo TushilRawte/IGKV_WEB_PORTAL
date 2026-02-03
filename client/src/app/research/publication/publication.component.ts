@@ -107,7 +107,6 @@ get_News_BysubCategory(){
   this.ds.postapi(`news/getNewsDetail/${queryString}`,null).subscribe((result:any)=>{
     if(result && result.newsData && result.newsData.length > 0){
       this.top_news=result.newsData;
-      console.log('newsData',this.top_news);
     }else{
       this.top_news=[];
     }

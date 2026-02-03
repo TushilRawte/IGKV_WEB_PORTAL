@@ -160,30 +160,6 @@ getdata(pageNumber: number = 1): void {
 }
 
 
-// getdata(pageNumber: number): void {
-//   const emp_id = this.selectedEmployee || '';
-//   const designation = this.selectedDesignation || '';
-//   const office = this.Office_id || '';
-//   const filters = this.searchForm.value.Emp_FName_E; // Search form values
-//   // const searchText = filters?.searchText || ''; 
-//   const pageSize = 30;
-//   const startRowFrom = (pageNumber - 1) * pageSize
-
-//   const queryString = `${emp_id},${designation},${office},${filters},${startRowFrom},${pageSize}`;
-//   this.ds.postapi(`allStaffDetails/empSearch/${queryString}`, null).subscribe(
-//     (result: any) => {
-//         this.loading = false;
-//       console.log('API Response:', result);
-//       this.employees = result.employees || []; 
-//       this.empployeeList_Data = result.employeeOverview || [];
-//       this.updatePaginatedContents();
-//     },
-//     (error) => {
-//       console.error('API Error:', error);
-//       this.employees = []; 
-//     }
-//   );
-// }
 
 
   loading: boolean = true;
@@ -195,12 +171,7 @@ getdata(pageNumber: number = 1): void {
     event.target.src = this.errorImage;
   }
 
-  // onOfficeSelected(event: any): void {
-  //   console.log('Option Selected:', event);
-  //   this.selectedOffice = event.option.value; // Capture the selected value
-  //   console.log('Selected Office Code:', this.selectedOffice);
-  //   this.getdata();
-  // }
+
 
   onOfficeSelected(event: MatAutocompleteSelectedEvent): void {
     const selectedOffice = event.option.value; 
@@ -230,37 +201,7 @@ getdata(pageNumber: number = 1): void {
     this.getdata();
   }
   
-  // getdata() {
-  //   const emp_id = this.selectedEmployee || '';
-  //   const designation = this.selectedDesignation || '';
-  //   const office = this.Office_id || '';
-  //   const StartRowFrom = '';
-  //   const TotalRow = '';
-  //   this.ds
-  //     .postapi(
-  //       `allStaffDetails/getEmployeeDetails/${emp_id},${designation},${office},${StartRowFrom},${TotalRow}`,
-  //       null
-  //     )
-  //     .subscribe((result: any) => {
-  //       this.loading = false;
-  //       this.empployeeList_Data = result.employeeOverview;
-  //       this.updatePaginatedContents();
-  //     });
-  // }
 
-  // getdata() {  
-  //   const emp_id = this.selectedEmployee || '';
-  //   const designation =  this.selectedDesignation || '';
-  //   const office = this.selectedOffice || ''; 
-  //   const StartRowFrom = '';
-  //   const TotalRow = '';
-  //   this.ds.postapi(`allStaffDetails/getEmployeeDetails/${emp_id},${designation},${office},${StartRowFrom},${TotalRow}`, null).subscribe((result: any) => {
-  //     console.log('emp_List', result);
-  //     this.loading = false;
-  //     this.empployeeList_Data = result.employeeOverview;
-  //     this.updatePaginatedContents();
-  //   });  
-  // }
 
   getOfficeList(){
     this.ds.postapi('allStaffDetails/getOffice', null).subscribe((result: any) => {
@@ -341,7 +282,6 @@ displayEmpName(emp: any): string {
   }
   
   updatePaginatedContents() {
-    // console.log("this is employee",this.empployeeList_Data);
     const startIndex = this.currentPage * this.pageSize;
     const endIndex = startIndex + this.pageSize;
     this.paginatedContents = this.empployeeList_Data.slice(startIndex, endIndex);
@@ -350,67 +290,3 @@ displayEmpName(emp: any): string {
 }
 
 
-
-
-// import { Component } from '@angular/core';
-// import { DataService } from 'src/app/services/data.service';
-// import { ActivatedRoute } from '@angular/router';
-// import { environment } from 'src/environments/environment';
-// import { Router } from '@angular/router';
-
-// @Component({
-//   selector: 'app-staff',
-//   templateUrl: './staff.component.html',
-//   styleUrls: ['./staff.component.scss']
-// })
-// export class StaffComponent {
-//   empployeeList_Data: any;
-//   Office_id:any;
-//   isshowUnLink:boolean = false;
-//   imageUrl:string=environment.PhotoUrl + 'academic-staff-banner.jpg';
-
-//   constructor(private ds:DataService,private activateroute:ActivatedRoute,private route:Router){}
-
-//   StartRowFrom:any = 0
-//   ngOnInit(): void {
-//     this.activateroute.paramMap.subscribe((result)=>{
-//       const currentUrl = this.route.url;
-//       if(currentUrl.includes('about/staff')){
-//         this.isshowUnLink = true;
-//       }
-//       this.Office_id=result.get('id');
-//       this.getdata(this.Office_id);
-//     })
-//   }
-
-//   loading: boolean = true;
-
-// getdata(start_id:any){
-//   const emp_id = '';
-//   const designation = '';
-//   const office = '';
-//   const StartRowFrom =start_id;
-//   const TotalRow  =  20;
-
-//   this.ds.postapi(`allStaffDetails/getEmployeeDetails/${emp_id},${designation},${office},${StartRowFrom},${TotalRow}`,null).subscribe((result:any)=>{
-//     console.log('emp_List',result);
-//     this.empployeeList_Data = result.employeeOverview;
-//     this.loading = false;
-//     })
-// }
-
-
-// start1(id:any){
-// this.getdata(id);
-// }
-
-// getPageNumbers(): number[] {
-//   const totalPages = 20; 
-//   const pageNumbers = [];
-//   for (let i = 20; i <= totalPages * 10; i += 20) {
-//     pageNumbers.push(i);
-//   }
-//   return pageNumbers;
-// }
-
-// }

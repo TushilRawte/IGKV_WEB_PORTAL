@@ -90,7 +90,6 @@ show:boolean=false;
           this.totalDepartment = this.departmentList_data.length;
           this.setupCounter(0, this.totalDepartment);
         } else {
-          console.log('No data received or data is not in array format.');
         }
     })
   }

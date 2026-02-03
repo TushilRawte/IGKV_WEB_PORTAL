@@ -179,8 +179,6 @@ export class HomeResearchInfoComponent implements OnInit {
     this.ds.postapi('kvk/kvklist', null).subscribe((result: any) => {
       if(result){
         this.kvklist = result.length;
-        // console.log('kvk',this.kvklist);
-        
       } else{
         this.kvklist = [];
       }

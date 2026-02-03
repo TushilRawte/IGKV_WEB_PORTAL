@@ -18,14 +18,12 @@ export class PublicationDetailComponent {
   ngOnInit(): void {
     this.activateroute.paramMap.subscribe(result=>{
       this.publicationType=result.get('id')
-      console.log('id', this.publicationType);
       this. getdata();
      })
   }
 
   getdata(){
     this.ds.postapi(`publications/publicationsData/${this.publicationType}`,null).subscribe((result:any)=>{
-      console.log('publicationdata',result);
       this.publicationList_Data = result.Response.publicationList;
     })
   }

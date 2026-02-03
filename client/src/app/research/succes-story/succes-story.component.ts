@@ -38,10 +38,7 @@ export class SuccesStoryComponent {
 
   getdata() {
     this.ds.postapi(`getFarm/getFarmerSuccessStory/,`, null).subscribe((result: any) => {
-        console.log('KissanList', result);
         this.farmer_Data = result; 
-        console.log();
-        
         this.farmer_Data = result; // No typecasting needed
 
       });
@@ -51,9 +48,7 @@ export class SuccesStoryComponent {
  getAllSuccessStory() {
   const farmer_story_id = this.selectedKissan || ',';
   this.ds.postapi(`getFarm/getFarmerSuccessStory/${farmer_story_id}`, null).subscribe((result: any) => {
-    // console.log('Success_Story', result);
     this.farmerData = result; 
-    // console.log('dd',this.farmerData);
   });
 }
 

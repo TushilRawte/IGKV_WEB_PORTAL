@@ -41,7 +41,6 @@ export class StudentCornerEventsViewmoreComponent {
     const emp_id ='';
     const Website_Content_ID='';
       this.ds.postapi(`ActivityList/${unit_id},${section_id},${category_id},${emp_id},${Website_Content_ID}`,null).subscribe((result:any)=>{
-        console.log('events',result);
         this.event_data=result;
         this.updatePaginatedContents();
       })

@@ -98,7 +98,6 @@ export class DirectorEventsViewmoreComponent {
 
   getOfficeDetails(id:any){
     this.ds.postapi(`OfficeDetails/${id}`,null).subscribe((result:any)=>{
-      console.log('officedetails',result);
       this.Office_Page_Data = result.Office_Page_Data[0];
     })
   }

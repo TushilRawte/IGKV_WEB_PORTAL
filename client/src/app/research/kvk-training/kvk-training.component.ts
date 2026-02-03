@@ -20,7 +20,6 @@ export class KvkTrainingComponent {
   ngOnInit() {
     this.activateroute.paramMap.subscribe(result => {
       this.Office_id = result.get('id');
-      console.log("office_id", this.Office_id);
       if(this.Office_id > 0){
         this.Title = 'Training'
       }
@@ -38,8 +37,6 @@ export class KvkTrainingComponent {
     const emp_id ='';
     const Website_Content_ID ='';
       this.ds.postapi(`ActivityList/${Unit_ID},${section_id},${category_id},${emp_id},${Website_Content_ID}`,null).subscribe((result:any)=>{
-        console.log('this is fld ',result);
-        
         if(result && result.length >0){
           this.Activities_data=result;
           

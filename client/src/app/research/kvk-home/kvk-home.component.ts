@@ -46,7 +46,6 @@ export class KvkHomeComponent {
             districtName: officeParts[1] ? officeParts[1].trim() : ''  // "Bilaspur"
           };
         });
-        // console.log('Updated kvklist with split values:', this.kvklist);
       } else {
         this.kvklist = [];
       }

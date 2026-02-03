@@ -121,8 +121,6 @@ export class KvkDetailComponent {
         }else{
           this.kvks_Detail = [];
           this.kvks_headDetail = [];
-          console.log('kvk',result);
-          
         }
       },(error)=>{
         console.error('Error fetching kvk details', error);

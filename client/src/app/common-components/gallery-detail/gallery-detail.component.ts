@@ -35,7 +35,6 @@ unit_id:any = 0;
       if (currentUrl.includes('/college-home/')) {
         const segments = currentUrl.split('/'); // Split the URL into parts
     const id = segments[segments.length - 3]; // Get the second-to-last segment
-    console.log('Extracted ID:', id);
     this.unit_id = id
         this.showbanner = false;
       } else {
@@ -44,7 +43,6 @@ unit_id:any = 0;
       if (currentUrl.includes('/kvk-home/')) {
         const segments = currentUrl.split('/'); // Split the URL into parts
     const id = segments[segments.length - 3]; // Get the second-to-last segment
-    console.log('Extracted ID:', id);
     this.unit_id = id
         this.showbanner = false;
       } 
@@ -57,7 +55,6 @@ unit_id:any = 0;
     this.ds
       .postapi(`ActivityList/galleryDetails/${this.unit_id}/${this.gallery_main_id}`, null)
       .subscribe((result: any) => {
-        console.log(result);
         
         // Check if GallaryDetail exists and has items
         if (result && result.GallaryDetail && result.GallaryDetail.length > 0) {

@@ -19,7 +19,7 @@ export class LanguageService {
   setLanguage(language: string): void {
     this.currentLanguageSubject.next(language);
     this.translate.use(language);
-    localStorage.setItem('language', language); // Save to localStorage
+    localStorage.setItem('language', language); 
   }
 
   getCurrentLanguage(): string {

@@ -66,7 +66,6 @@ export class NccComponent {
 
     // Attempt to play the video
     videoElement.play().then(() => {
-      // console.log('Video is playing successfully');
     }).catch(error => {
       // console.error('Error playing video:', error);
       // Handle errors, potentially unmute and retry

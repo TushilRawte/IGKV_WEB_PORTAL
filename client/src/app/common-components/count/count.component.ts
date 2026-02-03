@@ -60,7 +60,6 @@ export class CountComponent implements OnInit {
 
   getDpartmentlist() {
     this.ds.postapi('homeDashboard/departmentListBycollege', null).subscribe((result: any) => {
-      // console.log('list-dept',result);
       this.departmentList_data = result;
       this.departmentTotal = this.departmentList_data.length;
       this.loading = false;
@@ -73,18 +72,6 @@ export class CountComponent implements OnInit {
   targets: number[] = []; // Holds target values for counters
   hasAnimated: boolean[] = []; // Flags to ensure each counter animates once
  
-  // Count the number of college
-  // getCollegedata() {
-  //   this.ds.postapi('homeDashboard/collegeList', null).subscribe((result: any) => {
-  //     // console.log(result);
-  //     this.collegeList_data = result;
-  //     this.collegeTotal = this.collegeList_data.length;
-  //     this.loading = false;
-  //     this.animateCollegeCount();
-
-  //     //  
-  //   })
-  // }
 
 
   getCollegedata() {
@@ -99,7 +86,6 @@ export class CountComponent implements OnInit {
   // Count the number of college
   getFacultydata() {
     this.ds.postapi('homeDashboard/facultyList/', null).subscribe((result: any) => {
-      // console.log('faclist',result);
       this.facultyList_data = result;
       this.facultyTotal = this.facultyList_data.length;
       this.loading = false;
@@ -111,7 +97,6 @@ export class CountComponent implements OnInit {
     // Passout Students 
     getCurrentCount() {
       this.ds.postapi('homeDashboard/currentStudents', null).subscribe((result: any) => {
-        console.log('studentCurrent', result);
         this.StudentF_data = result[0].Student_Count;
   
         this.StudentM_data = result[1].Student_Count;
@@ -127,7 +112,6 @@ export class CountComponent implements OnInit {
   // Passout Students 
   getPassoutCount() {
     this.ds.postapi('homeDashboard/passoutStudents', null).subscribe((result: any) => {
-      console.log('passOut', result);
       this.passoutStudentF_data = result[0].Student_Count;
       this.passoutStudentM_data = result[1].Student_Count;
       this.pasoutCount = this.passoutStudentF_data + this.passoutStudentM_data;
@@ -167,12 +151,10 @@ export class CountComponent implements OnInit {
     await this.getPGDegreesdata();
     await this.getPHdDegreesdata();
     const total = this.ugProgramms + this.PGProgramms; +this.PHdProgramms
-    console.log('DegreeTotal:', total);
   }
 
   getKvklist() {
     this.ds.postapi('kvk/kvklist', null).subscribe((result: any) => {
-      console.log('kvklist', result);
       this.kvklist = result.kvks_Detail.length;
       this.setupCounter(7, this.kvklist);
 
@@ -184,7 +166,6 @@ export class CountComponent implements OnInit {
     const funding_source = 0;
     const MajorHead = 0;
     this.ds.postapi(`ourProjects/sponceredProject/${fin_year},${funding_source},${MajorHead}`, null).subscribe((result: any) => {
-      console.log('dash', result);
       this.projectDash_Data = result.UserPostResponse.PostList;
     })
   }

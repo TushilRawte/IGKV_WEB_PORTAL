@@ -42,15 +42,13 @@ export class TopbarComponent  {
 
 
   switchLanguage(language: string): void {
-    console.log(language);
+    // console.log('Switching language to:', language);
     
     this.languageService.setLanguage(language);
     this.currentLanguage = language;
     this.isHindi = !this.isHindi;
     if (language === 'hn') {
       this.isHindi = true;
-      // console.warn('called 1');
-      
     } else {
       this.isHindi = false;
     }
@@ -58,11 +56,9 @@ export class TopbarComponent  {
 
 
   ngOnInit(): void {
-    this.switchLanguage('hn')
+    this.switchLanguage('en')
 this.languageService.currentLanguage$.subscribe(lang => {
-  // console.log('tushil', lang);
 });
-    // this.switchLanguage('hn');
     this.route.events.subscribe((val: any) => {
 
       if(this.route.url === '/'){
@@ -102,39 +98,19 @@ this.languageService.currentLanguage$.subscribe(lang => {
      
     });
 
-    // this.getdata();
-    // this.com.changeLanguage(1);
+
    
   }
 
 
-  // translate(translationId: number): string {
-  //   // console.log(translationId);
-  //   return this.com.getTranslation(translationId);
-    
-  // }
 
-  // changeLanguage(languageId: number) {
-  //   this.com.changeLanguage(languageId);
-  // }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // When page is scrolled more than 10px, the navbar background changes
     this.isScrolled = window.pageYOffset < 100;
   }
-  
-  // private setMenuType(type: string): void {
-  //   // console.warn(`in ${type}`);
-  //   this.menutype = type;
-  // }
 
-
-  // switchLanguage(language:string){
-  //   console.log('tarnsalte',language);
-    
-  //   this.translate.use(language);
-  // }
   
   collapseNavbar() {
     const navbarCollapse = document.getElementById('navbarSupportedContent');
@@ -154,12 +130,7 @@ this.languageService.currentLanguage$.subscribe(lang => {
     });
   }
 
-  // getdata(){
-  //   this.ds.postapi(`homeDashboard/getLanguage/${1}`,null).subscribe((result:any)=>{
-  //     console.log(result);
-  //     console.log('language',result);
-  //   })
-  // }
+
 
 // for reset font size 
 increaseFont(){

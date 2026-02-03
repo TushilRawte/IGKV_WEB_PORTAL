@@ -23,7 +23,6 @@ export class DesPublicationComponent {
   ngOnInit(): void {
     this.activateroute.paramMap.subscribe(result=>{
      this.publicationType = Number(result.get('id'));
-      console.log(this.publicationType);
       this. getdata();
      })
   }

@@ -21,10 +21,8 @@ export class MedicalFacilityComponent {
   
   getdata(){
     this.ds.postapi('medicalUnit',null).subscribe((result:any)=>{
-      console.log(result);
       this.medicalUnit_data = result.Response.OfficeHeadDetail[0];
       this.medicalUnitOffice = result.Response.OfficePageDetail[0];
-      console.log(this.medicalUnit_data);
     })
 }
 

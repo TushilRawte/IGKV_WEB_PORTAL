@@ -25,10 +25,6 @@ export class MessageComponent {
 
   ngOnInit(): void {
     this.activateroute.paramMap.subscribe(result=>{
-      // console.log('tushil',this.headDetail_data);
-      // console.log('Rawte',this.pageDetail_data);
-      
-   
      })
   }
 

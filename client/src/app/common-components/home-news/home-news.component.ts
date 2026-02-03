@@ -28,7 +28,6 @@ export class HomeNewsComponent {
         null
       )
       .subscribe((result: any) => {
-        console.log('Awards', result);
         this.Activity_data = result;
       
       });

@@ -34,7 +34,6 @@ export class ActivitesDetailsComponent {
       this.catId =  catData?.catId;
       this.lastroute =  catData?.lastroute;
       
-      // console.log('webcontent_id',this.Website_Content_ID);
       this.getActivitiesdetails();
       const currentUrl = this.router.url;
       if(currentUrl.includes('about/activities')){

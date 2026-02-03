@@ -80,7 +80,6 @@ getdata(pageNumber: number = 1): void {
   const pageSize = 5;
   const startRowFrom = (pageNumber - 1) * pageSize;
   const queryString = `${fin_year},${filters},${startRowFrom},${pageSize}`;
-  console.log(queryString);
   
   
   // Call the API
@@ -89,8 +88,6 @@ getdata(pageNumber: number = 1): void {
       this.loading = false;
       this.projectBySearch = result || [];
       this.totalRecords = result || 0
-      console.log('pr',this.projectBySearch);
-      
     },
     (error) => {
       console.error('API Error:', error);

@@ -25,9 +25,6 @@ export class ArtCultureDetailsComponent implements OnInit {
   ngOnInit(){
     this.activateroute.paramMap.subscribe((result) => {
           this.facility_id = result.get('id');
-      
-          console.log(this.facility_id);
-         
         });
     setInterval(() => this.nextSlide(), 2500);
     

@@ -35,7 +35,6 @@ export class ClgActivitiesDetailsComponent {
         null
       )
       .subscribe((result: any) => {
-        // console.log('Activities details',result);
         this.Activities_detail_data = result[0];
         
       });

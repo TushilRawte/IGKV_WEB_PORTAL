@@ -28,7 +28,6 @@ export class FarmingComponent {
       this.Farm_id = result.get('id');
       this.getdata();
       this.getProductdata();
-      // console.log(this.Farm_id);
       
   if(this.Farm_id==1)
   {
@@ -47,7 +46,6 @@ export class FarmingComponent {
  getdata() {
   const product_id = ',';
   this.ds.postapi(`getFarm/${this.Farm_id},${product_id}`, null).subscribe((result: any) => {
-      // console.log('farmsDetails', result);
       this.productList = result;
       this.heading = result[0].Farm_Name;
     });
@@ -56,7 +54,6 @@ export class FarmingComponent {
 getProductdata() {
   const product_id = this.selectedProduct  || '';
   this.ds.postapi(`getFarm/${this.Farm_id},${product_id}`, null).subscribe((result: any) => {
-      // console.log('productByID', result);
       this.farming_Data = result;
     });
 }
