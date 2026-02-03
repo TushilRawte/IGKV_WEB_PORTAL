@@ -15,35 +15,57 @@ export class DesPublicationComponent {
   loding:boolean=true;
   errorImage:any=environment.PhotoUrl + 'no_image_available.jpg';
   bannerImg:string=environment.PhotoUrl + 'research-publication-banner.jpg';
+  bannerHeading!:String;
   constructor(private ds:DataService,private activateroute:ActivatedRoute){}
 
 
   
   ngOnInit(): void {
     this.activateroute.paramMap.subscribe(result=>{
-      this.publicationType=result.get('id')
+     this.publicationType = Number(result.get('id'));
+      console.log(this.publicationType);
       this. getdata();
      })
   }
 
-  routetoprofile(empid: any) {
-    // this.router.navigate(['about/employeeProfile', empid]);
-  }
 
-  getdata(){
-    const IGKV_Publication_ID = '';
-    const office_id = 101;
-    this.ds.postapi(`publication/publicationList/${this.publicationType},${IGKV_Publication_ID},${office_id}`,null).subscribe((result:any)=>{
-      if(result){
+ getdata() {
+  const IGKV_Publication_ID = '';
+  const office_id = 101;
+
+  this.ds
+    .postapi(
+      `publication/publicationList/${this.publicationType},${IGKV_Publication_ID},${office_id}`,
+      null
+    )
+    .subscribe((result: any[]) => {
+
+      if (result && result.length > 0) {
         this.publicationList_Data = result;
-      }else{
+        this.bannerHeading = this.publicationList_Data[0]?.Publication_Category_Name_E;
+      } else {
         this.publicationList_Data = [];
+        switch (this.publicationType) {
+          case 1:
+            this.bannerHeading = 'Books and Magazines';
+            break;
+
+          case 4:
+            this.bannerHeading = 'Journals';
+            break;
+
+          case 5:
+            this.bannerHeading = 'Research Papers';
+            break;
+
+          default:
+            this.bannerHeading = '';
+        }
       }
-      this.loding=false
-    },(error)=>{
-      console.error('Error fetching publication', error);
-    })
-  }
+
+    });
+}
+
 
   OnErrorImage(event:any){
     event.target.src=this.errorImage;

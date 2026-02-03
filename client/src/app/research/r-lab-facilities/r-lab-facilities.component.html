@@ -24,7 +24,7 @@
         <div class="row">
             <div class="profile col-md-3">
                 <img class="profile-picture" [src]="person_img"
-                    onerror="this.src=onerrorImg">
+                    onerror="this.src=onerrorImg" alt="staff image">
                 <p class="person-name">{{person_name}}</p>
                 <p class="person-post">{{person_post}}</p>
             </div>
@@ -57,7 +57,7 @@
                     <img
                       [src]="data.institutionSetup.imageList[data.currentSlide]?.imageUrl"
                       (error)="OnErrorImage($event)"
-                      alt="Award"/>
+                      alt="Facilities images" />
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@
                     <img
                       [src]="data.institutionSetup.imageList[data.currentSlide]?.imageUrl"
                       (error)="OnErrorImage($event)"
-                      alt="Award"
+                      alt="Facilities images"
                     />
                   </div>
                 </div>
@@ -86,7 +86,7 @@
                         <img
                           [src]="data.institutionSetup.imageList[data.currentSlide]?.imageUrl"
                           (error)="OnErrorImage($event)"
-                          alt="Award"/>
+                          alt="Facilities images"/>
                       </div>
                   </div>
                     <h3>{{ data.institutionSetup.title }}</h3>
@@ -196,8 +196,7 @@
                 <h2>Supporting Staff</h2>
             </div>
     
-            <div id="testimonial-slider" class=" row owl-carousel mt-5 mb-5" >
-            <!-- <div id="testimonial-slider" class=" row owl-carousel mt-5 mb-5"  tabindex="0"    role="region"  aria-label="Staff carousel"> -->
+            <div id="testimonial-slider_1" class=" row owl-carousel mt-5 mb-5" >
 
                 <div class="col-md-4 pb-5" >
                     <div class="testimonial">
@@ -216,13 +215,6 @@
                                 <h3 class="name">Ms. Kalpana Banjare</h3>
                                 <span class="post">DBA & Program Assistant</span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -242,18 +234,11 @@
                                 <h3 class="name">Sandeep Khatik</h3>
                                 <span class="post"> Sr. Application Engineer & .NET Developer</span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
     
-                <div class="col-md-4 pb-5">
+                <!-- <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
                             <img [src]="onerrorImg" alt="staff image">
@@ -267,20 +252,10 @@
                                 <h3 class="name">Ms. Neha k. Bedi</h3>
                                 <span class="post">Sr. .NET Developer & HRMIS Module Expert</span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
-                </div>
-    
-            </div>
-    
-            <div id="testimonial-slider" class=" row owl-carousel mt-5 mb-5">
+                </div> -->
+
                 <div class="col-md-4 pb-5" >
                     <div class="testimonial">
                         <div class="pic">
@@ -295,17 +270,52 @@
                                 <h3 class="name">Mr. Jitendra Sahu</h3>
                                 <span class="post">.NET Developer & Finance Module Expert </span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
+            </div>
     
+            <div id="testimonial-slider_2" class=" row owl-carousel mt-5 mb-5">
+                
+    
+                 <div class="col-md-4 pb-5">
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img [src]="onerrorImg" alt="staff image">
+                        </div>
+                        <h3 class="title" id="Mr_Jitendra_Chandrakar" tabindex="0">Mr. Jitendra Chandrakar</h3>
+                        <p class="staff-description">
+                            Mr. Jitendra Chandrakar is a skilled Android app developer specializing in innovative, user-friendly mobile applications.
+                            He delivers feature-rich Android solutions tailored to meet client requirements.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="testimonial-profile">
+                                <h3 class="name">Mr. Jitendra Chandrakar</h3>
+                                <span class="post">Android Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-md-4 pb-5">
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img [src]="onerrorImg" alt="staff image">
+                        </div>
+                        <h3 class="title" id="Mr_Suryakant_Verma" tabindex="0" >Mr. Suryakant Verma</h3>
+                        <p class="staff-description">
+                            Suryakant Verma, an experienced Senior Network Engineer, adeptly manages network
+                            infrastructures. With a wealth of knowledge in networking technologies, he ensures optimal
+                            performance and security.</p>
+                        <div class="testimonial-content">
+                            <div class="testimonial-profile">
+                                <h3 class="name">Mr. Suryakant Verma</h3>
+                                <span class="post"> Sr. Network Engineer </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
@@ -320,17 +330,15 @@
                                 <h3 class="name">Ujjwal Singh Mourya</h3>
                                 <span class="post"> Sr. Network Engineer </span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
     
+                
+            </div>
+    
+            <div id="testimonial-slider_3" class=" row owl-carousel mt-5 mb-5">
+               
                 <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
@@ -346,71 +354,28 @@
                                 <h3 class="name">Mr. Rakesh Sahu</h3>
                                 <span class="post">Graphics & UI/UX Designer</span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <div id="testimonial-slider" class=" row owl-carousel mt-5 mb-5">
-                <div class="col-md-4 pb-5">
+
+                   <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
                             <img [src]="onerrorImg" alt="staff image">
                         </div>
-                        <h3 class="title" id="Mr_Suryakant_Verma" tabindex="0" >Mr. Suryakant Verma</h3>
-                        <p class="staff-description">
-                            Suryakant Verma, an experienced Senior Network Engineer, adeptly manages network
-                            infrastructures. With a wealth of knowledge in networking technologies, he ensures optimal
-                            performance and security.</p>
+                        <h3 class="title">Mr. Saurabh Bhoi</h3>
+                        <p class="staff-description">Saurabh Bhoi is a skilled Angular developer and application engineer specializing in dynamic web applications.
+                            He delivers efficient, user-friendly solutions tailored to client needs.</p>
                         <div class="testimonial-content">
                             <div class="testimonial-profile">
-                                <h3 class="name">Mr. Suryakant Verma</h3>
-                                <span class="post"> Sr. Network Engineer </span>
+                                <h3 class="name">Mr. Saurabh Bhoi</h3>
+                                <span class="post"> Angular Developer & Application Engineer </span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 pb-5">
-                    <div class="testimonial">
-                        <div class="pic">
-                            <img [src]="onerrorImg" alt="staff image">
-                        </div>
-                        <h3 class="title" id="Mr_Jitendra_Chandrakar" tabindex="0">Mr. Jitendra Chandrakar</h3>
-                        <p class="staff-description">
-                            Mr. Jitendra Chandrakar is a skilled Android app developer, proficient in crafting innovative
-                            mobile applications. With expertise in Android development, he delivers user-friendly and
-                            feature-rich apps tailored to client requirements.
-                        </p>
-                        <div class="testimonial-content">
-                            <div class="testimonial-profile">
-                                <h3 class="name">Mr. Jitendra Chandrakar</h3>
-                                <span class="post">Android Developer</span>
-                            </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pb-5">
+               
+               <!--  <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
                             <img [src]="onerrorImg" alt="staff image">
@@ -424,49 +389,18 @@
                                 <h3 class="name">Mr. Daulat Sahu</h3>
                                 <span class="post"> Mean Stack Developer (Admission Module) </span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
-                </div>
-    
+                </div> -->
 
     
             </div>
     
-            <div id="testimonial-slider" class=" row owl-carousel mt-5 mb-5">
+            <div id="testimonial-slider_4" class=" row owl-carousel mt-5 mb-5">
               
     
-                <div class="col-md-4 pb-5">
-                    <div class="testimonial">
-                        <div class="pic">
-                            <img [src]="onerrorImg" alt="staff image">
-                        </div>
-                        <h3 class="title">Mr. Saurabh Bhoi</h3>
-                        <p class="staff-description">Saurabh Bhoi, a skilled Angular developer and application engineer, excels in
-                            building dynamic web applications. With expertise in Angular development, he delivers efficient
-                            and user-friendly solutions tailored to client needs.</p>
-                        <div class="testimonial-content">
-                            <div class="testimonial-profile">
-                                <h3 class="name">Mr. Saurabh Bhoi</h3>
-                                <span class="post"> Angular Developer & Application Engineer </span>
-                            </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pb-5">
+             
+                <!-- <div class="col-md-4 pb-5">
                     <div class="testimonial">
                         <div class="pic">
                             <img [src]="onerrorImg" alt="staff image">
@@ -480,16 +414,9 @@
                                 <h3 class="name">Mr. Ayush Chandrakar</h3>
                                 <span class="post">AI Developer </span>
                             </div>
-                            <!-- <ul class="rating">
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star"></li>
-                                <li class="fa fa-star-half-empty"></li>
-                            </ul> -->
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -504,11 +431,13 @@
             <div class="Security section-title">
                 <h2>Our Programs</h2>
               
-                    <div class="row">
+                    <div class="row pb-5">
                         <div class="col-md-3 ">
                             <div class="img-cont">
-                                <img src="https://igkv.ac.in/images/AngWeb/Photos/reasearch-RABI-udbhav.png" alt="Sample Image" />
-                                <div class="des">
+                                <div class="image-height">
+                                    <img src="https://igkv.ac.in/images/AngWeb/Photos/reasearch-RABI-udbhav.png" alt="Sample Image" />
+                                </div>
+                                <div class="image-des">
                                 
                                   <p>
                                  Udbhav - Agribusiness Incubation Programme (AIP)
@@ -520,9 +449,10 @@
                         </div>
                         <div class="col-md-3 ">
                             <div class="img-cont">
-                                <img src="https://igkv.ac.in/images/AngWeb/Photos/research-RABI-abhinav.png" alt="Sample Image" />
-                                <div class="des">
-                                
+                                <div class="image-height"> 
+                                    <img src="https://igkv.ac.in/images/AngWeb/Photos/research-RABI-abhinav.png" alt="Sample Image" />
+                                </div>
+                                <div class="image-des">
                                   <p>
                                     Student Entrepreneurship Programme
                                     Grant-in-Aid Up to 4 Lakhs
@@ -533,9 +463,10 @@
                         </div>
                         <div class="col-md-3 ">
                             <div class="img-cont">
-                                <img  alt="Sample Image" />
-                                <div class="des">
-                                
+                                <div class="image-height"> 
+                                    <img src="" alt="Sample Image" />
+                                </div>
+                                <div class="image-des">
                                   <p>
                                     Udbhav - Agribusiness Incubation Programme (AIP)
                                     Grant-in-Aid Up to 25 Lakhs
@@ -983,7 +914,7 @@
         </div>
         <div class="col-md-6">
           <div class="map-container">
-            <iframe
+            <iframe title="google maps for contacts"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6679886860793!2d81.69424410311981!3d21.235332575024216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c2cd61ab13f3%3A0x88aa0d80dc82ad34!2sUniversity%20Office%2C%20IGKV%20Raipur!5e0!3m2!1sen!2sin!4v1724417481982!5m2!1sen!2sin"
               width="100%" height="625" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy"  title="ContactUs"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
