@@ -70,7 +70,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(7, 41, 77, 0.75);
   z-index: 1; /* Places the overlay above the video */
 }
 
@@ -104,11 +104,14 @@
 }
 
 .breadcrumb .breadcrumb-item a {
-  color: #f0f0f0;
+  color: #fff;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white;
 }
 
 .breadcrumb .breadcrumb-item.active {
-  color: #ffd700; /* Golden color for the active breadcrumb */
+  color: #ffb700; /* Golden color for the active breadcrumb */
 }
 
 /* Responsive height for smaller screens */
@@ -282,7 +285,7 @@
 }
 
 
-.Activities .cont #venue{
+.Activities .cont .venue{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -309,6 +312,8 @@
 .Activities .cont span {
   font-size: calc(13px * var(--font-scale));
   color: #000;
+  display: flex;
+  padding-top: 0.3em;
   font-weight: 500;
 }
 

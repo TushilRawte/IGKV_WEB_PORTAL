@@ -408,10 +408,10 @@
 }
 
 .warden-role {
-  font-size: calc(12px * var(--font-scale));
-  color: #777;
+  font-size: calc(14px * var(--font-scale));
+  color: #595959; /* WCAG AA safe on white */
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .warden-hostel,

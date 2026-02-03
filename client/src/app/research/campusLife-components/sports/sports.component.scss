@@ -344,7 +344,7 @@
   }
   
   
-  .Activities .cont #venue{
+  .Activities .cont .venu{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -371,7 +371,9 @@
   .Activities .cont span {
     font-size: calc(13px * var(--font-scale));
     color: #000;
+    display: flex;
     font-weight: 500;
+    padding-top: 0.3em;
   }
   
   .Activities .cont i {
