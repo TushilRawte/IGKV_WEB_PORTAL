@@ -31,7 +31,7 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   top: -30px;
   right: -30px;
@@ -48,7 +48,7 @@
 .counter:hover::before {
   width: 200px;
   height: 200px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 /* Active state for the counter */
@@ -85,19 +85,23 @@
 
 /* Individual colors for each counter */
 #year2017 .counter {
-  background: #ffebee;
+  background: #f4c7cc; /* darker pink */
 }
+
 #year2018 .counter {
-  background: #e3f2fd;
+  background: #cfe3f8; /* darker light blue */
 }
+
 #year2019 .counter {
-  background: #f3e5f5;
+  background: #e1c7eb; /* darker lavender */
 }
+
 #year2020 .counter {
-  background: #e8f5e9;
+  background: #cfe8d3; /* darker mint green */
 }
+
 #year2022 .counter {
-  background: #fff3e0;
+  background: #f5d9b8; /* darker peach */
 }
 
 /* Color change on hover for each counter */

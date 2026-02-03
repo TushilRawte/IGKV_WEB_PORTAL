@@ -176,7 +176,7 @@
 
 .Security h3{
   font-weight: 500;
-  color: #003E53;
+  color: #07294d;
   font-size: calc(40px * var(--font-scale));
   margin-top: 1em;
   padding-bottom: 0.4em;
@@ -294,6 +294,19 @@
  margin:0.5em;
 }
 
+.Security .image-height{
+  height: 15em;
+  overflow: hidden;
+}
+
+.Security .image-des{
+  padding-top: 0.5em;
+  background: rgba(30, 57, 107, 0.9333333333);
+  height: 5em;
+  color: #fff;
+  overflow: hidden;
+}
+
 
 
 // Image slider css 
@@ -363,7 +376,7 @@
 .testimonial .title{
   font-size: calc(16px * var(--font-scale));
   font-weight: 700;
-  color: #eabd44;
+  color: #8a6a00;
   text-transform: none;
   margin: 10px 0 10px 0;
 }
@@ -407,11 +420,14 @@
   transition: all 700ms ease 0s;
 }
 .testimonial:hover .name{ color: #fff; }
+.testimonial:hover .post{ color: #fff; }
 .testimonial .post{
   font-size: calc(14px * var(--font-scale));
-  color: #eabd44;
+  color: #8a6a00;
   text-transform: capitalize;
 }
+
+
 .testimonial .rating{
   display: inline-block;
   padding: 1px 5px;
@@ -696,7 +712,7 @@
 
 .staff-description {
   font-size: calc(14px * var(--font-scale));
-  color: #999;
+  color: #333333;
   line-height: 20px;
   border-bottom: 1px solid #f7f7f7;
   padding: 0 20px 20px;
@@ -1104,9 +1120,9 @@
 
 // RABI
 .img-cont{
-  background-color: rgb(196, 205, 205);
+  background-color: #fff;
   padding: 5px;
-  height: 250px;
+  height: 15em;
 
 }
 

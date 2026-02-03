@@ -55,7 +55,6 @@ export class DepartActivitiesDetailsComponent {
         null
       )
       .subscribe((result: any) => {
-        // console.log('Activities details',result);
         this.Activities_detail_data = result[0];
         
       });
@@ -66,7 +65,6 @@ export class DepartActivitiesDetailsComponent {
     const office_id = '';
     const headoffice_id = '';
     this.ds.postapi(`department/departmentDetail/${office_id},${Subject_Id},${headoffice_id}`,null).subscribe((result:any)=>{
-      console.log('department-details',result);
       this.DepartmentFirst_Details = result.departmentInfo[0];
     })
   }
