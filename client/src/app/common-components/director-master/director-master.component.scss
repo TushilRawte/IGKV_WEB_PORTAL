@@ -330,7 +330,7 @@ background: linear-gradient(to right, #fecb4b, #e69814);
   font-size: calc(14px * var(--font-scale));
   margin-bottom: 0;
   padding: 0.5em;
-
+  color: #07294d;  
 }
 
 .Activity .Activity-member .activities-date {
@@ -347,7 +347,7 @@ background: linear-gradient(to right, #fecb4b, #e69814);
   display: block;
   font-size: calc(14px * var(--font-scale));
   font-weight: 400;
-  color: rgba(33, 37, 41, 0.4);
+  color: #495057; 
 }
 
 .Activity .Activity-member .member-info p {
@@ -415,7 +415,7 @@ background: linear-gradient(to right, #fecb4b, #e69814);
 }
 
 .blog .posts-list .post-content h4{
-  color: #000;
+  color: #07294d;  
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
