@@ -108,9 +108,8 @@ h6{
     padding:0.5em;
     margin:-1.2em;
     font-size:18px;
-    background-color:orange;
-    color:white;
-   
+    background-color: #b34700;
+    color: #ffffff;  
 }
 
 
@@ -368,12 +367,14 @@ h6{
 //   ===== Button ======
 .button-29 {
     align-items: center;
+    color: #ffff;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #49fff0 0, #4da2d3 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #15577e 0, #4da2d3 100%);
     border: 0;
     border-radius: 3px;
     box-sizing: border-box;
-    color: #fff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
@@ -395,6 +396,9 @@ h6{
     will-change: box-shadow,transform;
     font-size: calc(18px * var(--font-scale));
   }
+
+  
+
   
   .button-29:focus {
     box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
