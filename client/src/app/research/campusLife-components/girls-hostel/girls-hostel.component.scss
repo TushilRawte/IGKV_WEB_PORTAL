@@ -395,7 +395,7 @@
 
 .warden-role {
   font-size: calc(14px * var(--font-scale));
-  color: #777;
+  color: #595959; /* WCAG AA safe on white */
   font-weight: 400;
   margin-bottom: 10px;
 }
