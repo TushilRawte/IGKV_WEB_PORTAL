@@ -92,10 +92,10 @@ h4{
   overflow: hidden;
   z-index: 0;
   transition: 0.4s ease-in-out;
-  background-color: #ffc600;
+  background-color: #ffdb4d;
 }
 .main-btn:hover{
-  color: #ffc600;
+  color: #ffdb4d;
   border-color: #07294d;
   background-color: #07294d;
 }
@@ -426,4 +426,10 @@ body {
 //  for hide image 
 .hide-images img {
   display: none !important;
+}
+
+
+.redirect-link{
+    color: #0033cc;
+    text-decoration: underline;
 }

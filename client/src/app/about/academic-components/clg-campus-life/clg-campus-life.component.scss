@@ -42,7 +42,7 @@
   }
   
   
-  .Activities .cont #venue{
+  .Activities .cont .venue{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -70,6 +70,7 @@
     font-size: calc(13px * var(--font-scale));
     color: #000;
     font-weight: 500;
+    padding-top: 0.3em;
   }
   
   .Activities .cont i {

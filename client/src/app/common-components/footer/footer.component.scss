@@ -5,7 +5,7 @@
 .footer {
   background: #16628f;
   padding: 0 0 20px 0;
-  color: #e6e3e3;
+  color: #ffffff;
   font-size: calc(14px * var(--font-scale));
   // background: #f1f6fe;
 }
@@ -87,13 +87,13 @@
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #e9ecec;
+  color: #fff;
 }
 
 .footer .footer-top h4 {
   font-size: calc(16px * var(--font-scale));
   font-weight: bold;
-  color: #e9ecec;
+  color: #fff;
   position: relative;
   padding-bottom: 12px;
 }
@@ -167,7 +167,7 @@
   float: right;
   text-align: center;
   font-size: calc(13px * var(--font-scale));
-  color: #ddd7d7;
+  color: #fff;
 }
 
 
@@ -185,7 +185,7 @@
   font-size: calc(14px * var(--font-scale));
   font-weight: bold;
   background: #0f4c75;
-  color: #bbe1fa;
+  color: #fff;
   font-family: "Courier New", monospace;
   border: 2px solid #3282b8;
   border-radius: 8px;

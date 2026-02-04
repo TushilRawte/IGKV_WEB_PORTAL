@@ -1,380 +1,103 @@
-  <!-- <div class="error-container">
-    <div class="error-content">
-        <div class="error-code pb-3">404</div>
-        <div class="error-message">Page Not Found</div>
-        <div class="error-description">The requested page could not be found.</div>
-        <a href="/" class="btn-back">Go Back to Home</a>
-    </div>
-  </div> -->
+<app-banner [banner_heading]="'Site Map'"
+    [banner_img]="bannerImg"></app-banner>
 
-<div class="container mt-3" style="margin-top: 40px;">
-    <div class="row">
-        <h3> <a href="#" class=""> Home</a> <span style="padding: 10px;"> <i class="fa-solid fa-arrow-right-from-bracket"></i></span> Site Map</h3> <hr>
-    </div>
-</div>
+<div class="container mt-5">
+  <h4 style="font-weight:600; margin-left:20px;">Main Menu</h4>
 
-<div class="container">
-  <div class="row">
-    <div class="section" style=" margin-left: 20px; ">
-      <h4 style="font-weight: 600;">Main Menu</h4>
-  </div>
   <div class="sitemap">
     <ul>
-      <a href="#" class="head"> > About</a>
-      <ul>
-        <a href="#" class="sub-head"> IGKV In Focus</a>
-        <ul class="list-item">
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Chancellor</a></li>
-          <li><a href="#">Desk Of Vice Chancellor</a></li>
-          <li><a href="#">Board of Management</a></li>
-          <li><a href="#">Administrative Councill</a></li>
-          <li><a href="#">Academic Council</a></li>
-          <li><a href="#">Who's Who</a></li>
-          <li><a href="#">Directory Search</a></li>
 
+      <!-- ABOUT -->
+      <li>
+        <h3 class="head">About</h3>
+        <ul>
+          <li>
+            <h4 class="sub-head">IGKV In Focus</h4>
+            <ul class="list-item">
+              <li><a routerlLink="about/about-overview">Overview</a></li>
+              <li><a routerlLink="about/Chancellor">Chancellor</a></li>
+              <li><a routerlLink="about/vice-chancellor">Desk Of Vice Chancellor</a></li>
+              <li><a [routerLink]="['about/Administrative',1]">Board of Management</a></li>
+              <li><a routerlLink="#">Administrative Council</a></li>
+              <li><a routerlLink="#">Academic Council</a></li>
+              <li><a routerlLink="#">Who's Who</a></li>
+              <li><a routerlLink="#">Directory Search</a></li>
+            </ul>
+          </li>
 
+          <li>
+            <h4 class="sub-head">Organisation</h4>
+            <ul class="list-item">
+              <li><a routerlLink="#">VC Secretariat</a></li>
+              <li><a routerlLink="#">Registrar Office</a></li>
+              <li><a routerlLink="#">Comptroller Office</a></li>
+              <li><a routerlLink="#">Medical Unit</a></li>
+              <li><a routerlLink="#">Guest House</a></li>
+            </ul>
+          </li>
         </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Organisation</a>
-        <ul class="list-item">
-          <li><a href="#">VC Secretariat</a></li>
-          <li><a href="#">Registrar Office</a></li>
-          <li><a href="#">Comptroller Office</a></li>
-          <li><a href="#">Medical Unit</a></li>
-          <li><a href="#">Guest House</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head">Awards & Achievements</a>
-        <ul class="list-item">
-          <li><a href="#">National Awards
-          </a></li>
-          <li><a href="#">Student Awards
-          </a></li>
-          <li><a href="#">Sports Awards
-          </a></li>
-          <li><a href="#">Cultural Awards
-          </a></li>
-          <li><a href="#">IGKV Appreciation
-          </a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head">Activites & Events
-        </a>
-        <ul class="list-item">
-          <li><a href="#">Upcoming events</a></li>
-          <li><a href="#">All Activities</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="" class="sub-head">Important Links
-        </a>
-        <ul class="list-item">
-          <li><a href=""> Journal of Agricultural Issues</a></li>
-          <li><a href=""> NIRF</a></li>
-          <li><a href="">UGC HEI </a></li>
-          <li><a href=""> Digital Agri Village</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Others</a>
-        <ul class="list-item">
-          <li><a href="#">
-            IGKV Profile
-            </a></li>
-          <li><a href="#">University Act & Statutes</a></li>
-          <li><a href="#">University Service Regulation</a></li>
-          <li><a href="#">Seniority List</a></li>
-          <li><a href="#">Gallary</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Gallary</a>
-        <ul class="list-item">
-          <li><a href="#">
-           Photo Gallary
-            </a></li>
-          <li><a href="#">Video</a></li>
-        </ul>
-      </ul>
-  
-      <a href="#" class="head"> > Academics</a>
-      <ul>
-        <a href="#" class="sub-head"> Overview</a>
-        <ul class="list-item">
-          <li><a href="#">Directorate of Instruction</a></li>
-          <li><a href="#">Colleges</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Shrinkhala</a></li>
-          <!-- <li><a href="#">Academic Calendar</a></li> -->
-        </ul>
-      </ul>
-  
-      <ul>
-        <a href="#" class="sub-head"> Faculty</a>
-        <ul class="list-item">
-          <li><a href="#">Agriculture</a></li>
-          <li><a href="#">Agriculture Engineering</a></li>
-          <li><a href="#">Horticulture</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Degree</a>
-        <ul class="list-item">
-          <li><a href="#">UG</a></li>
-          <li><a href="#">PG</a></li>
-          <li><a href="#">Ph.D.</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Admission</a>
-        <ul class="list-item">
-          <li><a href="#">Admission Procedure</a></li>
-          <li><a href="#">Fee Structure</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Rules & Regulation</a>
-        <ul class="list-item">
-          <li><a href="#">Academic Regulations for phd degree</a></li>
-          <li><a href="#">Academic Regulations for master degree</a></li>
-          <li><a href="#">Academic Regulations for bachelor degree</a></li>
-          <li><a href="#">Acadmic Calender</a></li>
-          <li><a href="#">Thesis Guidline</a></li>
-          <li><a href="#">New Education Policy 2020</a></li>
-        </ul>
-      </ul>
-  
-      <a href="#" class="head"> > Research</a>
-      <ul>
-        <a href="#" class="sub-head"> Overview</a>
-        <ul class="list-item">
-          <li><a href="#">Directorate of Research Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">LMTB</a></li>
-        </ul>
-      </ul>
-  
-      <ul>
-        <a href="#" class="sub-head"> Technology</a>
-        <ul class="list-item">
-          <li><a href="#">Patents</a></li>
-          <li><a href="#">Copyright</a></li>
-          <li><a href="#">Variety released</a></li>
-          <li><a href="#">Technology Developed</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Publications</a>
-        <ul class="list-item">
-          <li><a href="#">Research Papers</a></li>
-          <li><a href="#">Newsletters</a></li>
-          <li><a href="#">Books & Magazines</a></li>
-          <li><a href="#">Publications</a></li>
-          <li><a href="#">Journals</a></li>
+      </li>
 
+      <!-- ACADEMICS -->
+      <li>
+        <h3  class="head">Academics</h3>
+        <ul>
+          <li>
+            <h4 class="sub-head">Overview</h4>
+            <ul class="list-item">
+              <li><a routerlLink="#">Directorate of Instruction</a></li>
+              <li><a routerlLink="#">Colleges</a></li>
+              <li><a routerlLink="#">Departments</a></li>
+              <li><a routerlLink="#">Shrinkhala</a></li>
+            </ul>
+          </li>
 
+          <li>
+            <h4  class="sub-head">Admission</h4>
+            <ul class="list-item">
+              <li><a routerlLink="#">Admission Procedure</a></li>
+              <li><a routerlLink="#">Fee Structure</a></li>
+              <li><a routerlLink="#">FAQs</a></li>
+            </ul>
+          </li>
         </ul>
-      </ul>
-  
-      <ul>
-        <a href="#" class="sub-head"> Laboratories And Facilities</a>
-        <ul class="list-item">
-          <li><a href="#">CBPS</a></li>
-          <li><a href="#">Knowledge & Technology Resource Centre</a></li>
-          <li><a href="#">Rh. Richharia Lab</a></li>
-          <li><a href="#">IGKV R-ABI</a></li>
-          <li><a href="#">Tissue Culture Lab</a></li>
-          <li><a href="#">Bio Control Lab</a></li>
-          <li><a href="#">Mushroom Spawan Lab</a></li>
-          <li><a href="#">Phytosanitary Lab</a></li>
-  
-        </ul>
-      </ul>
+      </li>
 
-      <ul>
-        <a href="#" class="sub-head"> Research Stations</a>
-        <ul class="list-item">
-          <li><a href="#">Overview</a></li>
+      <!-- RESEARCH -->
+      <li>
+        <h3 class="head">Research</h3>
+        <ul>
+          <li>
+            <h4 class="sub-head">Overview</h4>
+            <ul class="list-item">
+              <li><a routerlLink="#">Directorate of Research Services</a></li>
+              <li><a routerlLink="#">Projects</a></li>
+              <li><a routerlLink="#">LMTB</a></li>
+            </ul>
+          </li>
         </ul>
-      </ul>
+      </li>
 
-      <ul>
-        <a href="#" class="sub-head">Centre of Excellence</a>
-        <ul class="list-item">
-          <li><a href="#"> Agro Industrial Biotechnology</a></li>
-          <li><a href="#">Non Timber Forest Produce & Medical And Aromatic Plants</a></li>
-          <li><a href="#">Protective Cultivation & Precision Farming</a></li>
+      <!-- STUDENT WELFARE -->
+      <li>
+        <h3 class="head">Student Welfare</h3>
+        <ul>
+          <li>
+            <h4 class="sub-head">Life At IGKV</h4>
+            <ul class="list-item">
+              <li><a routerlLink="#">Dean Student Welfare</a></li>
+              <li><a routerlLink="#">Sports</a></li>
+              <li><a routerlLink="#">Facilities & Operations</a></li>
+            </ul>
+          </li>
         </ul>
-      </ul>
+      </li>
 
-      <ul>
-        <a href="#" class="sub-head">Collaborations</a>
-        <ul class="list-item">
-          <li><a href="#"> MOUs</a></li>
-        </ul>
-      </ul>
+      <!-- SIMPLE LINKS -->
+      <li><a routerlLink="#" class="head">Recruitment</a></li>
+      <li><a routerlLink="#" class="head">Admission</a></li>
+      <li><a routerlLink="#" class="head">International</a></li>
 
-      <ul>
-        <a href="#" class="sub-head"> Centre of Excellence</a>
-        <ul class="list-item">
-          <li><a href="#">Agro Industurial Biotechnology</a></li>
-          <li><a href="#">Non Timber Forest Produce & Medical And Aromatic Plants</a></li>
-          <li><a href="#">Protective Cultivation & Precision Farming</a></li>
-          <li><a href="#">MOUs</a></li>
-        </ul>
-      </ul>
-
-      <a href="#" class="head"> > Extentions</a>
-      <ul>
-        <a href="#" class="sub-head"> Overview</a>
-        <ul class="list-item">
-          <li><a href="#">Directorate Of Extension</a></li>
-          <li><a href="#">Krishi Vigyan Kendra (KVKs)</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Activities</a>
-        <ul class="list-item">
-          <li><a href="#">ATIC</a></li>
-          <li><a href="#">Kisan Mela</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">FLD</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Publications</a>
-        <ul class="list-item">
-          <li><a href="#">Books & Magazines</a></li>
-          <li><a href="#">Journals</a></li>
-          <li><a href="#">Publications</a></li>
-          <li><a href="#">Research Paper
-          </a></li>
-        </ul>
-      </ul>
-
-      <ul>
-        <a href="#" class="sub-head"> Mobile Apps</a>
-        <ul class="list-item">
-          <li><a href="#"> Crop Doctor</a></li>
-          <li><a href="#">e-HAAT</a></li>
-          <li><a href="#">e-Krishi Yantra</a></li>
-          <li><a href="#">e-Krishi Rojgar
-          </a></li>
-          <li><a href="#">Millet Doctor
-          </a></li>
-          <li><a href="#">e-Krishi Pathshala
-          </a></li>
-          <li><a href="#">Sankhya
-          </a></li>
-        </ul>
-      </ul>
-
-      <a href="#" class="head"> > Student Welfare</a>
-      <ul>
-        <a href="#" class="sub-head"> Life At IGKV</a>
-        <ul class="list-item">
-          <li><a href="#">Dean Student Walfare</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Facilities & Operations</a></li>
-          <li><a href="#">Public Services</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head">Event Activity</a>
-        <ul class="list-item">
-          <li><a href="#">Art & Culture</a></li>
-          <li><a href="#">NCC</a></li>
-          <li><a href="#">NSS</a></li>
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Housing & Residental</a>
-        <ul class="list-item">
-          <li><a href="#">Accommodation</a></li>
-          <li><a href="#">Girls Hostel</a></li>
-          <li><a href="#">Boys Hostel</a></li>
-          <li><a href="#">Safety & Security</a></li>
-  
-        </ul>
-      </ul>
-      <ul>
-        <a href="#" class="sub-head"> Nehru Library</a>
-        <ul class="list-item">
-          <li><a href="#">Overview</a></li>
-        </ul>
-      </ul>
-     
-      <ul>
-        <a href="#" class="sub-head"> Alumni & Placement</a>
-        <ul class="list-item">
-          <li><a href="#">Alumni Portal</a></li>
-          <li><a href="#">Placement Portal</a></li>
-        </ul>
-      </ul>
-  
-      <a href="#" class="head"> > Former Corner</a>
-      <ul>
-        <a href="#" class="sub-head"> Overview</a>
-        <ul class="list-item">
-          <li><a href="#">Directorate of Farmer</a></li>
-          <li><a href="#">Succes Story</a></li>
-          <li><a href="#">Smart Kisan</a></li>
-          <li><a href="#">Farms</a></li>
-        </ul>
-      </ul>
-      
-      <ul>
-        <a href="#" class="sub-head"> Farming</a>
-        <ul class="list-item">
-          <li><a href="#"> Poultry</a></li>
-          <li><a href="#">Bee Keeping</a></li>
-          <li><a href="#">Fisheries</a></li>
-          <li><a href="#"> Lakh</a></li>
-          <li><a href="#"> Marigold</a></li>
-          <li><a href="#"> Quail</a></li>
-          <li><a href="#"> Goatry</a></li>
-          <li><a href="#">Dairy</a></li>
-          <li><a href="#"> Nursery</a></li>
-          <li><a href="#"> Kadaknath</a></li>
-          <li><a href="#">Duckery</a></li>
-          <li><a href="#">Color Fish Farm</a></li>
-        </ul>
-      </ul>
-  
-      <!-- <ul>
-        <a href="#" class="sub-head"> Mobile App</a>
-        <ul class="list-item">
-          <li><a href="#">Crop Doctor</a></li>
-          <li><a href="#">Sankhya</a></li>
-          <li><a href="#">e-HAAT</a></li>
-          <li><a href="#">e-Krishi Yantra</a></li>
-          <li><a href="#">e-Krishi Rojgar</a></li>
-          <li><a href="#">Millte Doctor</a></li>
-          <li><a href="#">e-Krishi Pathsala</a></li>
-  
-        </ul>
-      </ul> -->
-  
-      <a href="#" class="head"> > Recruitment</a
-      ><br />
-      <a href="#" class="head"> > Admission</a
-        ><br />
-      <a href="#" class="head"> > International</a>
-      <ul>
-        <a href="#" class="sub-head"> </a>
-        <ul class="list-item">
-          <li><a href="#">Overview </a></li>
-          <li><a href="#">Why Choose IGKV</a></li>
-          <li><a href="#">MOUs</a></li>
-        </ul>
-      </ul>
     </ul>
   </div>
-  </div>
 </div>
-

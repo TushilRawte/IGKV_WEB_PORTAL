@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-sitemap',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class SitemapComponent {
 
-
+bannerImg:String=environment.PhotoUrl + 'about-activities-banner.jpg';
 }

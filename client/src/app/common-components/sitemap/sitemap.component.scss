@@ -23,14 +23,16 @@ a:hover {
 .head {
     font-weight: 600;
     font-size: calc(16px * var(--font-scale));
-    padding: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .sub-head {
     font-weight: 600;
     font-size: calc(14px * var(--font-scale));
-    color: #098edb;
-    padding: 5px;
+    color: #0b6fb8;
+    padding-bottom: 0;
+    margin-bottom: 0;
     margin-left: 40px;
 }
 
@@ -45,7 +47,7 @@ a:hover {
 
 .list-item li:before {
     content: '\2022'; /* Unicode character for bullet (use '\25CF' for a solid circle) */
-    color: #098edb; /* Bullet color */
+    color: #0b6fb8; /* Bullet color */
     font-size: calc(16px * var(--font-scale)); /* Bullet size */
     margin-right: 8px; /* Adjust space between bullet and text */
     font-weight: bold; /* Make bullet bold */
