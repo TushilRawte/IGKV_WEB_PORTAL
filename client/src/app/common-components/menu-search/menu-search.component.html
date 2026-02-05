@@ -9,7 +9,7 @@
       
       <!-- Autocomplete Results (Filtered Menu Items) -->
       <ul *ngIf="filteredMenu.length > 0" id='style-4'>
-        <li *ngFor="let menu of filteredMenu" (click)="navigateTo(menu.route)">
+        <li *ngFor="let menu of filteredMenu" (click)="navigateTo(menu.route,menu.external)">
           {{ menu.title }}
         </li>
       </ul>
