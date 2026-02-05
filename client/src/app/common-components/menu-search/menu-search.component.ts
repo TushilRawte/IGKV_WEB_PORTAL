@@ -95,7 +95,7 @@ const MENU_ITEMS = [
   { title: 'Nehru Library', route: "research/library-overview" },
   { title: 'Director Farm', route: "research/director/112" },
   { title: 'Success Story', route: "research/succesStory" },
-  { title: 'Smart Kisan', route: "https://igkv.ac.in/smartkisan/Auth/loginpage.aspx" },
+  { title: 'Smart Kisan', route: "/https://igkv.ac.in/smartkisan/Auth/loginpage.aspx" },
   { title: 'Poultry', route: "research/farming/1" },
   { title: 'Bee Keeping', route: "research/farming/2" },
   { title: 'Fisheries', route: "research/farming/3" },

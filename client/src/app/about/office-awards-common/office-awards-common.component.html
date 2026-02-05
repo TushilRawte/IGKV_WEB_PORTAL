@@ -14,7 +14,7 @@
                     <div class="col-lg-4 col-sm-6 col-xs-12">
                       <div class="card card-block">
                         <a (click)="setdetails()" [routerLink]="['/about/activities-details',data.Website_Content_ID]"
-                        aria-label="View award: {{ data.Content_Title }}">
+                        aria-label="View award">
                           <div class="image banner" [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
                           <img [src]="data.Column1" alt="office awards image" />
                           <div class="content">
