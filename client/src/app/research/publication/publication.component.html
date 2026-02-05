@@ -1,7 +1,7 @@
 <app-loder *ngIf="loding"></app-loder>
 <app-banner
-  *ngIf="publicationList_Data && publicationList_Data.length > 0 && showpublication"
-  [banner_heading]="publicationList_Data[0]?.Publication_Category_Name_E"
+  *ngIf="showpublication"
+  [banner_heading]="bannerHeading"
   [banner_img]="bannerImg"
 ></app-banner>
 
@@ -19,7 +19,7 @@
                 </div> <!-- section title -->
                 <div class="about-cont">
 
-                    <div *ngIf="showpublication" class="row justify-content-start">
+                    <div *ngIf="showpublication && this.publicationList_Data?.length > 0 ;else elseblock" class="row justify-content-start">
                         <div class="col-lg-3 mb-5 col-md-6 col-sm-8" *ngFor="let item of publicationList_Data">
                             <div class="singel-publication">
                                 <div class="image">
@@ -104,6 +104,9 @@
                         </div>
                       </div>
                 </div>
+                 <ng-template #elseblock>
+                <app-no-data></app-no-data>
+             </ng-template>  
             </div>
         </div> 
     </div> 

@@ -16,6 +16,7 @@ export class PublicationComponent {
   loding: boolean = true;
   errorImage: any = environment.PhotoUrl + 'no_image_available.jpg';
   bannerImg: string = environment.PhotoUrl + 'research-publication-banner.jpg';
+  bannerHeading!: string;
   unit_id: any;
   Activities_Id: any;
   office_id: any;
@@ -55,10 +56,6 @@ export class PublicationComponent {
     this.get_News_BysubCategory();
   }
 
-  routetoprofile(empid: any) {
-    // this.router.navigate(['about/employeeProfile', empid]);
-  }
-
   getdata() {
     const IGKV_Publication_ID = '';
     const office_id = this.office_id || '';
@@ -69,10 +66,30 @@ export class PublicationComponent {
       )
       .subscribe(
         (result: any) => {
-          if (result) {
+          if (result && result.length > 0) {
             this.publicationList_Data = result;
+            this.bannerHeading = this.publicationList_Data[0]?.Publication_Category_Name_E;
           } else {
             this.publicationList_Data = [];
+            switch (this.publicationType) {
+            case '1':
+            this.bannerHeading = 'Books And Magzines';
+            break;
+
+            case '3':
+            this.bannerHeading = 'Publications';
+            break;
+
+            case '4':
+            this.bannerHeading = 'Journals';
+            break;
+
+            case '5':
+            this.bannerHeading = 'Research Papers';
+            break;
+          default:
+            this.bannerHeading = '';
+        }
           }
           this.loding = false;
         },

@@ -2,7 +2,7 @@
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .box {
+.project-data .box {
     padding: 30px 25px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 0.3s;
@@ -12,14 +12,14 @@
   
   }
   
-  .why-us .box span {
+  .project-data .box span {
     display: block;
     font-size: calc(19px * var(--font-scale));
     font-weight: 700;
     color: #0984bd;
   }
   
-  .why-us .box h4 {
+  .project-data .box h4 {
     font-size: calc(20px * var(--font-scale));
     font-weight: 600;
     padding: 0;
@@ -27,14 +27,14 @@
     color: #353535;
   }
   
-  .why-us .box p {
+  .project-data .box p {
     color: #919191;
     font-size: calc(15px * var(--font-scale));
     margin: 0;
     padding: 0;
   }
   
-  .why-us .box:hover {
+  .project-data .box:hover {
     background: #0984bd;
   //   padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
@@ -43,17 +43,17 @@
   }
   }
   
-  .why-us .box:hover span,
-  .why-us .box:hover h4,
-  .why-us .box:hover a,
-  .why-us .box:hover p {
+  .project-data .box:hover span,
+  .project-data .box:hover h4,
+  .project-data .box:hover a,
+  .project-data .box:hover p {
     color: #fff;
    
   }
   
   .link{
   font-weight: 500;
-  color: #0984bd;
+  color: #0b5ea8;
   cursor: pointer;
   }
   
@@ -200,14 +200,12 @@
       transition: all 0.3s ease;
   }
   .counter h4{
-      color: #333;
-      font-size:15px;
-      font-weight: 500;
-      // letter-spacing: 1px;
-      // text-transform: uppercase;
-      margin: 0 0 5px 0;
-      text-align: center;
-      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+     color: #333333;
+     font-size: 16px;   
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   
   
   }
@@ -220,7 +218,7 @@
   .counter.blue:before{ background-color: #5A9BEF; }
   .counter.blue .counter-icon{ background-color: #2A70B5; }
   .counter.blue .counter-icon:before{ background-color: #367DCB; }
-  .counter.blue .counter-value{ color: #367DCB; }
+  .counter.blue .counter-value{ color: #1f5fa5; }
   .counter.red:before{ background-color: #FD6D4B; }
   .counter.red .counter-icon{ background-color: #D14026; }
   .counter.red .counter-icon:before{ background-color: #EA5736; }

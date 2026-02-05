@@ -32,23 +32,7 @@
     z-index: 2;
   }
   
-  .kvkActivity .kvkActivity-member .social a {
-    transition: color 0.3s;
-    color: rgba(55, 55, 63, 0.4);
-    margin: 15px 12px;
-    display: block;
-    line-height: 0;
-    text-align: center;
-  }
-  
-  .kvkActivity .kvkActivity-member .social a:hover {
-    color: rgba(55, 55, 63, 0.9);
-  }
-  
-  .kvkActivity .kvkActivity-member .social i {
-    font-size: calc(18px * var(--font-scale));
-  }
-  
+
   .kvkActivity .kvkActivity-member .member-info {
     padding: 0.5em;
     height: 5em;
@@ -61,6 +45,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     line-height: 22px;
+    color: #0000;
     font-weight: 600;
     font-size: calc(14px * var(--font-scale));
   }

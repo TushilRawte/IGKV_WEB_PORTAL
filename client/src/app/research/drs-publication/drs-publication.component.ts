@@ -15,13 +15,14 @@ export class DRSPUBLICATIONComponent {
   loding:boolean=true;
   errorImage:any=environment.PhotoUrl + 'no_image_available.jpg';
   bannerImg:string=environment.PhotoUrl + 'research-publication-banner.jpg';
+  bannerHeading!: string;
   constructor(private ds:DataService,private activateroute:ActivatedRoute){}
 
 
   
   ngOnInit(): void {
     this.activateroute.paramMap.subscribe(result=>{
-      this.publicationType=result.get('id')
+      this.publicationType= Number(result.get('id'))
       this. getdata();
      })
   }
@@ -34,10 +35,19 @@ export class DRSPUBLICATIONComponent {
     const IGKV_Publication_ID = '';
     const office_id = '';
     this.ds.postapi(`publication/publicationList/${this.publicationType},${IGKV_Publication_ID},${office_id}`,null).subscribe((result:any)=>{
-      if(result){
+      if(result && result.length > 0){
         this.publicationList_Data = result;
+        this.bannerHeading = this.publicationList_Data[0]?.Publication_Category_Name_E;
+        
       }else{
         this.publicationList_Data = [];
+         switch (this.publicationType) {
+          case 5:
+            this.bannerHeading = 'Research Papers';
+            break;
+          default:
+            this.bannerHeading = '';
+        }
       }
       this.loding=false
     },(error)=>{

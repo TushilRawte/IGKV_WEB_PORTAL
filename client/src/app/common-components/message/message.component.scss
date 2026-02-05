@@ -19,14 +19,14 @@
 .error-message .contents,
 .error-message .person-name,
 .error-message .person-post {
-  color: #2b2b2b;
+  color: #000000;
 }
 
 /* ================= Text Colors (WCAG safe) ================= */
 
 .message_section .contents,
 .message_section .message-text {
-  color: #2b2b2b; /* strong dark gray – WCAG AA+ */
+  color: #000000; /* strong dark gray – WCAG AA+ */
   font-weight: 500;
 }
 

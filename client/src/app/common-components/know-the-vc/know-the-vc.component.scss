@@ -139,9 +139,9 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
-  background-color: grey;
-  color: white;
-  font-weight: 200;
+  background-color: #555555;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .headers{
@@ -177,7 +177,7 @@ iframe {
 
 #page-banner:before {
   content: "";
-  background: #07294dd0; /* Adjust the alpha value to control overlay transparency */
+  background: rgba(7, 41, 77, 0.95); 
   position: absolute;
   top: 0;
   left: 0;
@@ -204,7 +204,7 @@ iframe {
 }
 
 .breadcrumb-item a {
-  color: #fff; /* Set breadcrumb text color to white */
+  color: #fff; 
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
@@ -212,7 +212,7 @@ iframe {
 }
 
 .breadcrumb-item.active {
-  color: #ffc107; /* Set active breadcrumb text color to yellow */
+  color: #ffb703;
 }
 
 // ----------  profile ------
@@ -313,7 +313,7 @@ margin-bottom: 15px;
 .timeline-dot {
 width: 10px;
 height: 10px;
-background-color: #ff7f02;
+background-color: #cc6600;
 border-radius: 50%;
 position: absolute;
 left: 0;
@@ -461,14 +461,14 @@ background-color: #007bff;
 // ----- vc title content ----
 .vc-title{
 font-size: calc(2rem * var(--font-scale));
-color: #ff7f02;
+color: #cc6600;
 text-transform: uppercase;
 font-weight:600;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .scroll-button {
-background-color: #ff7f02; /* Set button background color to orange */
+background-color: #cc6600; /* Set button background color to orange */
 color: white; /* Set font color to white */
 border: none; /* Remove border */
 padding: 10px 20px; /* Add padding to make the button larger */

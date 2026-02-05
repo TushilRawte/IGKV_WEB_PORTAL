@@ -114,6 +114,9 @@ const MENU_ITEMS = [
   { title: 'Student Corner', route: "about/student" },
   { title: 'Employee Corner', route: "about/staff/0" },
   { title: 'News & Notifications', route: "about/news" },
+  { title: 'Site Map', route: "about/sitemaps" },
+
+
   { title: "College of Agriculture, Raipur", route: "about/college-home/college/59" },
   { title: "BTC College Of Agriculture and Research Station, Bilaspur", route: "about/college-home/college/60" },
   { title: "RMD College of Agriculture & Res. Stn., Ambikapur", route: "about/college-home/college/62" },

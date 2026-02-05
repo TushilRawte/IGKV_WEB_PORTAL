@@ -1,96 +1,46 @@
-/* ============= NCC CSS STARTS ===========  */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(7, 41, 77, 0.5);
-  margin-top: 2em;
-}
-
-
-/* video banner Css */
-.banner {
+#page-banner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  max-height: auto;
+  min-height: 400px;
   overflow: hidden;
-
 }
 
-.banner-video {
+/* wrapper acts as background layer */
+.video-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* video remains a normal element */
+.video-wrapper video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
-  margin-top: 2em;
 }
 
-.banner-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: black;
-  padding: 20px;
-}
-
-.banner-content h1 {
-  font-size: 2em;
-  margin-top: 0;
-}
-
-/* Custom height for the banner video */
-.custom-height {
-  height: 100%; /* Set desired height in pixels */
-  object-fit: cover; /* Ensures the video covers the area while maintaining aspect ratio */
-  width: 100%; /* Make sure the video takes up the full width of the container */
-  overflow: hidden; /* Hide overflow to prevent unwanted scrollbars */
-}
-
-/* Styling for the page banner container */
-#page-banner {
-  position: relative; /* Relative positioning to place the overlay and text correctly */
-  display: flex;
-  align-items: center; /* Vertically centers content */
-  justify-content: center; /* Horizontally centers content */
-  text-align: center;
-  color: #fff; /* Text color for readability */
-  height: 400px;
-}
-
-/* Overlay to darken the video background */
-#page-banner .overlay {
+/* overlay */
+.overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(7, 41, 77, 0.75);
-  z-index: 1; /* Places the overlay above the video */
+  inset: 0;
+  background: rgba(7,41,77,0.75);
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Container within the banner for text and breadcrumb */
-#page-banner .container {
-  position: relative;
-  z-index: 1; /* Places content above the overlay */
-}
-
-/* Page banner content */
+/* text */
 .page-banner-cont {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding-top: 10em;
 }
 
-/* Header style within the banner */
+
 .page-banner-cont .header {
   font-size: calc(3rem * var(--font-scale));
   font-weight: bold;
   margin-bottom: 20px;
+  color: #fff;
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow for better text visibility */
 }
@@ -116,9 +66,17 @@
 
 /* Responsive height for smaller screens */
 @media (max-width: 768px) {
-  .custom-height {
-      height: 250px; /* Reduced height for mobile view */
+
+
+  #page-banner {
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
   }
+
+  .page-banner-cont {
+  padding-top: 2em;
+}
 
   .page-banner-cont .header {
       font-size: calc(2rem * var(--font-scale)); /* Smaller font size for the header */

@@ -1,20 +1,58 @@
 
-.overlay {
+
+/* banner heading */
+
+#page-banner {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+
+#page-banner:before {
+  content: "";
+  background: #07294dd0;
+  /* Adjust the alpha value to control overlay transparency */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  // background-color: #07294dd0; /* Adjust the transparency by changing the alpha value (0.5 for 50% transparency) */
- background-color: rgba(7, 41, 77, 0.5);
-}
-// video banner Css 
-.banner {
-  position: relative;
-  width: 100%;
   height: auto;
-  overflow: hidden;
 }
+
+.page-banner-cont {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+}
+
+.header {
+  font-size: calc(50px * var(--font-scale));
+  font-weight: 700;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item a {
+  color: #fff;
+  /* Set breadcrumb text color to white */
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: #ffc107;
+  /* Set active breadcrumb text color to yellow */
+}
+
 
 .banner-video {
   position: absolute;
@@ -23,21 +61,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Ensure the video stays behind other content */
+  z-index: -1;
+  margin-top: 2em;
 }
 
-.banner-content {
-  position: relative;
-  z-index: 1; /* Ensure content stays above the video */
-  text-align: center;
-  color: black; /* Example text color */
-  padding: 20px;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 41, 77, 0.75);
 }
 
-.banner-content h1 {
-  font-size: 2em;
-  margin-top: 0;
+.banner-height{
+  height:200px !important;
 }
+
+
+
 
   
 .routes .facility-card:hover {
@@ -127,7 +170,7 @@
     margin: 10px 0px 19px 0px;
     padding: 10px 0 10px 0;
     text-align: center; 
-    background-color: #fc654c;    
+    background-color: #e24b32;    
 }
 
 .slider-description:hover {
