@@ -593,7 +593,8 @@
                     <ng-container *ngFor="let data of award_data">
                       <div class="col-lg-4 col-sm-6 col-xs-12">
                         <div class="card card-block">
-                          <a (click)="setdetails_dir('Awards','/research/director/'+ unit_id +'/awards')" [routerLink]="['/about/activities-details',data.Website_Content_ID]">
+                          <a (click)="setdetails_dir('Awards','/research/director/'+ unit_id +'/awards')" [routerLink]="['/about/activities-details',data.Website_Content_ID]"\
+                          aria-label="View award: {{ data.Content_Title }}">
                             <div class="image banner" [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
                             <img [src]="data.Column1" alt="director award image" />
                             <div class="content">

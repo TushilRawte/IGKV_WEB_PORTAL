@@ -9,7 +9,7 @@
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="kvkAwards-member">
           <div class="member-img banner1 image1"  [style.background-image]="'url(' + data.Column1 + ')'" *ngIf="data.Column1">
-            <a [routerLink]="['cont/activities-details',data.Website_Content_ID]">
+            <a [routerLink]="['cont/activities-details',data.Website_Content_ID]" aria-label="View award: {{ data.Content_Title }}">
             <img [src]="data.Column1" class="img-fluid" alt="kvk award image" >
             </a>
           <div class="content1">
