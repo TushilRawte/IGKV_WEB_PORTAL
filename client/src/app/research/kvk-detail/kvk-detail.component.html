@@ -29,66 +29,185 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
-            <div class="row">
-                <div class="collapse navbar-collapse mt-1" id="navbarNavDropdown" >
-                    <ul class="navbar-nav">
-                      <li><a  class="nav-link topnav" aria-label="Home" routerLink="./"><i style="padding-right: 0;" class="fa-solid fa-house" style="color: black;"></i></a></li>
-                      <li class="nav-item dropdown">
-                          <a  class="nav-link dropdown-toggle"   id="navbarDropdownMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About 
-                          </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkAbout">
-                            <a class="dropdown-item"  [routerLink]="['/research/kvk-home/kvk/',Office_id]" fragment="Overview">Overview</a>
-                            <a class="dropdown-item"  [routerLink]="['/research/kvk-home/kvk/',Office_id]" fragment="SeniorScientist">Senior Scientist and Head</a>
-                            <a class="dropdown-item"  [routerLink]="['cont/staff-details/',Office_id]">Who's Who</a>
-                            <a class="dropdown-item" [routerLink]="['cont/gallery/',Office_id]">Gallery</a>
-                          </div>
-                        </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkResearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Research
-                          </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkResearch">
-                            <a class="dropdown-item" [routerLink]="['cont/project/',Office_id]">Projects</a>
-                            <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,1]">Books & Magazines</a>
-                            <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,3]">Publications</a>
-                            <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,4]">Journals</a>
-                            <a class="dropdown-item" [routerLink]="['cont/publication',Office_id,5]">Research Paper</a>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkActivity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Activity
-                          </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkActivity">
-                            <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,17]">Visit</a>
-                            <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,15]">Training</a>
-                            <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,13]">FLD</a>
-                            <a class="dropdown-item"  [routerLink]="['cont/farmer-corner/',Office_id,14]">OFT</a>
-                          </div>
-                        </li>
-                        
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLinkFarmerCorner" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            FarmerCorner 
-                          </a>
-                          <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLinkFarmerCorner">
-                            <a class="dropdown-item"  routerLink="cont/sucessStories">Success Stories</a>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown" id="navbarDropdownMenuLinkInfrastruture">
-                          <a class="nav-link "  [routerLink]="['cont/infrastruturetype/',Office_id]" >
-                            Infrastruture
-                          </a>
-                        </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link "  [routerLink]="['cont/recruitment',Office_id]"  id="navbarDropdownMenuLinkRecruitment" aria-haspopup="true" aria-expanded="false">
-                          Recruitment
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-               </div>
+           <div class="row">
+  <div class="collapse navbar-collapse mt-1" id="navbarNavDropdown">
+
+    <ul class="navbar-nav">
+
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link topnav" routerLink="./" aria-label="Home">
+          <i class="fa-solid fa-house" style="padding-right:0;color:black;"></i>
+        </a>
+      </li>
+
+      <!-- About -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           id="navbarDropdownAbout"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          About
+        </a>
+
+        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownAbout">
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['/research/kvk-home/kvk/',Office_id]"
+               fragment="Overview">
+               Overview
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['/research/kvk-home/kvk/',Office_id]"
+               fragment="SeniorScientist">
+               Senior Scientist and Head
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/staff-details/',Office_id]">
+               Who's Who
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/gallery/',Office_id]">
+               Gallery
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Research -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           id="navbarDropdownResearch"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          Research
+        </a>
+
+        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownResearch">
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/project/',Office_id]">
+               Projects
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/publication',Office_id,1]">
+               Books & Magazines
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/publication',Office_id,3]">
+               Publications
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/publication',Office_id,4]">
+               Journals
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/publication',Office_id,5]">
+               Research Paper
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Activity -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           id="navbarDropdownActivity"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          Activity
+        </a>
+
+        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownActivity">
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/farmer-corner/',Office_id,17]">
+               Visit
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/farmer-corner/',Office_id,15]">
+               Training
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/farmer-corner/',Office_id,13]">
+               FLD
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item"
+               [routerLink]="['cont/farmer-corner/',Office_id,14]">
+               OFT
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Farmer Corner -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           id="navbarDropdownFarmerCorner"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+          Farmer Corner
+        </a>
+
+        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownFarmerCorner">
+          <li>
+            <a class="dropdown-item" routerLink="cont/sucessStories">
+              Success Stories
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Infrastructure -->
+      <li class="nav-item">
+        <a class="nav-link"
+           [routerLink]="['cont/infrastruturetype/',Office_id]">
+          Infrastructure
+        </a>
+      </li>
+
+      <!-- Recruitment -->
+      <li class="nav-item">
+        <a class="nav-link"
+           [routerLink]="['cont/recruitment',Office_id]">
+          Recruitment
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
        </div>
   </nav>
 
