@@ -14,16 +14,19 @@
             <div class="about-cont">
               <p class="contents" style="line-height: 29px; letter-spacing: inherit;">{{faculty_Data.Overview}}</p>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="image-containers">
-              <img [src]="faculty_Detail.img_url" class="img-class"  style="height: 260px;" (error)="onErrorImage($event)" alt="faculty image" />
-              <div class="details">
-              <h3 class="person-name">{{faculty_Detail.emp_full_name}}</h3>
-              <p class="person-post">{{faculty_Detail.post_name}}</p>
-              </div>
-              
             </div>
+            <div class="col-md-3">
+              <div class="image-containers">
+                <!-- ✅ FIX ALT (not generic) -->
+                <img [src]="faculty_Detail.img_url" class="img-class" (error)="onErrorImage($event)"
+                  alt="{{faculty_Detail.emp_full_name}} profile photo" />
+            
+                <div class="details">
+                  <!-- ✅ Already correct h3 -->
+                  <h3 class="person-name">{{faculty_Detail.emp_full_name}}</h3>
+                  <p class="person-post">{{faculty_Detail.post_name}}</p>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -116,7 +119,12 @@
          <div class="col-lg-4 col-md-3 col-6" *ngFor="let item of Program_Data">
           <div class="card-cont mb-3">
             <div class="head">
-             <p><span style="font-size: calc(32px * var(--font-scale));"><i class="fa-solid fa-book"></i></span> </p> 
+              <p>
+                <span style="font-size: calc(32px * var(--font-scale));">
+                  <!-- ✅ hide decorative icon -->
+                  <i class="fa-solid fa-book" aria-hidden="true"></i>
+                </span>
+              </p>
               <span  class="head">{{item.Subject_Name_E}}</span>
             </div>
           </div>
@@ -140,22 +148,26 @@
         <div class="row">
           <div class="col-md-12">
             <div class="info-box">
-              <i class="fa-solid fa-location-dot" style="color: #eecc0a;"></i>              <h3>Our Address</h3>
+              <i class="fa-solid fa-location-dot" aria-hidden="true" style="color: #eecc0a;"></i>             
+               <h3>Our Address</h3>
               <p>{{faculty_Detail.College_Name_E}}</p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="info-box mt-4">
-              <i class="fa-regular fa-envelope" style="color: #eecc0a;"></i>              <h3>Email Us</h3>
+              <i class="fa-regular fa-envelope" aria-hidden="true" style="color: #eecc0a;"></i>             
+               <h3>Email Us</h3>
               <p>{{faculty_Detail.Email_Id}}</p>
               <br>
             </div>
           </div>
           <div class="col-md-6">
             <div class="info-box mt-4">
-              <i class="fa-solid fa-phone-volume" style="color: #eecc0a;"></i>
+              <i class="fa-solid fa-phone-volume" aria-hidden="true" style="color: #eecc0a;"></i>
                             <h3>Call Us</h3>
-              <p>  +91 {{faculty_Detail.Contact_No_1}}</p>
+            <a style="color: #fff;" [href]="'tel:+91' + faculty_Detail.Contact_No_1" [attr.aria-label]="'Call ' + faculty_Detail.Contact_No_1">
+              +91 {{faculty_Detail.Contact_No_1}}
+            </a>
             </div>
           </div>
         </div>

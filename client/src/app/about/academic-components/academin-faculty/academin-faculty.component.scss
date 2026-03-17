@@ -80,6 +80,10 @@
     text-transform: uppercase;
     margin: 0;
 }
+
+.counter h3 a{
+  color: #fff;
+}
 .counter.red{ color: #EF460D; }
 .counter.red:after{ background-color: #EF460D; }
 .counter.green{ color: #1D8B1A; }

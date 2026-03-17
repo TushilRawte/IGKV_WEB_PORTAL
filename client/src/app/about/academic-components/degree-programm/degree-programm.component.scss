@@ -178,6 +178,7 @@
 .counter .title{
   font-size: calc(17px * var(--font-scale));
   text-transform: uppercase;
+  text-shadow: 0 0 5px #000;
   margin: 0 0 10px 0;
 }
 .counter:hover .title{ 

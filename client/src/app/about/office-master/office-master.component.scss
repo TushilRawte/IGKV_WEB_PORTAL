@@ -201,7 +201,7 @@
 }
 
 /* Name styling */
-.former-vc .details .name {
+.former-vc  .name {
   font-size: calc(1.2em * var(--font-scale));
   font-weight: bold;
   color: #333;
@@ -245,7 +245,7 @@
 }
 
 /* Contact card title */
-.contact-card h2 {
+.contact-card h3 {
   font-size: 1.3em;
   margin-bottom: 10px;
   color: #fff;

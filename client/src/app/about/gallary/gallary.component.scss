@@ -65,13 +65,16 @@
     font-weight: 500;
     background-color: #ffffff; 
 }
-.gallery .cont h4{
+
+.gallery .cont h3{
     font-weight: 600;
     font-size: calc(14px * var(--font-scale));
     color:#07294d;
     transition: all 0.4s linear;
+    margin-bottom: 0;
 }
-.gallery .cont h4:hover{
+
+.gallery .cont h3:hover{
     color: #ffc600;
 }
 
