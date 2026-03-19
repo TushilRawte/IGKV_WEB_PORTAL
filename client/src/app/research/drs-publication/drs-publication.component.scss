@@ -1,36 +1,38 @@
-
 /*=====================================================
     11. PUBLICATION css 
 ======================================================*/
 .singel-publication {
-	background-color: #fff;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 32em;
 }
 
-.singel-publication h6{
-	text-align:left;
-	font-size: medium;
-	font-weight: 600;
-} 
+.singel-publication h6 {
+    text-align: left;
+    font-size: medium;
+    font-weight: 600;
+}
 
-.singel-publication h5{
-text-align: center;
+.singel-publication h5 {
+    text-align: center;
 
 
 }
-.singel-publication .image{
+
+.singel-publication .image {
     position: relative;
     height: 21em;
 }
-.singel-publication .image img{
+
+.singel-publication .image img {
     width: 100%;
     height: 100%;
-   
+
 }
-.singel-publication .image .add-cart{
+
+.singel-publication .image .add-cart {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,23 +43,26 @@ text-align: center;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
-.singel-publication .image:hover .add-cart{
+
+.singel-publication .image:hover .add-cart {
     opacity: 1;
-	background-color:#07294d
-	
+    background-color: #07294d
 }
-.singel-publication .image .add-cart ul{
+
+.singel-publication .image .add-cart ul {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.singel-publication .image .add-cart ul li{
+
+.singel-publication .image .add-cart ul li {
     display: inline-block;
     margin: 0 5px;
 }
-.singel-publication .image .add-cart ul li a{
+
+.singel-publication .image .add-cart ul li a {
     font-size: calc(16px * var(--font-scale));
     color: #ffc600;
     width: 35px;
@@ -67,12 +72,13 @@ text-align: center;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
-.singel-publication .image .add-cart ul li a:hover{
+
+.singel-publication .image .add-cart ul li a:hover {
     background-color: #ffc600;
     color: #07294d;
 }
 
-.singel-publication .cont{
+.singel-publication .cont {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -84,26 +90,31 @@ text-align: center;
     align-items: center;
     padding-top: 25px;
 }
-.singel-publication .cont .name{
+
+.singel-publication .cont .name {
     width: 50%;
 }
-.singel-publication .cont .name a{
+
+.singel-publication .cont .name a {
     display: block;
 }
-.singel-publication .cont .name a h6{
+
+.singel-publication .cont .name a h6 {
     font-size: calc(14px * var(--font-scale));
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
 }
-.singel-publication .cont .name a:hover h6{
+
+.singel-publication .cont .name a:hover h6 {
     color: #ffc600;
 }
 
-.singel-publication .cont .name span{
+.singel-publication .cont .name span {
     font-size: calc(13px * var(--font-scale));
     color: #8a8a8a;
 }
-.singel-publication .cont .button{
+
+.singel-publication .cont .button {
     width: 50%;
 }
 
@@ -113,7 +124,7 @@ text-align: center;
 }
 
 
-.details  .author-name{
+.details .author-name {
     color: #000;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -125,11 +136,11 @@ text-align: center;
     margin-bottom: 0.7em;
 }
 
-.details  .p-date p{
+.details .p-date p {
     margin-bottom: 0.2em;
 }
 
-.details .p-title{
+.details .p-title {
     color: #000;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -139,24 +150,34 @@ text-align: center;
     font-weight: normal;
 }
 
-.details .info p{
+.details .info p {
     font-size: calc(12px * var(--font-scale));
     text-align: left;
     // padding-top: 3px;
 }
 
-.details .info p span{
+.details .info p span {
     font-weight: 600;
     color: #097697;
 }
 
-.details .view-more{
-justify-content: center;
-display: flex;
+.details .view-more {
+    justify-content: center;
+    display: flex;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 @media (max-width: 768px) {
-    .about-cont  .row{
-    justify-content:center;
+    .about-cont .row {
+        justify-content: center;
     }
 }
