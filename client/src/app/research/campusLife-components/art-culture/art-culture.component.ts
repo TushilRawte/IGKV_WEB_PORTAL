@@ -1,6 +1,6 @@
-import { Component,Input,AfterViewInit, ViewChild, ElementRef  } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -15,6 +15,8 @@ export class ArtCultureComponent implements AfterViewInit {
   @Input() banner_img:string=environment.PhotoUrl + '';
   @Input() banner_heading: string="Art & Culture";
   @Input() banner_video: string=environment.VideoUrl + 'ArtCulture-banner_video.mp4';
+   // Track currently focused element before modal opens
+  private previouslyFocusedElement: HTMLElement | null = null;
 
   selectedYear: any;
 
@@ -140,6 +142,22 @@ export class ArtCultureComponent implements AfterViewInit {
       this.Lab_Facilities = result.Response?.GallaryList;
       ;
     })
+  }
+
+  openModal(imageUrl: string, imageIndex: number) {
+    // Store currently focused element
+    this.previouslyFocusedElement = document.activeElement as HTMLElement;
+    
+    // Open modal logic here
+    this.openImageModal(imageUrl, imageIndex);
+    
+    // Set focus to modal after it opens (with slight delay for DOM update)
+    setTimeout(() => {
+      const modal = document.querySelector('.modal-dialog');
+      if (modal instanceof HTMLElement) {
+        modal.focus();
+      }
+    }, 100);
   }
 
 

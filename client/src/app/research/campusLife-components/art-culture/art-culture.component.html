@@ -1,20 +1,9 @@
 <section id="page-banner">
 
   <div class="video-wrapper">
-    <video
-      #bannerVideo
-      [src]="banner_video"
-      autoplay
-      muted
-      loop
-      controls
-      aria-label="Intro video">
+    <video #bannerVideo [src]="banner_video" autoplay muted loop controls aria-label="Intro video">
 
-      <track kind="captions"
-             srclang="en"
-             src="assets/captions/intro-video.vtt"
-             label="English captions"
-             default>
+      <track kind="captions" srclang="en" src="assets/captions/intro-video.vtt" label="English captions" default>
     </video>
   </div>
 
@@ -35,7 +24,7 @@
 </section>
 
 
-<section  class="pt-3 pb-3 mt-5">
+<section class="pt-3 pb-3 mt-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -65,10 +54,11 @@
     <h2 class="section-title1">Highlights</h2>
     <div class="row first_section text-center">
       <div class="col-md-4 first_row">
-        <a [routerLink]="['details',1]" aria-label="View details of Madai event">
+        <a [routerLink]="['details',1]" aria-label="View details of Madai cultural event">
           <div class="card">
             <div class="slider-container ">
-              <img class="slider-image" [src]="Madai[currentSlide].src" alt="Image {{ currentSlide + 1 }}">
+              <img class="slider-image" [src]="Madai[currentSlide].src"
+                alt="Madai cultural event {{ currentSlide + 1 }}">
             </div>
             <div class="slider-description">{{ Madai[currentSlide].description }}</div>
           </div>
@@ -326,7 +316,7 @@
               </div> 
           </section> -->
 
-<section  class="pt-20 pb-2 gray-bg">
+<section class="pt-20 pb-2 gray-bg">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -341,11 +331,12 @@
   <div class="pt-5 pb-5 gray-bg container text-center years-counts">
     <div class="row hero">
 
-     <div class="col-md-2 counter blue" role="button" tabindex="0" aria-label="Open gallery for year 2023" (click)="openContent('year2023')" (keydown.enter)="openContent('year2023')">
+      <div class="col-md-2 counter blue" role="button" tabindex="0" aria-label="Open gallery for year 2023"
+        (click)="openContent('year2023')" (keydown.enter)="openContent('year2023')">
         <span class="counter-value">2023</span>
-    </div>
+      </div>
 
-      <div class="col-md-2 id=year2022" (click)="openContent('year2022')">
+      <!-- <div class="col-md-2 id=year2022" (click)="openContent('year2022')">
         <a>
           <div class="counter blue">
             <div class="counter-content">
@@ -355,6 +346,12 @@
             </div>
           </div>
         </a>
+      </div> -->
+      <div class="col-md-2 id=year2022">
+        <button class="counter blue" (click)="openContent('year2022')" aria-label="Open gallery for year 2022"
+        style="border: none;">
+          <span class="counter-value">2022</span>
+        </button>
       </div>
 
       <div class="col-md-2 id=year2019" (click)="openContent('year2019')">
@@ -396,7 +393,7 @@
   </div>
 
   <div class="gray-bg" *ngIf="selectedYear === 'year2023'">
-    <section  class="pt-20 pb-5 mb-20">
+    <section class="pt-20 pb-5 mb-20">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -563,7 +560,7 @@
   </div>
 
   <div class="gray-bg" *ngIf="selectedYear === 'year2022'">
-    <section  class="pt-20 pb-5 mb-20">
+    <section class="pt-20 pb-5 mb-20">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
