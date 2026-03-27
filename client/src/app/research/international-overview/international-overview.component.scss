@@ -359,12 +359,12 @@
 }
 
 .blog .posts-list .post-content {
-  padding: 30px;
+  padding: 15px;
   background-color: #fff;
 }
 
 .blog .posts-list .post-title {
-  font-size: calc(24px * var(--font-scale));
+  font-size: calc(16px * var(--font-scale));
   color: var(--color-secondary);
   font-weight: 700;
   transition: 0.3s;
@@ -382,7 +382,7 @@
 }
 
 .blog .posts-list p {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .blog .posts-list hr {
@@ -734,5 +734,39 @@
   .stage {
     flex-basis: calc(25% - 20px); /* Calculate 25% width minus padding */
     margin-bottom: 20px;
+  }
+}
+
+
+/* FIX row spacing */
+.admission-stages .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spacing between cards */
+  justify-content: center;
+}
+
+/* FIX each card width */
+.admission-stages .stage {
+  flex: 0 0 calc(25% - 20px); /* 4 cards in one row */
+  max-width: calc(25% - 20px);
+  background: #f5f5f5; /* keep your existing */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .admission-stages .stage {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .admission-stages .stage {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }

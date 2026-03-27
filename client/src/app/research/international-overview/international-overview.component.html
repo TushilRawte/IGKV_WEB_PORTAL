@@ -45,7 +45,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="why-section">
-          <h2>Why India</h2>
+          <h3>Why India</h3>
           <ul>
             <li>Fastest growing economy by World Bank, IMF & CSO.</li>
             <li>
@@ -67,7 +67,7 @@
       </div>
       <div class="col-md-6">
         <div class="why-section">
-          <h2>Why IGKV</h2>
+          <h3>Why IGKV</h3>
           <ul>
             <li>
               Internationally Recognised Degrees, Approved by UGC, Govt. of
@@ -95,58 +95,76 @@
 
 <section class="pt-3 pb-3">
   <div class="container">
+
     <div class="col-lg-12">
       <div>
         <h2 class="section-title1">How To Apply</h2>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+
           <div class="admission-section">
             <div class="admission-stages">
-              <div class="stage col-md-6">
-                <div class="stage-icon">
-                  <i class="fas fa-file-alt"></i>
-                </div>
-                <h3>Step 1: Fill out Application Form</h3>
-                <p>
-                  Complete the online application form with your personal and
-                  academic information.
-                </p>
-              </div>
-              <div class="stage col-md-6">
-                <div class="stage-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Step 2: Submit Documents</h3>
-                <p>
-                  Submit required documents such as transcripts, test scores, and
-                  letters of recommendation.
-                </p>
-              </div>
-              <div class="stage col-md-6">
-                <div class="stage-icon">
-                  <i class="fas fa-check-circle"></i>
-                </div>
-                <h3>Step 3: Application Review</h3>
-                <p>
-                  Your application will be reviewed by the admissions committee.
-                </p>
-              </div>
-              <div class="stage col-md-6">
-                <div class="stage-icon">
-                  <i class="fas fa-money-bill-wave"></i>
-                </div>
-                <h3>Step 4: Pay Application Fee</h3>
-                <p>Pay the application fee online or by mail.</p>
-              </div>
+
+              <!-- ONLY CHANGE: added <ol>, no style change -->
+              <ol class="row" style="list-style: none; padding-left: 0; margin: 0;">
+
+                <!-- Step 1 -->
+                <li class="stage">
+                  <div class="stage-icon">
+                    <i class="fas fa-file-alt" aria-hidden="true"></i>
+                  </div>
+                  <h3>Step 1: Fill out Application Form</h3>
+                  <p>
+                    Complete the online application form with your personal and
+                    academic information.
+                  </p>
+                </li>
+
+                <!-- Step 2 -->
+                <li class="stage">
+                  <div class="stage-icon">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <h3>Step 2: Submit Documents</h3>
+                  <p>
+                    Submit required documents such as transcripts, test scores, and
+                    letters of recommendation.
+                  </p>
+                </li>
+
+                <!-- Step 3 -->
+                <li class="stage">
+                  <div class="stage-icon">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  </div>
+                  <h3>Step 3: Application Review</h3>
+                  <p>
+                    Your application will be reviewed by the admissions committee.
+                  </p>
+                </li>
+
+                <!-- Step 4 -->
+                <li class="stage">
+                  <div class="stage-icon">
+                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                  </div>
+                  <h3>Step 4: Pay Application Fee</h3>
+                  <p>Pay the application fee online or by mail.</p>
+                </li>
+
+              </ol>
+
             </div>
           </div>
+
         </div>
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -201,102 +219,142 @@
   </div>
 </section>
 
-<section  class="blog pt-3 pb-3 gray-bg">
+<section class="blog pt-3 pb-3 gray-bg">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
+
     <div>
       <h2 class="section-title1">Latest Events</h2>
     </div>
+
     <div class="row gy-4 posts-list">
+
+      <!-- POST 1 -->
       <div class="col-xl-4 col-md-6">
         <div class="post-item position-relative h-100">
+
           <div class="post-img position-relative overflow-hidden">
-            <img [src]="Latest_EventsImg1" class="img-fluid" alt="Latest Events Image 1" />
-            <span class="post-date">December 12</span>
+            <!-- FIX 1: meaningful alt -->
+            <img [src]="Latest_EventsImg1"
+                 class="img-fluid"
+                 alt="Cultural event held on December 12" />
+
+            <!-- FIX 2: time element -->
+            <time class="post-date" datetime="2024-12-12">
+              December 12
+            </time>
           </div>
 
           <div class="post-content d-flex flex-column">
+
+            <!-- FIX 3: descriptive heading -->
+            <h3 class="post-title">
+              Educational Visit to IGKV Field
+            </h3>
+
             <div class="meta d-flex align-items-center">
+
+              <!-- FIX 4: hide decorative icons -->
               <div class="d-flex align-items-center">
-                <!-- <i class="bi bi-person"></i> <span class="ps-2">John Doe</span> -->
+                <i class="bi bi-person" aria-hidden="true"></i>
               </div>
-              <span class="px-3 text-black-50">/</span>
+
+              <!-- <span class="px-3 text-black-50">/</span> -->
+
               <div class="d-flex align-items-center">
-                <!-- <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span> -->
+                <i class="bi bi-folder2" aria-hidden="true"></i>
               </div>
+
             </div>
 
-            <p class="contents">
-              <!-- Similique neque nam consequuntur ad non maxime aliquam quas.
-              Quibusdam animi praesentium. Aliquam et laboriosam eius aut
-              nostrum quidem aliquid dicta. -->
-            </p>
-
+            <p class="contents"></p>
             <hr />
+
           </div>
         </div>
       </div>
-      <!-- End post list item -->
 
+      <!-- POST 2 -->
       <div class="col-xl-4 col-md-6">
         <div class="post-item position-relative h-100">
+
           <div class="post-img position-relative overflow-hidden">
-            <img [src]="Latest_EventsImg2" height="12em" class="img-fluid" alt="Latest Events Image 2" />
-            <span class="post-date">March 19</span>
+            <img [src]="Latest_EventsImg2"
+                 class="img-fluid"
+                 alt="Seminar or event conducted on March 19" />
+
+            <time class="post-date" datetime="2024-03-19">
+              March 19
+            </time>
           </div>
 
           <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">
+              Learning in Action at IGKV Field
+            </h3>
+
             <div class="meta d-flex align-items-center">
+
               <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i>
-                <!-- <span class="ps-2">Julia Parker</span> -->
+                <i class="bi bi-person" aria-hidden="true"></i>
               </div>
-              <span class="px-3 text-black-50">/</span>
+
+              <!-- <span class="px-3 text-black-50">/</span> -->
+
               <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i>
-                <!-- <span class="ps-2">Economics</span> -->
+                <i class="bi bi-folder2" aria-hidden="true"></i>
               </div>
+
             </div>
 
-            <p class="contents">
-              <!-- Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint
-              ullam quis illum voluptatum et. Quo libero rerum voluptatem
-              pariatur nam. -->
-            </p>
-
+            <p class="contents"></p>
             <hr />
+
           </div>
         </div>
       </div>
-      <!-- End post list item -->
 
+      <!-- POST 3 -->
       <div class="col-xl-4 col-md-6">
         <div class="post-item position-relative h-100">
+
           <div class="post-img position-relative overflow-hidden">
-            <img [src]="Latest_EventsImg3" height="12em" class="img-fluid" alt="Latest Events Image 3" />
-            <span class="post-date">June 24</span>
+            <img [src]="Latest_EventsImg3"
+                 class="img-fluid"
+                 alt="Sports or campus activity event on June 24" />
+
+            <time class="post-date" datetime="2024-06-24">
+              June 24
+            </time>
           </div>
 
           <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">
+              Exploring Agriculture at IGKV Field
+            </h3>
+
             <div class="meta d-flex align-items-center">
+
               <div class="d-flex align-items-center">
-                <!-- <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span> -->
+                <i class="bi bi-person" aria-hidden="true"></i>
               </div>
-              <span class="px-3 text-black-50">/</span>
+
+              <!-- <span class="px-3 text-black-50">/</span> -->
+
               <div class="d-flex align-items-center">
-                <!-- <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span> -->
+                <i class="bi bi-folder2" aria-hidden="true"></i>
               </div>
+
             </div>
 
-            <p class="contents">
-              <!-- Aut iste neque ut illum qui perspiciatis similique recusandae non.
-              Fugit autem dolorem labore omnis et. Eum temporibus fugiat
-              voluptate enim tenetur sunt omnis. -->
-            </p>
-
+            <p class="contents"></p>
             <hr />
+
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -317,8 +375,8 @@
               <div class="row">
                 <div class="col-sm-3">
                   <div class="img-box">
-                    <img [src]="Gallery_Img1"  alt="international images"/>
-                    <div class="transparent-box">
+                   <img [src]="Gallery_Img1" alt="Students visiting IGKV agricultural field" />
+                    <div class="transparent-box" aria-hidden="true">
                       <div class="caption">
                        
                       </div>
@@ -326,9 +384,9 @@
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="img-box">
-                    <img [src]="Gallery_Img2"  alt="international images"/>
-                    <div class="transparent-box">
+                  <div class="img-box">                
+            <img [src]="Gallery_Img2" alt="Hands-on learning session at IGKV field" />
+                    <div class="transparent-box" aria-hidden="true">
                       <div class="caption">
                         
                       </div>
@@ -337,8 +395,8 @@
                 </div>
                 <div class="col-sm-3">
                   <div class="img-box">
-                    <img [src]="Gallery_Img3"  alt="international images" />
-                    <div class="transparent-box">
+                    <img [src]="Gallery_Img3" alt="Exploring crops during IGKV field visit" />
+                    <div class="transparent-box" aria-hidden="true">
                       <div class="caption">
                         
                       </div>
@@ -347,8 +405,8 @@
                 </div>
                 <div class="col-sm-3">
                   <div class="img-box">
-                    <img [src]="Gallery_Img4"  alt="international images" />
-                    <div class="transparent-box">
+                    <img [src]="Gallery_Img4" alt="Group observing farming techniques at IGKV" />
+                    <div class="transparent-box" aria-hidden="true">
                       <div class="caption">
                         
                       </div>

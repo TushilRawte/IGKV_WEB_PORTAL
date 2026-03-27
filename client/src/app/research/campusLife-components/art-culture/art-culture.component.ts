@@ -144,21 +144,23 @@ export class ArtCultureComponent implements AfterViewInit {
     })
   }
 
-  openModal(imageUrl: string, imageIndex: number) {
-    // Store currently focused element
-    this.previouslyFocusedElement = document.activeElement as HTMLElement;
+  // openModal(imageUrl: string, imageIndex: number) {
+  //   // Store currently focused element
+  //   this.previouslyFocusedElement = document.activeElement as HTMLElement;
     
-    // Open modal logic here
-    this.openImageModal(imageUrl, imageIndex);
+  //   // Open modal logic here
+  //   this.openImageModal(imageUrl, imageIndex);
     
-    // Set focus to modal after it opens (with slight delay for DOM update)
-    setTimeout(() => {
-      const modal = document.querySelector('.modal-dialog');
-      if (modal instanceof HTMLElement) {
-        modal.focus();
-      }
-    }, 100);
-  }
+  //   // Set focus to modal after it opens (with slight delay for DOM update)
+  //   setTimeout(() => {
+  //     const modal = document.querySelector('.modal-dialog');
+  //     if (modal instanceof HTMLElement) {
+  //       modal.focus();
+  //     }
+  //   }, 100);
+  // }
+
+  
 
 
 }

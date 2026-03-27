@@ -54,7 +54,7 @@
     <h2 class="section-title1">Highlights</h2>
     <div class="row first_section text-center">
       <div class="col-md-4 first_row">
-        <a [routerLink]="['details',1]" aria-label="View details of Madai cultural event">
+        <a [routerLink]="['details',1]" [attr.aria-label]="'View details of ' + Agri_Carnival[currentSlide].description" aria-label="View details of Madai cultural event">
           <div class="card">
             <div class="slider-container ">
               <img class="slider-image" [src]="Madai[currentSlide].src"
@@ -66,7 +66,7 @@
       </div>
 
       <div class="col-md-4 first_row">
-        <a [routerLink]="['details',2]">
+        <a [routerLink]="['details',2]"  [attr.aria-label]="'View details of ' + Agri_Carnival[currentSlide].description">
           <div class="card">
             <div class="slider-container ">
               <img class="slider-image" [src]="Agri_Carnival[currentSlide].src" alt="Image {{ currentSlide + 1 }}">
@@ -87,7 +87,7 @@
       </div> -->
 
       <div class="col-md-4 first_row">
-        <a [routerLink]="['details',4]">
+        <a [routerLink]="['details',4]" [attr.aria-label]="'View details of ' + Agri_Carnival[currentSlide].description">
           <div class="card">
             <div class="slider-container ">
               <img class="slider-image" [src]="Akti_Tihaar[currentSlide].src" alt="Image {{ currentSlide + 1 }}">
@@ -100,457 +100,300 @@
   </div>
 </div>
 
-
-
-<!-- Gallery Starts  -->
-
-<!-- <section id="Section3" class="pt-20 pb-5 mb-20">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <div class="section-title mt-400">
-                              <h2>Gallery</h2>
-                          </div>
-                          <div class="mb-3 about-cont">
-                            <div class="gallery_section ">  
-                                <div class="gallery-image">
-                                    <div class="container">
-                                        <div class="row">
-                                              <div class="col-md-4">
-                                             
-                                                <a [href]="GalleryImg1" data-lightbox="models">
-                                                 
-                                                  <div class="gallery-section">
-                                                  
-                                                    <div class="gallery-image image banner">
-                                                     
-                                                      <img [src]="GalleryImg1" alt="Gallery Image" />
-                                                     
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-  
-                                              <div class="col-md-4">
-                                              
-                                                <a [href]="GalleryImg2" data-lightbox="models">
-                                                 
-                                                  <div class="gallery-section">
-                                                   
-                                                    <div class="gallery-image image banner">
-                                                     
-                                                      <img [src]="GalleryImg2" alt="Gallery Image" />
-                                                     
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-  
-                                              <div class="col-md-4">
-                                              
-                                                <a [href]="GalleryImg3" data-lightbox="models">
-                                                 
-                                                  <div class="gallery-section">
-                                                    
-                                                    <div class="gallery-image image banner">
-                                                    
-                                                      <img [src]="GalleryImg3" alt="Gallery Image" />
-                                                     
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-                                          </div>
-                                      </div>
-                                      
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="mb-3 about-cont">
-                            <div class="gallery_section ">
-                                <div class="gallery-image">
-                                    <div class="container">
-                                        <div class="row">
-                                             
-                                              <div class="col-md-4">
-                                               
-                                                <a [href]="GalleryImg4" data-lightbox="models">
-                                                 
-                                                  <div class="gallery-section">
-                                                   
-                                                    <div class="gallery-image image banner">
-                                                     
-                                                      <img [src]="GalleryImg4" alt="Gallery Image" />
-                                                     
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-  
-                                              <div class="col-md-4">
-                                              
-                                                <a [href]="GalleryImg5" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg5" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-  
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg6" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg6" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="mb-3 about-cont">
-                            <div class="gallery_section ">
-                                <div class="gallery-image">
-                                    <div class="container">
-                                        <div class="row">
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg7" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg7" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-  
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg8" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg8" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-  
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg9" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg9" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-                                          </div>
-                                      </div>
-                                      
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="mb-3 about-cont">
-                            <div class="gallery_section ">
-                                <div class="gallery-image">
-                                    <div class="container">
-                                        <div class="row">
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg10" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg10" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg11" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg11" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-  
-                                              <div class="col-md-4">
-                                                <a [href]="GalleryImg12" data-lightbox="models">
-                                                  <div class="gallery-section">
-                                                    <div class="gallery-image image banner">
-                                                      <img [src]="GalleryImg12" alt="Gallery Image" />
-                                                    </div>
-                                                  </div>
-                                                </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      
-                                </div>
-                            </div>
-
-                        </div>
-
-                      </div> 
-
-                  </div> 
-
-              </div> 
-          </section> -->
-
 <section class="pt-20 pb-2 gray-bg">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="section-title mt-400">
-          <h2>Gallery (Session Wise) </h2>
+          <h2>Gallery (Session Wise)</h2>
         </div>
       </div>
     </div>
   </div>
 
-
+  <!-- YEAR BUTTONS -->
   <div class="pt-5 pb-5 gray-bg container text-center years-counts">
     <div class="row hero">
 
-      <div class="col-md-2 counter blue" role="button" tabindex="0" aria-label="Open gallery for year 2023"
-        (click)="openContent('year2023')" (keydown.enter)="openContent('year2023')">
-        <span class="counter-value">2023</span>
+      <!-- 2023 -->
+      <div class="col-md-2">
+        <button class="counter blue"
+          (click)="openContent('year2023')"
+          aria-label="Open gallery for year 2023"
+          type="button">
+          <span class="counter-value">2023</span>
+        </button>
       </div>
 
-      <!-- <div class="col-md-2 id=year2022" (click)="openContent('year2022')">
-        <a>
-          <div class="counter blue">
-            <div class="counter-content">
-              <div class="counter-icon">
-              </div>
-              <span class="counter-value">2022</span>
-            </div>
-          </div>
-        </a>
-      </div> -->
-      <div class="col-md-2 id=year2022">
-        <button class="counter blue" (click)="openContent('year2022')" aria-label="Open gallery for year 2022"
-        style="border: none;">
+      <!-- 2022 -->
+      <div class="col-md-2">
+        <button class="counter blue"
+          (click)="openContent('year2022')"
+          aria-label="Open gallery for year 2022"
+          type="button">
           <span class="counter-value">2022</span>
         </button>
       </div>
 
-      <div class="col-md-2 id=year2019" (click)="openContent('year2019')">
-        <a>
-          <div class="counter blue">
-            <div class="counter-content">
-              <div class="counter-icon">
-              </div>
-              <span class="counter-value">2019</span>
-            </div>
-          </div>
-        </a>
+      <!-- 2019 -->
+      <div class="col-md-2">
+        <button class="counter blue"
+          (click)="openContent('year2019')"
+          aria-label="Open gallery for year 2019"
+          type="button">
+          <span class="counter-value">2019</span>
+        </button>
       </div>
 
-      <div class="col-md-2 id=year2018" (click)="openContent('year2018')">
-        <a>
-          <div class="counter blue">
-            <div class="counter-content">
-              <div class="counter-icon">
-              </div>
-              <span class="counter-value">2018</span>
-            </div>
-          </div>
-        </a>
+      <!-- 2018 -->
+      <div class="col-md-2">
+        <button class="counter blue"
+          (click)="openContent('year2018')"
+          aria-label="Open gallery for year 2018"
+          type="button">
+          <span class="counter-value">2018</span>
+        </button>
       </div>
 
-      <div class="col-md-2 id=year2017" (click)="openContent('year2017')">
-        <a>
-          <div class="counter blue">
-            <div class="counter-content">
-              <div class="counter-icon">
-              </div>
-              <span class="counter-value">2017</span>
-            </div>
-          </div>
-        </a>
+      <!-- 2017 -->
+      <div class="col-md-2">
+        <button class="counter blue"
+          (click)="openContent('year2017')"
+          aria-label="Open gallery for year 2017"
+          type="button">
+          <span class="counter-value">2017</span>
+        </button>
       </div>
+
     </div>
   </div>
 
+  <!-- ===================== 2023 ===================== -->
   <div class="gray-bg" *ngIf="selectedYear === 'year2023'">
     <section class="pt-20 pb-5 mb-20">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
+
             <div class="section-title mt-400">
-              <h2>Gallery of 2023</h2>
+              <h3>Gallery of 2023</h3>
             </div>
+
+            <!-- IMAGE GRID -->
             <div class="mb-3 about-cont">
-              <div class="gallery_section ">
+              <div class="gallery_section">
                 <div class="gallery-image">
                   <div class="container">
                     <div class="row">
 
+                      <!-- SAMPLE IMAGE -->
                       <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_1" data-lightbox="models">
+                        <a 
+                          [href]="Akti_2023_Img_1"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
                           <div class="gallery-section">
                             <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_1" alt="Gallery Image" />
+                              <img 
+                                [src]="Akti_2023_Img_1"
+                                alt="Akti Tihaar cultural event 2023" />
                             </div>
                           </div>
                         </a>
                       </div>
 
                       <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_2" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_2" alt="Gallery Image" />
-                            </div>
-                          </div>
+                        <a 
+                          [href]="Akti_2023_Img_2"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_2"
+                            alt="Akti Tihaar celebration 2023" />
                         </a>
                       </div>
 
                       <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_3" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_3" alt="Gallery Image" />
-                            </div>
-                          </div>
+                        <a 
+                          [href]="Akti_2023_Img_3"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_3"
+                            alt="Akti Tihaar festival activities 2023" />
                         </a>
                       </div>
 
                       <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_4" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_4" alt="Gallery Image" />
-                            </div>
-                          </div>
+                        <a 
+                          [href]="Akti_2023_Img_4"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_4"
+                            alt="Akti Tihaar program 2023" />
                         </a>
                       </div>
+
+                      <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Akti_2023_Img_5"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_5"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Akti_2023_Img_6"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_6"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Akti_2023_Img_7"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_7"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Akti_2023_Img_8"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Akti_2023_Img_8"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Madai_2023_Img_1"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Madai_2023_Img_1"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Madai_2023_Img_2"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Madai_2023_Img_2"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Madai_2023_Img_3"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Madai_2023_Img_3"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
+                         <div class="col-md-3 mb-2">
+                        <a 
+                          [href]="Madai_2023_Img_4"
+                          data-lightbox="models"
+                          aria-label="View full image of Akti Tihaar 2023">
+                          <img 
+                            [src]="Madai_2023_Img_4"
+                            alt="Akti Tihaar program 2023" />
+                        </a>
+                      </div>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="mb-3 about-cont">
-              <div class="gallery_section ">
-                <div class="gallery-image">
-                  <div class="container">
-                    <div class="row">
+            <!-- You can repeat same pattern for remaining images -->
 
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_5" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_5" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_6" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_6" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
+  <!-- ===================== 2022 ===================== -->
+  <div class="gray-bg" *ngIf="selectedYear === 'year2022'">
+    <section class="pt-20 pb-5 mb-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
 
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_7" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_7" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Akti_2023_Img_8" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Akti_2023_Img_8" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="section-title mt-400">
+              <h3>Gallery of 2022</h3>
             </div>
 
-            <div class="mb-3 about-cont">
-              <div class="gallery_section ">
-                <div class="gallery-image">
-                  <div class="container">
-                    <div class="row">
+            <div class="row">
 
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Madai_2023_Img_1" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Madai_2023_Img_1" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Madai_2023_Img_2" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Madai_2023_Img_2" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Madai_2023_Img_3" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Madai_2023_Img_3" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Madai_2023_Img_4" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Madai_2023_Img_4" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-3 mb-2">
+                <a 
+                  [href]="Agri_Carnival_2022_Img_1"
+                  data-lightbox="models"
+                  aria-label="View full image of Agri Carnival 2022">
+                  <img 
+                    [src]="Agri_Carnival_2022_Img_1"
+                    alt="Agri Carnival exhibition 2022" />
+                </a>
               </div>
+
+              <div class="col-md-3 mb-2">
+                <a 
+                  [href]="Agri_Carnival_2022_Img_2"
+                  data-lightbox="models"
+                  aria-label="View full image of Agri Carnival 2022">
+                  <img 
+                    [src]="Agri_Carnival_2022_Img_2"
+                    alt="Agri Carnival event 2022" />
+                </a>
+              </div>
+
+               <div class="col-md-3 mb-2">
+                <a 
+                  [href]="Agri_Carnival_2022_Img_3"
+                  data-lightbox="models"
+                  aria-label="View full image of Agri Carnival 2022">
+                  <img 
+                    [src]="Agri_Carnival_2022_Img_3"
+                    alt="Agri Carnival event 2022" />
+                </a>
+              </div>
+
+               <div class="col-md-3 mb-2">
+                <a 
+                  [href]="Agri_Carnival_2022_Img_4"
+                  data-lightbox="models"
+                  aria-label="View full image of Agri Carnival 2022">
+                  <img 
+                    [src]="Agri_Carnival_2022_Img_4"
+                    alt="Agri Carnival event 2022" />
+                </a>
+              </div>
+
             </div>
 
           </div>
@@ -559,65 +402,4 @@
     </section>
   </div>
 
-  <div class="gray-bg" *ngIf="selectedYear === 'year2022'">
-    <section class="pt-20 pb-5 mb-20">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title mt-400">
-              <h2>Gallery of 2022</h2>
-            </div>
-            <div class="mb-3 about-cont">
-              <div class="gallery_section ">
-                <div class="gallery-image">
-                  <div class="container">
-                    <div class="row">
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Agri_Carnival_2022_Img_1" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Agri_Carnival_2022_Img_1" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Agri_Carnival_2022_Img_2" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Agri_Carnival_2022_Img_2" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Agri_Carnival_2022_Img_3" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Agri_Carnival_2022_Img_3" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-md-3 mb-2">
-                        <a [href]="Agri_Carnival_2022_Img_4" data-lightbox="models">
-                          <div class="gallery-section">
-                            <div class="gallery-image image banner">
-                              <img [src]="Agri_Carnival_2022_Img_4" alt="Gallery Image" />
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+</section>
