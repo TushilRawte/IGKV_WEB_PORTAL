@@ -56,7 +56,7 @@ export class TopbarComponent  {
 
 
   ngOnInit(): void {
-    // this.switchLanguage('hn')
+    this.switchLanguage('en')
 this.languageService.currentLanguage$.subscribe(lang => {
 });
     this.route.events.subscribe((val: any) => {
