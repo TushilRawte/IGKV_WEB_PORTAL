@@ -89,6 +89,7 @@ import { DRSPUBLICATIONComponent } from './drs-publication/drs-publication.compo
 import { DesPublicationComponent } from './des-publication/des-publication.component';
 import { FarmResStationComponent } from './farm-res-station/farm-res-station.component';
 import { AdharVerificationComponent } from './adhar-verification/adhar-verification.component';
+import {TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -184,7 +185,8 @@ import { AdharVerificationComponent } from './adhar-verification/adhar-verificat
     NgbModule,
     MaterialcomponentsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    TranslateModule
   ]
 })
 export class ResearchModule { }

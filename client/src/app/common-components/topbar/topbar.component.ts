@@ -41,18 +41,38 @@ export class TopbarComponent  {
   }
 
 
-  switchLanguage(language: string): void {
-    // console.log('Switching language to:', language);
+  // switchLanguage(language: string): void {
+  //   // console.log('Switching language to:', language);
     
-    this.languageService.setLanguage(language);
-    this.currentLanguage = language;
-    this.isHindi = !this.isHindi;
-    if (language === 'hn') {
+  //   this.languageService.setLanguage(language);
+  //   this.currentLanguage = language;
+  //   this.isHindi = !this.isHindi;
+  //   if (language === 'hn') {
+  //     this.isHindi = true;
+  //   } else {
+  //     this.isHindi = false;
+  //   }
+  // }
+
+  switchLanguage(language: string): void {
+  this.languageService.setLanguage(language);
+  this.currentLanguage = language;
+  if (language === 'hn') {
       this.isHindi = true;
-    } else {
+    } else if (language === 'en') {
       this.isHindi = false;
     }
-  }
+}
+
+
+// Optional helpers (use in UI if needed)
+// get isHindi(): boolean {
+//   return this.currentLanguage === 'hn';
+// }
+
+get isUzbek(): boolean {
+  return this.currentLanguage === 'uz';
+}
 
 
   ngOnInit(): void {
